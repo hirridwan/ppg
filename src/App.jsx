@@ -161,16 +161,16 @@ const App = () => {
               <div className="flex flex-col mb-8 border-b border-slate-100 pb-6">
                 <h3 className="text-xl md:text-2xl font-bold text-blue-900 mb-4">1. Perangkat Pembelajaran & Dokumentasi Praktik</h3>
                 <div className="flex flex-wrap gap-3">
-                  <a href="https://drive.google.com/drive/folders/dummy-link-rpp" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 transition font-bold text-xs md:text-sm">
+                  <a href="https://drive.google.com/drive/folders/dummy-link-rpp" target="_blank" rel="noreferrer" className="px-6 py-3 bg-blue-50 text-blue-700 hover:bg-blue-600 hover:text-white rounded-xl font-bold text-sm text-center transition-colors">
                     Modul Ajar (RPP) →
                   </a>
-                  <a href="https://drive.google.com/drive/folders/dummy-link-media" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 transition font-bold text-xs md:text-sm">
+                  <a href="https://drive.google.com/drive/folders/dummy-link-media" target="_blank" rel="noreferrer" className="px-6 py-3 bg-blue-50 text-blue-700 hover:bg-blue-600 hover:text-white rounded-xl font-bold text-sm text-center transition-colors">
                     Media Pembelajaran →
                   </a>
-                  <a href="https://drive.google.com/drive/folders/dummy-link-hasil" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 text-emerald-700 rounded-lg hover:bg-emerald-100 transition font-bold text-xs md:text-sm">
+                  <a href="https://drive.google.com/drive/folders/dummy-link-hasil" target="_blank" rel="noreferrer" className="px-6 py-3 bg-blue-50 text-blue-700 hover:bg-blue-600 hover:text-white rounded-xl font-bold text-sm text-center transition-colors">
                     Contoh Hasil Kerja Siswa →
                   </a>
-                  <a href="https://youtube.com/dummy-link-video" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-orange-50 text-orange-700 rounded-lg hover:bg-orange-100 transition font-bold text-xs md:text-sm">
+                  <a href="https://youtube.com/dummy-link-video" target="_blank" rel="noreferrer" className="px-6 py-3 bg-blue-50 text-blue-700 hover:bg-blue-600 hover:text-white rounded-xl font-bold text-sm text-center transition-colors">
                     Video Praktik Mengajar →
                   </a>
                 </div>
@@ -286,7 +286,7 @@ const App = () => {
           </div>
         </div>
         <div className="max-w-6xl mx-auto px-4 md:px-6 mt-8 pt-8 border-t border-slate-100 text-center">
-           <p className="text-slate-400 text-xs">© 2026 Ridwan Maulana, S.Kom.</p>
+            <p className="text-slate-400 text-xs">© 2026 Ridwan Maulana, S.Kom.</p>
         </div>
       </footer>
     </div>
