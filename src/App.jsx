@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 
 const App = () => {
-  // Mengatur Title, Meta Description, dan efek smooth scroll
+  // Mengatur Title, Meta Description, efek smooth scroll, dan Open Graph Fallback
   useEffect(() => {
     document.title = "E-Portfolio | Ridwan Maulana";
     
+    // Meta Description standar
     let metaDescription = document.querySelector('meta[name="description"]');
     if (!metaDescription) {
       metaDescription = document.createElement('meta');
@@ -13,6 +14,25 @@ const App = () => {
     }
     metaDescription.content = "E-Portfolio Refleksi PPL Terbimbing di SMAN 1 Bandung oleh Ridwan Maulana, S.Kom.";
     
+    // Meta Open Graph untuk tampilan saat link di-share
+    const ogTags = [
+      { property: 'og:title', content: 'E-Portfolio | Ridwan Maulana' },
+      { property: 'og:description', content: 'E-Portfolio Refleksi PPL Terbimbing di SMAN 1 Bandung oleh Ridwan Maulana, S.Kom.' },
+      { property: 'og:image', content: 'https://i.imgur.com/gK53z6G.jpeg' },
+      { property: 'og:url', content: 'https://ppg-1j3.pages.dev/' },
+      { property: 'og:type', content: 'website' }
+    ];
+
+    ogTags.forEach(tag => {
+      let element = document.querySelector(`meta[property="${tag.property}"]`);
+      if (!element) {
+        element = document.createElement('meta');
+        element.setAttribute('property', tag.property);
+        document.head.appendChild(element);
+      }
+      element.content = tag.content;
+    });
+
     document.documentElement.style.scrollBehavior = "smooth";
   }, []);
 
@@ -29,9 +49,8 @@ const App = () => {
       <header className="bg-white/90 backdrop-blur-md border-b border-slate-100 fixed top-0 left-0 w-full z-50 shadow-sm">
         <div className="max-w-6xl mx-auto px-4 md:px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-blue-600 rounded-lg shrink-0"></div>
             <h1 className="text-lg md:text-xl font-extrabold tracking-tight text-slate-900 text-center md:text-left">
-              E-Portfolio <span className="text-blue-600 font-light">|</span> Ridwan Maulana
+              Ridwan Maulana, S.Kom.
             </h1>
           </div>
           <nav className="flex flex-wrap justify-center bg-slate-100 p-1 rounded-xl w-full md:w-auto">
@@ -71,7 +90,7 @@ const App = () => {
               <img 
                 src="https://i.imgur.com/gK53z6G.jpeg" 
                 alt="Ridwan Maulana" 
-                className="relative rounded-[2rem] shadow-xl grayscale hover:grayscale-0 transition-all duration-500 w-full object-cover aspect-square border-4 border-white"
+                className="relative rounded-[2rem] shadow-xl transition-all duration-500 w-full object-cover aspect-square border-4 border-white"
               />
             </div>
           </div>
@@ -256,7 +275,7 @@ const App = () => {
           </div>
         </div>
         <div className="max-w-6xl mx-auto px-4 md:px-6 mt-8 pt-8 border-t border-slate-100 text-center">
-           <p className="text-slate-400 text-xs">© 2026 Ridwan Maulana.</p>
+           <p className="text-slate-400 text-xs">© 2026 Ridwan Maulana. Seluruh konten didasarkan pada LK 1 PPL Terbimbing.</p>
         </div>
       </footer>
     </div>
