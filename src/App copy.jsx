@@ -1,9 +1,20 @@
 import React, { useEffect } from 'react';
 
 const App = () => {
+  // Mengatur Title, Meta Description, efek smooth scroll, dan Open Graph Fallback
   useEffect(() => {
     document.title = "E-Portfolio | Ridwan Maulana";
     
+    // Meta Description standar
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.name = "description";
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.content = "E-Portfolio Refleksi PPL Terbimbing di SMAN 1 Bandung oleh Ridwan Maulana, S.Kom.";
+    
+    // Meta Open Graph untuk tampilan saat link di-share
     const ogTags = [
       { property: 'og:title', content: 'E-Portfolio | Ridwan Maulana' },
       { property: 'og:description', content: 'E-Portfolio Refleksi PPL Terbimbing di SMAN 1 Bandung oleh Ridwan Maulana, S.Kom.' },
@@ -34,11 +45,11 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 overflow-x-hidden">
-      {/* HEADER V2 - Fixed & Responsive (Text Only) */}
+      {/* HEADER V2 - Fixed & Responsive */}
       <header className="bg-white/90 backdrop-blur-md border-b border-slate-100 fixed top-0 left-0 w-full z-50 shadow-sm">
         <div className="max-w-6xl mx-auto px-4 md:px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2">
-            <h1 className="text-lg md:text-xl font-extrabold tracking-tight text-slate-900 text-center md:text-left uppercase">
+            <h1 className="text-lg md:text-xl font-extrabold tracking-tight text-slate-900 text-center md:text-left">
               Ridwan Maulana, S.Kom.
             </h1>
           </div>
@@ -84,6 +95,7 @@ const App = () => {
             </div>
           </div>
           
+          {/* IDENTITAS: 4 KOTAK */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-8 md:mt-12">
             <div className="p-6 md:p-8 bg-white border border-slate-100 rounded-2xl md:rounded-[2rem] text-center shadow-sm hover:border-blue-200 hover:shadow-md transition-all">
               <h3 className="text-slate-400 font-bold text-xs uppercase mb-2 tracking-widest">Nama Saya</h3>
@@ -112,14 +124,18 @@ const App = () => {
           </header>
           
           <div className="bg-white p-6 md:p-12 rounded-[2rem] border border-slate-100 shadow-sm">
-            <h3 className="text-xl font-bold mb-4 text-blue-900">Latar Belakang</h3>
+            <h3 className="text-xl font-bold mb-4 text-blue-900">
+              Latar Belakang
+            </h3>
             <div className="prose prose-sm md:prose-base prose-slate max-w-none text-slate-600 leading-relaxed text-justify space-y-4 mb-10">
               <p>
-                Hallo! Nama Saya <strong>RIDWAN MAULANA</strong>. Saya berasal dari Tasikmalaya, sebuah kota yang dikenal dengan julukan "Kota Santri" serta pusat kerajinan kreatif dan UMKM yang tangguh. Keunikan daerah asal inilah yang menanamkan nilai-nilai religius, ketekunan, dan semangat inovasi dalam diri saya sebagai fondasi karakter pendidik.
+                Hallo! Nama Saya RIDWAN MAULANA. Saya berasal dari Tasikmalaya, sebuah kota yang dikenal dengan julukan "Kota Santri" serta pusat kerajinan kreatif dan UMKM yang tangguh. Keunikan daerah asal inilah yang menanamkan nilai-nilai religius, ketekunan, dan semangat inovasi dalam diri saya sebagai fondasi karakter pendidik.
               </p>
             </div>
 
-            <h3 className="text-xl font-bold mb-4 text-blue-900">Inspirasi & Tujuan</h3>
+            <h3 className="text-xl font-bold mb-4 text-blue-900">
+              Inspirasi & Tujuan
+            </h3>
             <div className="prose prose-sm md:prose-base prose-slate max-w-none text-slate-600 leading-relaxed text-justify space-y-4 mb-10">
               <p>
                 Melihat perkembangan teknologi yang sangat masif, saya terinspirasi untuk menjadi guru Informatika yang mampu menjembatani kesenjangan literasi digital pada peserta didik. Tujuan utama saya adalah membentuk generasi yang tidak hanya mahir secara teknis dalam menggunakan teknologi, tetapi juga bijak, kritis, dan beretika di era digital.
@@ -140,9 +156,24 @@ const App = () => {
           </header>
 
           <div className="grid gap-6 md:gap-8">
+            {/* Card 1 - Varian Artifak & Analisis Terintegrasi */}
             <div className="bg-white border border-slate-100 rounded-[2rem] p-6 md:p-12 shadow-sm">
               <div className="flex flex-col mb-8 border-b border-slate-100 pb-6">
                 <h3 className="text-xl md:text-2xl font-bold text-blue-900 mb-4">1. Perangkat Pembelajaran & Dokumentasi Praktik</h3>
+                <div className="flex flex-wrap gap-3">
+                  <a href="https://drive.google.com/drive/folders/dummy-link-rpp" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 transition font-bold text-xs md:text-sm">
+                    Modul Ajar (RPP) →
+                  </a>
+                  <a href="https://drive.google.com/drive/folders/dummy-link-media" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 transition font-bold text-xs md:text-sm">
+                    Media Pembelajaran →
+                  </a>
+                  <a href="https://drive.google.com/drive/folders/dummy-link-hasil" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 text-emerald-700 rounded-lg hover:bg-emerald-100 transition font-bold text-xs md:text-sm">
+                    Contoh Hasil Kerja Siswa →
+                  </a>
+                  <a href="https://youtube.com/dummy-link-video" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-orange-50 text-orange-700 rounded-lg hover:bg-orange-100 transition font-bold text-xs md:text-sm">
+                    Video Praktik Mengajar →
+                  </a>
+                </div>
               </div>
               
               <div className="mb-8">
@@ -152,7 +183,7 @@ const App = () => {
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-10">
+              <div className="grid md:grid-cols-2 gap-6 md:gap-8">
                 <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                   <h4 className="font-bold text-slate-800 mb-3 text-sm uppercase tracking-wide">Faktor Keberhasilan</h4>
                   <p className="text-slate-600 text-sm leading-relaxed text-justify">
@@ -166,24 +197,9 @@ const App = () => {
                   </p>
                 </div>
               </div>
-
-              {/* REVISI: Tombol Artifak Pindah ke Bawah */}
-              <div className="flex flex-wrap gap-3 border-t border-slate-100 pt-6">
-                <a href="https://drive.google.com/drive/folders/dummy-link-rpp" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-600 hover:text-white transition font-bold text-xs md:text-sm">
-                  Modul Ajar (RPP) →
-                </a>
-                <a href="https://drive.google.com/drive/folders/dummy-link-media" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-600 hover:text-white transition font-bold text-xs md:text-sm">
-                  Media Pembelajaran →
-                </a>
-                <a href="https://drive.google.com/drive/folders/dummy-link-hasil" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 text-emerald-700 rounded-lg hover:bg-emerald-600 hover:text-white transition font-bold text-xs md:text-sm">
-                  Contoh Hasil Kerja Siswa →
-                </a>
-                <a href="https://youtube.com/dummy-link-video" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-orange-50 text-orange-700 rounded-lg hover:bg-orange-600 hover:text-white transition font-bold text-xs md:text-sm">
-                  Video Praktik Mengajar →
-                </a>
-              </div>
             </div>
 
+            {/* Card 2 - Evaluasi GP dan DPL */}
             <div className="bg-white border border-slate-100 rounded-[2rem] p-6 md:p-12 shadow-sm">
               <h3 className="text-xl md:text-2xl font-bold text-blue-900 mb-4 border-b border-slate-100 pb-6">2. Penilaian Guru Pamong (GP) & DPL (L7 & L8)</h3>
               <p className="text-slate-600 mb-8 leading-relaxed text-justify">
@@ -214,6 +230,7 @@ const App = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+              {/* KEKUATAN DIRI - HIJAU */}
               <div className="bg-emerald-50 p-6 md:p-10 border border-emerald-100 rounded-[2rem] shadow-sm">
                 <div className="w-12 h-12 bg-white text-emerald-600 rounded-xl flex items-center justify-center mb-6 shadow-sm">
                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
@@ -226,6 +243,7 @@ const App = () => {
                 </ul>
               </div>
 
+              {/* AREA PENGEMBANGAN - KUNING/ORANYE */}
               <div className="bg-orange-50 p-6 md:p-10 border border-orange-100 rounded-[2rem] shadow-sm">
                 <div className="w-12 h-12 bg-white text-orange-600 rounded-xl flex items-center justify-center mb-6 shadow-sm">
                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
@@ -239,15 +257,16 @@ const App = () => {
             </div>
 
             <div className="bg-white p-6 md:p-12 rounded-[2rem] border border-slate-100 shadow-sm">
-              <h3 className="text-xl md:text-2xl font-bold text-blue-900 mb-6 font-black uppercase tracking-widest text-xs md:text-sm">Rencana Tindak Lanjut</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-blue-900 mb-6">Rencana Tindak Lanjut</h3>
               <p className="text-slate-600 leading-relaxed text-justify">
-                Sebagai upaya pengembangan diri, saya akan menyusun Rencana Pelaksanaan Pembelajaran (RPP) yang lebih rinci dengan mempersiapkan <strong>Rencana Mitigasi (Plan B)</strong> teknis jaringan atau perangkat di kelas. Selain itu, saya berencana untuk mendalami instrumen evaluasi formatif berbasis game atau kuiz interaktif yang dapat mengukur pemahaman siswa di tengah berjalannya proyek (PjBL) tanpa mengurangi alokasi waktu yang signifikan.
+                Sebagai upaya pengembangan diri, saya akan menyusun Rencana Pelaksanaan Pembelajaran (RPP) yang lebih rinci dengan mempersiapkan Rencana B (Plan B) untuk memitigasi jika terjadi kendala teknis jaringan atau perangkat di kelas. Selain itu, saya berencana untuk mendalami instrumen evaluasi formatif berbasis game atau kuiz interaktif yang dapat mengukur pemahaman siswa di tengah berjalannya proyek (PjBL) tanpa mengurangi alokasi waktu yang signifikan.
               </p>
             </div>
           </div>
         </section>
       </main>
 
+      {/* FOOTER REVISI */}
       <footer className="bg-white border-t border-slate-200 mt-12 py-10">
         <div className="max-w-6xl mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
@@ -267,7 +286,7 @@ const App = () => {
           </div>
         </div>
         <div className="max-w-6xl mx-auto px-4 md:px-6 mt-8 pt-8 border-t border-slate-100 text-center">
-           <p className="text-slate-400 text-[9px] font-black uppercase tracking-[0.5em]">© 2026 Ridwan Maulana | PPG Informatika UPI</p>
+           <p className="text-slate-400 text-xs">© 2026 Ridwan Maulana. Seluruh konten didasarkan pada LK 1 PPL Terbimbing.</p>
         </div>
       </footer>
     </div>
