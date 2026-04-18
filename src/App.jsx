@@ -318,7 +318,7 @@ const App = () => {
           </div>
         </div>
         <div className="max-w-6xl mx-auto px-4 md:px-6 mt-8 pt-8 border-t border-slate-100 text-center">
-            <p className="text-slate-400 text-xs">© 2026 Ridwan Maulana, S.Kom.</p>
+            <p className="text-slate-400 text-xs">© 2026. All rights reserved.</p>
         </div>
       </footer>
     </div>
