@@ -1,6 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const App = () => {
+  // Menambahkan state untuk melacak bagian yang sedang aktif (Active State)
+  const [activeSection, setActiveSection] = useState('');
+
   // Mengatur Title, Meta Description, efek smooth scroll, dan Open Graph Fallback
   useEffect(() => {
     document.title = "E-Portfolio | Ridwan Maulana, S.Kom.";
@@ -36,6 +39,27 @@ const App = () => {
     document.documentElement.style.scrollBehavior = "smooth";
   }, []);
 
+  // Efek untuk mendeteksi posisi scroll dengan Intersection Observer
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.3 } // Aktif saat 30% area section terlihat
+    );
+
+    const sections = document.querySelectorAll('section[id]');
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
+
   const navItems = [
     { id: 'beranda', label: 'Beranda' },
     { id: 'profil', label: 'Profil' },
@@ -47,7 +71,8 @@ const App = () => {
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 overflow-x-hidden">
       {/* HEADER V2 - Fixed & Responsive */}
       <header className="bg-white/90 backdrop-blur-md border-b border-slate-100 fixed top-0 left-0 w-full z-50 shadow-sm">
-        <div className="max-w-6xl mx-auto px-4 md:px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+        {/* REVISI 1: py-4 diubah menjadi py-2 md:py-4 agar header versi mobile lebih proporsional */}
+        <div className="max-w-6xl mx-auto px-4 md:px-6 py-2 md:py-4 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2">
             <h1 className="text-lg md:text-xl font-extrabold tracking-tight text-slate-900 text-center md:text-left">
               Ridwan Maulana, S.Kom.
@@ -58,7 +83,12 @@ const App = () => {
               <a
                 key={item.id}
                 href={`#${item.id}`}
-                className="px-3 md:px-4 py-2 text-xs md:text-sm font-medium rounded-lg transition-all text-slate-500 hover:text-blue-600 hover:bg-white hover:shadow-sm"
+                // REVISI 2 & 3: Warna teks dasar diubah ke slate-600 dan penambahan gaya khusus saat state menu aktif
+                className={`px-3 md:px-4 py-2 text-xs md:text-sm font-medium rounded-lg transition-all hover:shadow-sm ${
+                  activeSection === item.id
+                    ? 'text-blue-600 bg-white shadow-sm'
+                    : 'text-slate-600 hover:text-blue-600 hover:bg-white'
+                }`}
               >
                 {item.label}
               </a>
@@ -87,9 +117,11 @@ const App = () => {
             </div>
             <div className="relative order-1 md:order-2 w-2/3 md:w-full mx-auto">
               <div className="absolute -inset-4 bg-blue-200/50 rounded-full blur-3xl opacity-30"></div>
+              {/* REVISI 4: Menambahkan loading="lazy" pada gambar */}
               <img 
                 src="https://i.imgur.com/oYLaroL.jpeg" 
                 alt="Ridwan Maulana" 
+                loading="lazy"
                 className="relative rounded-[2rem] shadow-xl transition-all duration-500 w-full object-cover object-top aspect-square border-4 border-white"
               />
             </div>
