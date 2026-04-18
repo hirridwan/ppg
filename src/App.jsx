@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 const App = () => {
   // Mengatur Title, Meta Description, efek smooth scroll, dan Open Graph Fallback
   useEffect(() => {
-    document.title = "E-Portfolio | Ridwan Maulana";
+    document.title = "E-Portfolio | Ridwan Maulana, S.Kom.";
     
     // Meta Description standar
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -12,14 +12,14 @@ const App = () => {
       metaDescription.name = "description";
       document.head.appendChild(metaDescription);
     }
-    metaDescription.content = "E-Portfolio Refleksi PPL Terbimbing di SMAN 1 Bandung oleh Ridwan Maulana, S.Kom.";
+    metaDescription.content = "E-Portfolio PPG Prajabatan UPI - Refleksi PPL Terbimbing di SMAN 1 Bandung.";
     
     // Meta Open Graph untuk tampilan saat link di-share
     const ogTags = [
-      { property: 'og:title', content: 'E-Portfolio | Ridwan Maulana' },
-      { property: 'og:description', content: 'E-Portfolio Refleksi PPL Terbimbing di SMAN 1 Bandung oleh Ridwan Maulana, S.Kom.' },
+      { property: 'og:title', content: 'E-Portfolio | Ridwan Maulana, S.Kom.' },
+      { property: 'og:description', content: 'E-Portfolio PPG Prajabatan UPI - Refleksi PPL Terbimbing di SMAN 1 Bandung.' },
       { property: 'og:image', content: 'https://i.imgur.com/gK53z6G.jpeg' },
-      { property: 'og:url', content: 'https://ppg-1j3.pages.dev/' },
+      { property: 'og:url', content: 'https://ppg.rmfhd.my.id/' },
       { property: 'og:type', content: 'website' }
     ];
 
@@ -88,7 +88,7 @@ const App = () => {
             <div className="relative order-1 md:order-2 w-2/3 md:w-full mx-auto">
               <div className="absolute -inset-4 bg-blue-200/50 rounded-full blur-3xl opacity-30"></div>
               <img 
-                src="https://i.imgur.com/gK53z6G.jpeg" 
+                src="https://i.imgur.com/oYLaroL.jpeg" 
                 alt="Ridwan Maulana" 
                 className="relative rounded-[2rem] shadow-xl transition-all duration-500 w-full object-cover aspect-square border-4 border-white"
               />
@@ -99,7 +99,7 @@ const App = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-8 md:mt-12">
             <div className="p-6 md:p-8 bg-white border border-slate-100 rounded-2xl md:rounded-[2rem] text-center shadow-sm hover:border-blue-200 hover:shadow-md transition-all">
               <h3 className="text-slate-400 font-bold text-xs uppercase mb-2 tracking-widest">Nama Saya</h3>
-              <p className="text-lg md:text-xl font-bold text-slate-900">Ridwan Maulana</p>
+              <p className="text-lg md:text-xl font-bold text-slate-900">Ridwan Maulana, S.Kom.</p>
             </div>
             <div className="p-6 md:p-8 bg-white border border-slate-100 rounded-2xl md:rounded-[2rem] text-center shadow-sm hover:border-blue-200 hover:shadow-md transition-all">
               <h3 className="text-slate-400 font-bold text-xs uppercase mb-2 tracking-widest">NIM</h3>
