@@ -74,7 +74,7 @@ const App = () => {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center bg-white rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-16 shadow-sm border border-slate-100">
             <div className="order-2 md:order-1 text-center md:text-left">
               <span className="inline-block px-4 py-1.5 bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider rounded-full mb-6">
-                Mahasiswa PPG Informatika
+                Mahasiswa PPG Prajabatan Informatika
               </span>
               <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-tight mb-6">
                 Membangun Karakter Melalui <span className="text-blue-600">Pendidikan Digital.</span>
@@ -90,7 +90,7 @@ const App = () => {
               <img 
                 src="https://i.imgur.com/oYLaroL.jpeg" 
                 alt="Ridwan Maulana" 
-                className="relative rounded-[2rem] shadow-xl transition-all duration-500 w-full object-cover aspect-square border-4 border-white"
+                className="relative rounded-[2rem] shadow-xl transition-all duration-500 w-full object-cover object-top aspect-square border-4 border-white"
               />
             </div>
           </div>
@@ -271,7 +271,7 @@ const App = () => {
         <div className="max-w-6xl mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
             <h3 className="text-lg font-bold text-slate-900">Ridwan Maulana, S.Kom.</h3>
-            <p className="text-slate-500 text-sm mt-1">Mahasiswa PPG Prajabatan - Universitas Pendidikan Indonesia</p>
+            <p className="text-slate-500 text-sm mt-1">Mahasiswa PPG Prajabatan Informatika - Universitas Pendidikan Indonesia</p>
           </div>
           
           <div className="flex flex-col md:flex-row items-center gap-4 text-sm font-medium">
