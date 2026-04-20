@@ -64,23 +64,23 @@ const App = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-900 overflow-x-hidden">
-      <header className="bg-white/90 backdrop-blur-md border-b border-slate-100 fixed top-0 left-0 w-full z-50 shadow-sm">
+    <div className="min-h-screen bg-gradient-to-br from-sky-100 via-indigo-50 to-fuchsia-100 font-sans text-slate-900 overflow-x-hidden">
+      <header className="bg-white/40 backdrop-blur-2xl border-b border-white/60 fixed top-0 left-0 w-full z-50 shadow-[0_4px_30px_rgba(0,0,0,0.05)]">
         <div className="max-w-6xl mx-auto px-4 md:px-6 py-2 md:py-4 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2">
             <h1 className="text-lg md:text-xl font-extrabold tracking-tight text-slate-900 text-center md:text-left">
               Ridwan Maulana, S.Kom.
             </h1>
           </div>
-          <nav className="flex flex-wrap justify-center bg-slate-100 p-1 rounded-xl w-full md:w-auto">
+          <nav className="flex flex-wrap justify-center bg-white/40 backdrop-blur-md border border-white/50 p-1 rounded-xl w-full md:w-auto shadow-inner">
             {navItems.map((item) => (
               <a
                 key={item.id}
                 href={`#${item.id}`}
-                className={`px-3 md:px-4 py-2 text-xs md:text-sm font-medium rounded-lg transition-all hover:shadow-sm ${
+                className={`px-3 md:px-4 py-2 text-xs md:text-sm font-medium rounded-lg transition-all ${
                   activeSection === item.id
-                    ? 'text-blue-600 bg-white shadow-sm'
-                    : 'text-slate-600 hover:text-blue-600 hover:bg-white'
+                    ? 'text-blue-700 bg-white/70 shadow-sm backdrop-blur-md'
+                    : 'text-slate-600 hover:text-blue-700 hover:bg-white/50'
                 }`}
               >
                 {item.label}
@@ -93,9 +93,9 @@ const App = () => {
       <main className="max-w-6xl mx-auto px-4 md:px-6 pb-8 md:pb-12 pt-32 md:pt-28 flex flex-col gap-24">
         
         <section id="beranda" className="scroll-mt-32">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center bg-white rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-16 shadow-sm border border-slate-100">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center bg-white/40 backdrop-blur-xl border border-white/60 rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-16 shadow-[0_8px_32px_0_rgba(0,0,0,0.05)]">
             <div className="order-2 md:order-1 text-center md:text-left">
-              <span className="inline-block px-4 py-1.5 bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider rounded-full mb-6">
+              <span className="inline-block px-4 py-1.5 bg-blue-100/60 backdrop-blur-md border border-white/50 text-blue-700 text-xs font-bold uppercase tracking-wider rounded-full mb-6">
                 Mahasiswa PPG Prajabatan Informatika
               </span>
               <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-tight mb-6">
@@ -108,46 +108,46 @@ const App = () => {
               </p>
             </div>
             <div className="relative order-1 md:order-2 w-2/3 md:w-full mx-auto">
-              <div className="absolute -inset-4 bg-blue-200/50 rounded-full blur-3xl opacity-30"></div>
+              <div className="absolute -inset-4 bg-blue-300/40 rounded-full blur-3xl opacity-50"></div>
               <img 
                 src="https://i.imgur.com/oYLaroL.jpeg" 
                 alt="Ridwan Maulana" 
                 loading="lazy"
-                className="relative rounded-[2rem] shadow-xl transition-all duration-500 w-full object-cover object-top aspect-square border-4 border-white"
+                className="relative rounded-[2rem] shadow-[0_8px_32px_0_rgba(0,0,0,0.1)] transition-all duration-500 w-full object-cover object-top aspect-square border-4 border-white/70"
               />
             </div>
           </div>
           
           {/* IDENTITAS: 6 KOTAK */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-8 md:mt-12">
-            <div className="p-6 md:p-8 bg-white border border-slate-100 rounded-2xl md:rounded-[2rem] text-center shadow-sm hover:border-blue-200 hover:shadow-md transition-all">
+            <div className="p-6 md:p-8 bg-white/40 backdrop-blur-xl border border-white/60 rounded-2xl md:rounded-[2rem] text-center shadow-[0_4px_24px_0_rgba(0,0,0,0.04)] hover:border-white/80 hover:shadow-lg transition-all">
               <svg className="w-6 h-6 mx-auto mb-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-              <h3 className="text-slate-400 font-bold text-xs uppercase mb-2 tracking-widest">Nama Saya</h3>
+              <h3 className="text-slate-500 font-bold text-xs uppercase mb-2 tracking-widest">Nama Saya</h3>
               <p className="text-lg md:text-xl font-bold text-slate-900">Ridwan Maulana, S.Kom.</p>
             </div>
-            <div className="p-6 md:p-8 bg-white border border-slate-100 rounded-2xl md:rounded-[2rem] text-center shadow-sm hover:border-blue-200 hover:shadow-md transition-all">
+            <div className="p-6 md:p-8 bg-white/40 backdrop-blur-xl border border-white/60 rounded-2xl md:rounded-[2rem] text-center shadow-[0_4px_24px_0_rgba(0,0,0,0.04)] hover:border-white/80 hover:shadow-lg transition-all">
               <svg className="w-6 h-6 mx-auto mb-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path></svg>
-              <h3 className="text-slate-400 font-bold text-xs uppercase mb-2 tracking-widest">NIM</h3>
+              <h3 className="text-slate-500 font-bold text-xs uppercase mb-2 tracking-widest">NIM</h3>
               <p className="text-lg md:text-xl font-bold text-slate-900">2531031</p>
             </div>
-            <div className="p-6 md:p-8 bg-white border border-slate-100 rounded-2xl md:rounded-[2rem] text-center shadow-sm hover:border-blue-200 hover:shadow-md transition-all">
+            <div className="p-6 md:p-8 bg-white/40 backdrop-blur-xl border border-white/60 rounded-2xl md:rounded-[2rem] text-center shadow-[0_4px_24px_0_rgba(0,0,0,0.04)] hover:border-white/80 hover:shadow-lg transition-all">
               <svg className="w-6 h-6 mx-auto mb-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-              <h3 className="text-slate-400 font-bold text-xs uppercase mb-2 tracking-widest">Guru Pamong</h3>
+              <h3 className="text-slate-500 font-bold text-xs uppercase mb-2 tracking-widest">Guru Pamong</h3>
               <p className="text-lg md:text-xl font-bold text-slate-900">Irman Margino, S.T.</p>
             </div>
-            <div className="p-6 md:p-8 bg-white border border-slate-100 rounded-2xl md:rounded-[2rem] text-center shadow-sm hover:border-blue-200 hover:shadow-md transition-all">
+            <div className="p-6 md:p-8 bg-white/40 backdrop-blur-xl border border-white/60 rounded-2xl md:rounded-[2rem] text-center shadow-[0_4px_24px_0_rgba(0,0,0,0.04)] hover:border-white/80 hover:shadow-lg transition-all">
               <svg className="w-6 h-6 mx-auto mb-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
-              <h3 className="text-slate-400 font-bold text-xs uppercase mb-2 tracking-widest">Sekolah PPL</h3>
+              <h3 className="text-slate-500 font-bold text-xs uppercase mb-2 tracking-widest">Sekolah PPL</h3>
               <p className="text-lg md:text-xl font-bold text-slate-900">SMAN 1 Bandung</p>
             </div>
-            <div className="p-6 md:p-8 bg-white border border-slate-100 rounded-2xl md:rounded-[2rem] text-center shadow-sm hover:border-blue-200 hover:shadow-md transition-all">
+            <div className="p-6 md:p-8 bg-white/40 backdrop-blur-xl border border-white/60 rounded-2xl md:rounded-[2rem] text-center shadow-[0_4px_24px_0_rgba(0,0,0,0.04)] hover:border-white/80 hover:shadow-lg transition-all">
               <svg className="w-6 h-6 mx-auto mb-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
-              <h3 className="text-slate-400 font-bold text-xs uppercase mb-2 tracking-widest">Dosen Pembimbing Lapangan</h3>
+              <h3 className="text-slate-500 font-bold text-xs uppercase mb-2 tracking-widest">Dosen Pembimbing Lapangan</h3>
               <p className="text-lg md:text-xl font-bold text-slate-900">Dr. Eki Nugraha, S.Pd., M.Kom.</p>
             </div>
-            <div className="p-6 md:p-8 bg-white border border-slate-100 rounded-2xl md:rounded-[2rem] text-center shadow-sm hover:border-blue-200 hover:shadow-md transition-all">
+            <div className="p-6 md:p-8 bg-white/40 backdrop-blur-xl border border-white/60 rounded-2xl md:rounded-[2rem] text-center shadow-[0_4px_24px_0_rgba(0,0,0,0.04)] hover:border-white/80 hover:shadow-lg transition-all">
               <svg className="w-6 h-6 mx-auto mb-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-              <h3 className="text-slate-400 font-bold text-xs uppercase mb-2 tracking-widest">LPTK</h3>
+              <h3 className="text-slate-500 font-bold text-xs uppercase mb-2 tracking-widest">LPTK</h3>
               <p className="text-lg md:text-xl font-bold text-slate-900">Universitas Pendidikan Indonesia</p>
             </div>
           </div>
@@ -159,7 +159,7 @@ const App = () => {
             <div className="h-1.5 w-16 md:w-24 bg-blue-600 mx-auto rounded-full"></div>
           </header>
           
-          <div className="bg-white p-6 md:p-12 rounded-[2rem] border border-slate-100 shadow-sm">
+          <div className="bg-white/40 backdrop-blur-xl border border-white/60 p-6 md:p-12 rounded-[2rem] shadow-[0_8px_32px_0_rgba(0,0,0,0.05)]">
             <h3 className="text-xl font-bold mb-4 text-blue-900">Latar Belakang</h3>
             <div className="prose prose-sm md:prose-base prose-slate max-w-none text-slate-600 leading-relaxed text-justify space-y-4 mb-10">
               <p>
@@ -174,7 +174,7 @@ const App = () => {
               </p>
             </div>
 
-            <blockquote className="p-6 md:p-8 border-l-4 border-blue-600 bg-slate-50 rounded-r-2xl italic text-slate-700 text-base md:text-lg font-medium">
+            <blockquote className="p-6 md:p-8 border-l-4 border-blue-500 bg-white/30 backdrop-blur-md border border-white/40 rounded-r-2xl italic text-slate-700 text-base md:text-lg font-medium shadow-inner">
               "Teknologi hanyalah sebuah alat. Dalam hal membuat anak-anak bekerja sama dan memotivasi mereka, guru adalah yang paling penting." - Bill Gates
             </blockquote>
           </div>
@@ -187,14 +187,14 @@ const App = () => {
           </header>
 
           <div className="grid gap-6 md:gap-8">
-            <div className="bg-white border border-slate-100 rounded-[2rem] p-6 md:p-12 shadow-sm">
-              <div className="flex flex-col mb-8 border-b border-slate-100 pb-6">
+            <div className="bg-white/40 backdrop-blur-xl border border-white/60 rounded-[2rem] p-6 md:p-12 shadow-[0_8px_32px_0_rgba(0,0,0,0.05)]">
+              <div className="flex flex-col mb-8 border-b border-white/50 pb-6">
                 <h3 className="text-xl md:text-2xl font-bold text-blue-900 mb-4">1. Perangkat Pembelajaran & Dokumentasi Praktik</h3>
                 <div className="flex flex-wrap gap-3">
-                  <a href="https://drive.google.com/drive/folders/dummy-link-rpp" target="_blank" rel="noreferrer" className="px-6 py-3 bg-blue-50 text-blue-700 hover:bg-blue-600 hover:text-white rounded-xl font-bold text-sm text-center transition-colors">Modul Ajar (RPP) →</a>
-                  <a href="https://drive.google.com/drive/folders/dummy-link-media" target="_blank" rel="noreferrer" className="px-6 py-3 bg-blue-50 text-blue-700 hover:bg-blue-600 hover:text-white rounded-xl font-bold text-sm text-center transition-colors">Media Pembelajaran →</a>
-                  <a href="https://drive.google.com/drive/folders/dummy-link-hasil" target="_blank" rel="noreferrer" className="px-6 py-3 bg-blue-50 text-blue-700 hover:bg-blue-600 hover:text-white rounded-xl font-bold text-sm text-center transition-colors">Contoh Hasil Kerja Siswa →</a>
-                  <a href="https://youtube.com/dummy-link-video" target="_blank" rel="noreferrer" className="px-6 py-3 bg-blue-50 text-blue-700 hover:bg-blue-600 hover:text-white rounded-xl font-bold text-sm text-center transition-colors">Video Praktik Mengajar →</a>
+                  <a href="https://drive.google.com/drive/folders/dummy-link-rpp" target="_blank" rel="noreferrer" className="px-6 py-3 bg-blue-100/50 backdrop-blur-md border border-white/60 text-blue-700 hover:bg-blue-600 hover:text-white hover:border-transparent rounded-xl font-bold text-sm text-center transition-all shadow-sm">Modul Ajar (RPP) →</a>
+                  <a href="https://drive.google.com/drive/folders/dummy-link-media" target="_blank" rel="noreferrer" className="px-6 py-3 bg-blue-100/50 backdrop-blur-md border border-white/60 text-blue-700 hover:bg-blue-600 hover:text-white hover:border-transparent rounded-xl font-bold text-sm text-center transition-all shadow-sm">Media Pembelajaran →</a>
+                  <a href="https://drive.google.com/drive/folders/dummy-link-hasil" target="_blank" rel="noreferrer" className="px-6 py-3 bg-blue-100/50 backdrop-blur-md border border-white/60 text-blue-700 hover:bg-blue-600 hover:text-white hover:border-transparent rounded-xl font-bold text-sm text-center transition-all shadow-sm">Contoh Hasil Kerja Siswa →</a>
+                  <a href="https://youtube.com/dummy-link-video" target="_blank" rel="noreferrer" className="px-6 py-3 bg-blue-100/50 backdrop-blur-md border border-white/60 text-blue-700 hover:bg-blue-600 hover:text-white hover:border-transparent rounded-xl font-bold text-sm text-center transition-all shadow-sm">Video Praktik Mengajar →</a>
                 </div>
               </div>
               
@@ -206,13 +206,13 @@ const App = () => {
               </div>
 
               <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                <div className="bg-white/30 backdrop-blur-md p-6 rounded-2xl border border-white/50 shadow-inner">
                   <h4 className="font-bold text-slate-800 mb-3 text-sm uppercase tracking-wide">Faktor Keberhasilan</h4>
                   <p className="text-slate-600 text-sm leading-relaxed text-justify">
                     Keberhasilan penerapan produk ini didukung oleh kesiapan guru untuk terus belajar yang berjalan beriringan dengan fasilitas fisik seperti proyektor yang memadai. Selain itu, infrastruktur teknologi seperti kapasitas server dan jaringan internet yang stabil di sekolah juga menjadi faktor pendukung utama.
                   </p>
                 </div>
-                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                <div className="bg-white/30 backdrop-blur-md p-6 rounded-2xl border border-white/50 shadow-inner">
                   <h4 className="font-bold text-slate-800 mb-3 text-sm uppercase tracking-wide">Kendala & Perubahan Masa Depan</h4>
                   <p className="text-slate-600 text-sm leading-relaxed text-justify">
                     Kendala utama yang terjadi selama proses pembelajaran berkaitan dengan kecepatan literasi informasi dan kendala teknis digital, serta keterbatasan teknologi saat mengakomodasi fitur yang kompleks. Untuk situasi kelas yang mungkin memiliki literasi teknologi lebih rendah, perubahan difokuskan pada penambahan waktu bimbingan teknis (Bimtek) operasional atau modifikasi sintaks PjBL menjadi lebih sederhana dengan pendekatan kelompok tutor sebaya.
@@ -221,15 +221,40 @@ const App = () => {
               </div>
             </div>
 
-            <div className="bg-white border border-slate-100 rounded-[2rem] p-6 md:p-12 shadow-sm">
-              <h3 className="text-xl md:text-2xl font-bold text-blue-900 mb-4 border-b border-slate-100 pb-6">2. Penilaian Guru Pamong (GP) & DPL (L7 & L8)</h3>
-              <p className="text-slate-600 mb-8 leading-relaxed text-justify">
-                Berikut adalah rekapitulasi penilaian penyusunan perangkat pembelajaran dan praktik mengajar selama 3 siklus secara komprehensif yang telah dievaluasi oleh Guru Pamong (Bapak Irman Margino, S.T.) dan Dosen Pembimbing Lapangan (Bapak Dr. Eki Nugraha, S.Pd., M.Kom.).
+            <div className="bg-white/40 backdrop-blur-xl border border-white/60 rounded-[2rem] p-6 md:p-12 shadow-[0_8px_32px_0_rgba(0,0,0,0.05)]">
+              <h3 className="text-xl md:text-2xl font-bold text-blue-900 mb-4 border-b border-white/50 pb-6">2. Penilaian Guru Pamong (GP) & DPL (L7 & L8)</h3>
+              <p className="text-slate-600 mb-6 leading-relaxed text-justify">
+                Berikut adalah rekapitulasi penilaian rancangan pembelajaran dan praktik mengajar selama 3 siklus secara komprehensif yang telah dievaluasi oleh Guru Pamong (Bapak Irman Margino, S.T.) dan Dosen Pembimbing Lapangan (Bapak Dr. Eki Nugraha, S.Pd., M.Kom.).
               </p>
+
+              <div className="space-y-4 mb-8">
+                <div className="bg-white/30 backdrop-blur-md border border-white/50 p-5 rounded-2xl shadow-inner">
+                  <div className="flex justify-between items-center mb-2">
+                    <h4 className="font-bold text-blue-800">Siklus 1</h4>
+                    <span className="px-3 py-1 bg-white/50 backdrop-blur-sm border border-white/60 text-blue-800 text-xs font-bold rounded-full shadow-sm">Nilai: 77</span>
+                  </div>
+                  <p className="text-sm text-slate-600 leading-relaxed"><strong className="text-slate-700">Rancangan Pembelajaran:</strong> Perlu penyesuaian pada alokasi waktu PjBL agar lebih realistis untuk diterapkan.<br/><strong className="text-slate-700">Praktik Mengajar:</strong> Penguasaan kelas sudah baik, namun perlu lebih interaktif dan merata saat membimbing kelompok.</p>
+                </div>
+                <div className="bg-white/30 backdrop-blur-md border border-white/50 p-5 rounded-2xl shadow-inner">
+                  <div className="flex justify-between items-center mb-2">
+                    <h4 className="font-bold text-blue-800">Siklus 2</h4>
+                    <span className="px-3 py-1 bg-white/50 backdrop-blur-sm border border-white/60 text-blue-800 text-xs font-bold rounded-full shadow-sm">Nilai: 85</span>
+                  </div>
+                  <p className="text-sm text-slate-600 leading-relaxed"><strong className="text-slate-700">Rancangan Pembelajaran:</strong> Sintaks PjBL sudah tergambar dengan sangat jelas dan terstruktur pada modul ajar.<br/><strong className="text-slate-700">Praktik Mengajar:</strong> Bimbingan teknis operasional ke siswa lebih terarah, penggunaan media interaktif sangat memfasilitasi pemahaman.</p>
+                </div>
+                <div className="bg-white/30 backdrop-blur-md border border-white/50 p-5 rounded-2xl shadow-inner">
+                  <div className="flex justify-between items-center mb-2">
+                    <h4 className="font-bold text-blue-800">Siklus 3</h4>
+                    <span className="px-3 py-1 bg-white/50 backdrop-blur-sm border border-white/60 text-blue-800 text-xs font-bold rounded-full shadow-sm">Nilai: 90</span>
+                  </div>
+                  <p className="text-sm text-slate-600 leading-relaxed"><strong className="text-slate-700">Rancangan Pembelajaran:</strong> Asesmen formatif terintegrasi dengan sangat baik dan komprehensif dalam langkah pembelajaran.<br/><strong className="text-slate-700">Praktik Mengajar:</strong> Manajemen kelas dan waktu sangat efektif, siswa mampu menghasilkan produk digital sesuai target proyek.</p>
+                </div>
+              </div>
+
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="https://drive.google.com/file/d/dummy-link-siklus1" className="px-6 py-3 bg-blue-50 text-blue-700 hover:bg-blue-600 hover:text-white rounded-xl font-bold text-sm text-center transition-colors">Unduh Siklus 1</a>
-                <a href="https://drive.google.com/file/d/dummy-link-siklus2" className="px-6 py-3 bg-blue-50 text-blue-700 hover:bg-blue-600 hover:text-white rounded-xl font-bold text-sm text-center transition-colors">Unduh Siklus 2</a>
-                <a href="https://drive.google.com/file/d/dummy-link-siklus3" className="px-6 py-3 bg-blue-50 text-blue-700 hover:bg-blue-600 hover:text-white rounded-xl font-bold text-sm text-center transition-colors">Unduh Siklus 3</a>
+                <a href="https://drive.google.com/file/d/dummy-link-siklus1" className="px-6 py-3 bg-blue-100/50 backdrop-blur-md border border-white/60 text-blue-700 hover:bg-blue-600 hover:text-white hover:border-transparent rounded-xl font-bold text-sm text-center transition-all shadow-sm">Unduh Lampiran Siklus 1</a>
+                <a href="https://drive.google.com/file/d/dummy-link-siklus2" className="px-6 py-3 bg-blue-100/50 backdrop-blur-md border border-white/60 text-blue-700 hover:bg-blue-600 hover:text-white hover:border-transparent rounded-xl font-bold text-sm text-center transition-all shadow-sm">Unduh Lampiran Siklus 2</a>
+                <a href="https://drive.google.com/file/d/dummy-link-siklus3" className="px-6 py-3 bg-blue-100/50 backdrop-blur-md border border-white/60 text-blue-700 hover:bg-blue-600 hover:text-white hover:border-transparent rounded-xl font-bold text-sm text-center transition-all shadow-sm">Unduh Lampiran Siklus 3</a>
               </div>
             </div>
           </div>
@@ -242,7 +267,7 @@ const App = () => {
           </header>
 
           <div className="grid gap-6 md:gap-8">
-            <div className="bg-white p-6 md:p-12 rounded-[2rem] shadow-sm border border-slate-100 text-justify">
+            <div className="bg-white/40 backdrop-blur-xl p-6 md:p-12 rounded-[2rem] shadow-[0_8px_32px_0_rgba(0,0,0,0.05)] border border-white/60 text-justify">
               <h3 className="text-xl md:text-2xl font-bold text-blue-900 mb-6">Model Guru yang Dituju</h3>
               <p className="text-slate-600 leading-relaxed">
                 Model guru yang saya tuju adalah pendidik yang adaptif terhadap perkembangan teknologi dan mampu memfasilitasi pembelajaran bermakna secara inovatif. Berdasarkan observasi di lapangan, kompetensi dan karakter yang ingin saya bangun adalah integrasi antara pemahaman pedagogi yang mendalam dan penguasaan literasi digital yang tinggi, sehingga siap membimbing siswa generasi abad 21 secara profesional.
@@ -250,8 +275,8 @@ const App = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-              <div className="bg-emerald-50 p-6 md:p-10 border border-emerald-100 rounded-[2rem] shadow-sm">
-                <div className="w-12 h-12 bg-white text-emerald-600 rounded-xl flex items-center justify-center mb-6 shadow-sm">
+              <div className="bg-emerald-100/30 backdrop-blur-xl p-6 md:p-10 border border-white/60 rounded-[2rem] shadow-[0_4px_24px_0_rgba(0,0,0,0.04)]">
+                <div className="w-12 h-12 bg-white/60 backdrop-blur-md text-emerald-600 border border-white/50 rounded-xl flex items-center justify-center mb-6 shadow-sm">
                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                 </div>
                 <h3 className="text-xl font-bold mb-6 text-emerald-900">Kekuatan Diri</h3>
@@ -262,8 +287,8 @@ const App = () => {
                 </ul>
               </div>
 
-              <div className="bg-orange-50 p-6 md:p-10 border border-orange-100 rounded-[2rem] shadow-sm">
-                <div className="w-12 h-12 bg-white text-orange-600 rounded-xl flex items-center justify-center mb-6 shadow-sm">
+              <div className="bg-orange-100/30 backdrop-blur-xl p-6 md:p-10 border border-white/60 rounded-[2rem] shadow-[0_4px_24px_0_rgba(0,0,0,0.04)]">
+                <div className="w-12 h-12 bg-white/60 backdrop-blur-md text-orange-600 border border-white/50 rounded-xl flex items-center justify-center mb-6 shadow-sm">
                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
                 </div>
                 <h3 className="text-xl font-bold mb-6 text-orange-900">Area Pengembangan</h3>
@@ -274,7 +299,7 @@ const App = () => {
               </div>
             </div>
 
-            <div className="bg-white p-6 md:p-12 rounded-[2rem] border border-slate-100 shadow-sm">
+            <div className="bg-white/40 backdrop-blur-xl p-6 md:p-12 rounded-[2rem] border border-white/60 shadow-[0_8px_32px_0_rgba(0,0,0,0.05)]">
               <h3 className="text-xl md:text-2xl font-bold text-blue-900 mb-6">Rencana Tindak Lanjut</h3>
               <p className="text-slate-600 leading-relaxed text-justify">
                 Sebagai upaya pengembangan diri, saya akan menyusun Rencana Pelaksanaan Pembelajaran (RPP) yang lebih rinci dengan mempersiapkan Rencana B (Plan B) untuk memitigasi jika terjadi kendala teknis jaringan atau perangkat di kelas. Selain itu, saya berencana untuk mendalami instrumen evaluasi formatif berbasis game atau kuiz interaktif yang dapat mengukur pemahaman siswa di tengah berjalannya proyek (PjBL) tanpa mengurangi alokasi waktu yang signifikan.
@@ -284,7 +309,7 @@ const App = () => {
         </section>
       </main>
 
-      <footer className="bg-white border-t border-slate-200 mt-12 py-10">
+      <footer className="bg-white/40 backdrop-blur-2xl border-t border-white/60 mt-12 py-10 shadow-[0_-4px_30px_rgba(0,0,0,0.02)]">
         <div className="max-w-6xl mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
             <h3 className="text-lg font-bold text-slate-900">Ridwan Maulana, S.Kom.</h3>
@@ -292,18 +317,18 @@ const App = () => {
           </div>
           
           <div className="flex flex-col md:flex-row items-center gap-4 text-sm font-medium">
-            <a href="mailto:ridwanguru@student.upi.edu" className="flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors bg-slate-50 px-5 py-2.5 rounded-full border border-slate-200 hover:border-blue-200">
+            <a href="mailto:ridwanguru@student.upi.edu" className="flex items-center gap-2 text-slate-600 hover:text-blue-700 transition-colors bg-white/40 backdrop-blur-md px-5 py-2.5 rounded-full border border-white/60 hover:bg-white/60 shadow-sm">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
               ridwanguru@student.upi.edu
             </a>
-            <a href="tel:085860565852" className="flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors bg-slate-50 px-5 py-2.5 rounded-full border border-slate-200 hover:border-blue-200">
+            <a href="tel:085860565852" className="flex items-center gap-2 text-slate-600 hover:text-blue-700 transition-colors bg-white/40 backdrop-blur-md px-5 py-2.5 rounded-full border border-white/60 hover:bg-white/60 shadow-sm">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
               085860565852
             </a>
           </div>
         </div>
-        <div className="max-w-6xl mx-auto px-4 md:px-6 mt-8 pt-8 border-t border-slate-100 text-center">
-            <p className="text-slate-400 text-xs">© 2026. All rights reserved.</p>
+        <div className="max-w-6xl mx-auto px-4 md:px-6 mt-8 pt-8 border-t border-white/50 text-center">
+            <p className="text-slate-500 text-xs">© 2026. All rights reserved.</p>
         </div>
       </footer>
     </div>
