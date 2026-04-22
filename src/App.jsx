@@ -355,7 +355,7 @@ const App = () => {
           </div>
         </div>
         <div className="max-w-6xl mx-auto px-4 md:px-6 mt-8 pt-8 border-t border-white/50 dark:border-slate-700/50 text-center">
-            <p className="text-slate-500 dark:text-slate-400 text-xs">© 2026. All rights reserved.</p>
+            <p className="text-slate-500 dark:text-slate-400 text-xs">© 2026. All rights reserved</p>
         </div>
       </footer>
     </div>
