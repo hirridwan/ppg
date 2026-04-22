@@ -82,7 +82,8 @@ const App = () => {
             </h1>
           </div>
           
-          <div className="flex items-center gap-3 w-full md:w-auto justify-center">
+          {/* Pembungkus Navigasi & Tombol dengan Flex Wrap agar tidak tumpah di HP */}
+          <div className="flex flex-wrap items-center gap-3 w-full md:w-auto justify-center">
             <nav className="flex flex-wrap justify-center bg-white/40 dark:bg-slate-800/50 backdrop-blur-md border border-white/50 dark:border-slate-700/50 p-1 rounded-xl shadow-inner">
               {navItems.map((item) => (
                 <a
@@ -116,7 +117,7 @@ const App = () => {
         </div>
       </header>
 
-      <main className="max-w-6xl mx-auto px-4 md:px-6 pb-8 md:pb-12 pt-32 md:pt-28 flex flex-col gap-24">
+      <main className="max-w-6xl mx-auto px-4 md:px-6 pb-8 md:pb-12 pt-40 md:pt-28 flex flex-col gap-24">
         
         <section id="beranda" className="scroll-mt-32">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center bg-white/40 dark:bg-slate-800/40 backdrop-blur-xl border border-white/60 dark:border-slate-700/60 rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-16 shadow-[0_8px_32px_0_rgba(0,0,0,0.05)]">
