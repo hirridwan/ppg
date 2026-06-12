@@ -188,7 +188,7 @@ const App = () => {
                   Latar Belakang
                 </h3>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-justify text-lg">
-                  Hallo! Nama Saya RIDWAN MAULANAAAAAAA. Saya berasal dari Tasikmalaya, sebuah kota yang dikenal dengan julukan "Kota Santri" serta pusat kerajinan kreatif dan UMKM yang tangguh. Keunikan daerah asal inilah yang menanamkan nilai-nilai religius, ketekunan, dan semangat inovasi dalam diri saya sebagai fondasi karakter pendidik.
+                  Hallo! Nama Saya RIDWAN MAULANA. Saya berasal dari Tasikmalaya, sebuah kota yang dikenal dengan julukan "Kota Santri" serta pusat kerajinan kreatif dan UMKM yang tangguh. Keunikan daerah asal inilah yang menanamkan nilai-nilai religius, ketekunan, dan semangat inovasi dalam diri saya sebagai fondasi karakter pendidik.
                 </p>
               </div>
 
@@ -224,10 +224,10 @@ const App = () => {
               <h3 className="text-2xl font-bold text-[#1A1A1A] dark:text-white mb-8">1. Perangkat Pembelajaran & Dokumentasi Praktik</h3>
               
               <div className="flex flex-wrap gap-4 mb-12">
-                <a href="https://drive.google.com/drive/folders/dummy-link-rpp" target="_blank" rel="noreferrer" className="px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Modul Ajar (RPP) →</a>
-                <a href="https://drive.google.com/drive/folders/dummy-link-media" target="_blank" rel="noreferrer" className="px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Media Pembelajaran →</a>
+                <a href="https://drive.google.com/drive/folders/1GTaBRwEQg4UfxtuPCFUK2YTIHJIigGAV?usp=sharing" target="_blank" rel="noreferrer" className="px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Modul Ajar (RPP) →</a>
+                <a href="https://drive.google.com/drive/folders/1GTaBRwEQg4UfxtuPCFUK2YTIHJIigGAV?usp=sharing" target="_blank" rel="noreferrer" className="px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Media Pembelajaran →</a>
                 {/* <a href="https://drive.google.com/drive/folders/dummy-link-hasil" target="_blank" rel="noreferrer" className="px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Contoh Hasil Kerja Siswa →</a> */}
-                <a href="https://youtube.com/dummy-link-video" target="_blank" rel="noreferrer" className="px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Video Praktik Mengajar →</a>
+                <a href="https://drive.google.com/drive/folders/1GTaBRwEQg4UfxtuPCFUK2YTIHJIigGAV?usp=sharing" target="_blank" rel="noreferrer" className="px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Dokumentasi Praktik Mengajar →</a>
               </div>
               
               <div className="mb-12">
