@@ -187,33 +187,102 @@ const Uts = () => {
             </div>
 
             {/* Penilaian GP dan DPL */}
-            <h3 className="text-2xl font-bold text-[#1A1A1A] dark:text-white mb-6 pt-8 border-t border-slate-100 dark:border-slate-800">Penilaian Guru Pamong & DPL (L7 & L8)</h3>
+            <h3 className="text-2xl font-bold text-[#1A1A1A] dark:text-white mb-6 pt-12 border-t border-slate-100 dark:border-slate-800">Penilaian Guru Pamong & DPL (L7 & L8)</h3>
             <p className="text-slate-600 dark:text-slate-300 mb-10 text-lg">
               Rekapitulasi penilaian rancangan pembelajaran dan praktik mengajar selama 3 siklus.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
-              {[
-                { s: "Siklus 1", n: "77", text: <><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Perlu penyesuaian pada alokasi waktu PjBL agar lebih realistis.<br/><br/><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Penguasaan kelas sudah baik, namun perlu lebih interaktif saat membimbing kelompok.</>},
-                { s: "Siklus 2", n: "85", text: <><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Sintaks PjBL sudah tergambar dengan sangat jelas pada modul ajar.<br/><br/><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Bimbingan teknis ke siswa lebih terarah, penggunaan media sangat memfasilitasi pemahaman.</>},
-                { s: "Siklus 3", n: "90", text: <><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Asesmen formatif terintegrasi dengan sangat baik dan komprehensif.<br/><br/><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Manajemen kelas sangat efektif, siswa mampu menghasilkan produk digital sesuai target.</>}
-              ].map((item, i) => (
-                <div key={i} className="bg-[#fafafa] dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl flex flex-col h-full">
-                  <h4 className="font-black text-xl text-[#1A1A1A] dark:text-white mb-4">{item.s}</h4>
-                  <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-6 flex-grow">{item.text}</p>
-                  <div className="mt-auto">
-                    <span className="inline-block bg-[#8EF1F5] text-[#1A1A1A] font-bold px-4 py-2 rounded-full text-sm">
-                      Nilai: {item.n}
-                    </span>
+            {/* Siklus 1 Penilaian */}
+            <div className="bg-[#fafafa] dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl mb-8">
+              <h4 className="font-black text-xl text-[#1A1A1A] dark:text-white mb-4">Siklus 1</h4>
+              <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
+                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Perlu penyesuaian pada alokasi waktu PjBL agar lebih realistis.</p>
+                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Penguasaan kelas sudah baik, namun perlu lebih interaktif saat membimbing kelompok.</p>
+              </div>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="flex flex-col gap-4">
+                  <div className="flex justify-between items-center">
+                    <span className="font-bold text-[#1A1A1A] dark:text-white">A. Penilaian Penyusunan Perangkat</span>
+                    <span className="bg-[#8EF1F5] text-[#1A1A1A] font-bold px-3 py-1 rounded-full text-xs">Nilai: 100</span>
                   </div>
+                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
+                    <iframe src="https://drive.google.com/file/d/1cvkx1nM0n181liqTIygllalywPGk3q1Y/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
+                  </div>
+                  <a href="https://drive.google.com/file/d/1cvkx1nM0n181liqTIygllalywPGk3q1Y/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-white dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Lampiran A Siklus 1 →</a>
                 </div>
-              ))}
+                <div className="flex flex-col gap-4">
+                  <div className="flex justify-between items-center">
+                    <span className="font-bold text-[#1A1A1A] dark:text-white">B. Penilaian Pelaksanaan Pembelajaran</span>
+                    <span className="bg-[#8EF1F5] text-[#1A1A1A] font-bold px-3 py-1 rounded-full text-xs">Nilai: 82</span>
+                  </div>
+                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
+                    <iframe src="https://drive.google.com/file/d/1cvkx1nM0n181liqTIygllalywPGk3q1Y/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
+                  </div>
+                  <a href="https://drive.google.com/file/d/1cvkx1nM0n181liqTIygllalywPGk3q1Y/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-white dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Lampiran B Siklus 1 →</a>
+                </div>
+              </div>
             </div>
-            
-            <div className="flex flex-wrap gap-4 mt-8">
-                <a href="#" className="px-6 py-3 bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Lampiran Penilaian Siklus 1 →</a>
-                <a href="#" className="px-6 py-3 bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Lampiran Penilaian Siklus 2 →</a>
-                <a href="#" className="px-6 py-3 bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Lampiran Penilaian Siklus 3 →</a>
+
+            {/* Siklus 2 Penilaian */}
+            <div className="bg-[#fafafa] dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl mb-8">
+              <h4 className="font-black text-xl text-[#1A1A1A] dark:text-white mb-4">Siklus 2</h4>
+              <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
+                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Sintaks PjBL sudah tergambar dengan sangat jelas pada modul ajar.</p>
+                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Bimbingan teknis ke siswa lebih terarah, penggunaan media sangat memfasilitasi pemahaman.</p>
+              </div>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="flex flex-col gap-4">
+                  <div className="flex justify-between items-center">
+                    <span className="font-bold text-[#1A1A1A] dark:text-white">A. Penilaian Penyusunan Perangkat</span>
+                    <span className="bg-[#8EF1F5] text-[#1A1A1A] font-bold px-3 py-1 rounded-full text-xs">Nilai: 100</span>
+                  </div>
+                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
+                    <iframe src="https://drive.google.com/file/d/1cvkx1nM0n181liqTIygllalywPGk3q1Y/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
+                  </div>
+                  <a href="https://drive.google.com/file/d/1cvkx1nM0n181liqTIygllalywPGk3q1Y/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-white dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Lampiran A Siklus 2 →</a>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <div className="flex justify-between items-center">
+                    <span className="font-bold text-[#1A1A1A] dark:text-white">B. Penilaian Pelaksanaan Pembelajaran</span>
+                    <span className="bg-[#8EF1F5] text-[#1A1A1A] font-bold px-3 py-1 rounded-full text-xs">Nilai: 82</span>
+                  </div>
+                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
+                    <iframe src="https://drive.google.com/file/d/1cvkx1nM0n181liqTIygllalywPGk3q1Y/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
+                  </div>
+                  <a href="https://drive.google.com/file/d/1cvkx1nM0n181liqTIygllalywPGk3q1Y/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-white dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Lampiran B Siklus 2 →</a>
+                </div>
+              </div>
+            </div>
+
+            {/* Siklus 3 Penilaian */}
+            <div className="bg-[#fafafa] dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl mb-12">
+              <h4 className="font-black text-xl text-[#1A1A1A] dark:text-white mb-4">Siklus 3</h4>
+              <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
+                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Asesmen formatif terintegrasi dengan sangat baik dan komprehensif.</p>
+                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Manajemen kelas sangat efektif, siswa mampu menghasilkan produk digital sesuai target.</p>
+              </div>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="flex flex-col gap-4">
+                  <div className="flex justify-between items-center">
+                    <span className="font-bold text-[#1A1A1A] dark:text-white">A. Penilaian Penyusunan Perangkat</span>
+                    <span className="bg-[#8EF1F5] text-[#1A1A1A] font-bold px-3 py-1 rounded-full text-xs">Nilai: 100</span>
+                  </div>
+                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
+                    <iframe src="https://drive.google.com/file/d/1cvkx1nM0n181liqTIygllalywPGk3q1Y/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
+                  </div>
+                  <a href="https://drive.google.com/file/d/1cvkx1nM0n181liqTIygllalywPGk3q1Y/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-white dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Lampiran A Siklus 3 →</a>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <div className="flex justify-between items-center">
+                    <span className="font-bold text-[#1A1A1A] dark:text-white">B. Penilaian Pelaksanaan Pembelajaran</span>
+                    <span className="bg-[#8EF1F5] text-[#1A1A1A] font-bold px-3 py-1 rounded-full text-xs">Nilai: 82</span>
+                  </div>
+                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
+                    <iframe src="https://drive.google.com/file/d/1cvkx1nM0n181liqTIygllalywPGk3q1Y/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
+                  </div>
+                  <a href="https://drive.google.com/file/d/1cvkx1nM0n181liqTIygllalywPGk3q1Y/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-white dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Lampiran B Siklus 3 →</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
