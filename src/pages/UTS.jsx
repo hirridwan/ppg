@@ -51,158 +51,92 @@ const Uts = () => {
           <h2 className="text-3xl md:text-4xl font-black text-[#1A1A1A] dark:text-white tracking-tight">Analisis Artefak Pembelajaran</h2>
         </div>
 
-        <div className="grid gap-8">
-          <div className="bg-white dark:bg-[#1a1a1a] rounded-[3rem] p-10 md:p-16 shadow-[0_10px_40px_rgb(0,0,0,0.04)] border border-slate-100 dark:border-slate-800">
-            <h3 className="text-2xl font-bold text-[#1A1A1A] dark:text-white mb-8">Refleksi Produk Pembelajaran</h3>
-            
-            {/* BAGIAN EMBED GOOGLE DRIVE & YOUTUBE - 3 SIKLUS */}
-            
-            {/* SIKLUS 1 */}
-            <div className="mb-10">
-              <h4 className="font-extrabold text-[#1A1A1A] dark:text-white mb-4 text-xl">Siklus 1</h4>
-              <div className="grid md:grid-cols-3 gap-6">
-                {/* Embed Modul Ajar Siklus 1 */}
-                <div className="flex flex-col gap-4">
-                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
-                    <iframe src="https://drive.google.com/file/d/1g3N40YKkq-AO_8jHITyRPGcI3HcZVjKG/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
-                  </div>
-                  <a href="https://drive.google.com/file/d/1g3N40YKkq-AO_8jHITyRPGcI3HcZVjKG/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Modul Ajar Siklus 1 →</a>
-                </div>
-                
-                {/* Embed Media Pembelajaran Siklus 1 */}
-                <div className="flex flex-col gap-4">
-                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
-                    <iframe src="https://drive.google.com/file/d/1YRlbovcLweLwn2rr_cSrAVqIUMPb_0IV/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
-                  </div>
-                  <a href="https://drive.google.com/file/d/1YRlbovcLweLwn2rr_cSrAVqIUMPb_0IV/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Media Pembelajaran Siklus 1 →</a>
-                </div>
-
-                {/* Embed Dokumentasi Video Siklus 1 */}
-                <div className="flex flex-col gap-4">
-                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-100 dark:bg-slate-800">
-                    <iframe src="https://www.youtube.com/embed/lX9cO0kNx4I" title="Dokumentasi Praktik Mengajar Siklus 1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="absolute top-0 left-0 w-full h-full border-0"></iframe>
-                  </div>
-                  <a href="https://youtube.com/watch?v=lX9cO0kNx4I" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Dokumentasi Praktik Siklus 1 →</a>
-                </div>
-              </div>
+        {/* --- BLOK SIKLUS 1 --- */}
+        <div className="bg-white dark:bg-[#1a1a1a] rounded-[3rem] p-10 md:p-16 shadow-[0_10px_40px_rgb(0,0,0,0.04)] border border-slate-100 dark:border-slate-800 mb-8">
+            <h3 className="text-2xl font-bold text-[#1A1A1A] dark:text-white mb-8">Siklus 1</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+                <iframe src="https://drive.google.com/viewerng/viewer?url=https://drive.google.com/file/d/1g3N40YKkq-AO_8jHITyRPGcI3HcZVjKG/view?usp=sharing&embedded=true" className="w-full aspect-video border rounded-2xl"></iframe>
+                <iframe src="https://drive.google.com/viewerng/viewer?url=https://drive.google.com/file/d/1YRlbovcLweLwn2rr_cSrAVqIUMPb_0IV/view?usp=sharing&embedded=true" className="w-full aspect-video border rounded-2xl"></iframe>
+                <iframe src="https://www.youtube.com/embed/lX9cO0kNx4I" className="w-full aspect-video border rounded-2xl" allowFullScreen></iframe>
             </div>
+        </div>
 
-            {/* SIKLUS 2 */}
-            <div className="mb-10">
-              <h4 className="font-extrabold text-[#1A1A1A] dark:text-white mb-4 text-xl">Siklus 2</h4>
-              <div className="grid md:grid-cols-3 gap-6">
-                {/* Embed Modul Ajar Siklus 2 */}
-                <div className="flex flex-col gap-4">
-                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
-                    <iframe src="https://drive.google.com/file/d/1bgofRcDUSDTrY2kAvIStMUKRopv_Zyvr/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
-                  </div>
-                  <a href="https://drive.google.com/file/d/1bgofRcDUSDTrY2kAvIStMUKRopv_Zyvr/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Modul Ajar Siklus 2 →</a>
-                </div>
-                
-                {/* Embed Media Pembelajaran Siklus 2 */}
-                <div className="flex flex-col gap-4">
-                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
-                    <iframe src="https://drive.google.com/file/d/1zAHtx0wbDqshY_8OBLlKIjaCWMI-Nq13/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
-                  </div>
-                  <a href="https://drive.google.com/file/d/1zAHtx0wbDqshY_8OBLlKIjaCWMI-Nq13/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Media Pembelajaran Siklus 2 →</a>
-                </div>
-
-                {/* Embed Dokumentasi Video Siklus 2 */}
-                <div className="flex flex-col gap-4">
-                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-100 dark:bg-slate-800">
-                    <iframe src="https://www.youtube.com/embed/3YsifFDiFaI" title="Dokumentasi Praktik Mengajar Siklus 2" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="absolute top-0 left-0 w-full h-full border-0"></iframe>
-                  </div>
-                  <a href="https://youtube.com/watch?v=3YsifFDiFaI" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Dokumentasi Praktik Siklus 2 →</a>
-                </div>
-              </div>
+        {/* --- BLOK SIKLUS 2 --- */}
+        <div className="bg-white dark:bg-[#1a1a1a] rounded-[3rem] p-10 md:p-16 shadow-[0_10px_40px_rgb(0,0,0,0.04)] border border-slate-100 dark:border-slate-800 mb-8">
+            <h3 className="text-2xl font-bold text-[#1A1A1A] dark:text-white mb-8">Siklus 2</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+                <iframe src="https://drive.google.com/viewerng/viewer?url=https://drive.google.com/file/d/1bgofRcDUSDTrY2kAvIStMUKRopv_Zyvr/view?usp=sharing&embedded=true" className="w-full aspect-video border rounded-2xl"></iframe>
+                <iframe src="https://drive.google.com/viewerng/viewer?url=https://drive.google.com/file/d/1zAHtx0wbDqshY_8OBLlKIjaCWMI-Nq13/view?usp=sharing&embedded=true" className="w-full aspect-video border rounded-2xl"></iframe>
+                <iframe src="https://www.youtube.com/embed/3YsifFDiFaI" className="w-full aspect-video border rounded-2xl" allowFullScreen></iframe>
             </div>
+        </div>
 
-            {/* SIKLUS 3 */}
-            <div className="mb-12">
-              <h4 className="font-extrabold text-[#1A1A1A] dark:text-white mb-4 text-xl">Siklus 3</h4>
-              <div className="grid md:grid-cols-3 gap-6">
-                {/* Embed Modul Ajar Siklus 3 */}
-                <div className="flex flex-col gap-4">
-                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
-                    <iframe src="https://drive.google.com/file/d/1L8WSGfJtvLRq71xNY1GZIiavOon4ajTw/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
-                  </div>
-                  <a href="https://drive.google.com/file/d/1L8WSGfJtvLRq71xNY1GZIiavOon4ajTw/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Modul Ajar Siklus 3 →</a>
-                </div>
-                
-                {/* Embed Media Pembelajaran Siklus 3 */}
-                <div className="flex flex-col gap-4">
-                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
-                    <iframe src="https://drive.google.com/file/d/1NXOvVptQfiScXsr57btkA8S5FNqDQgO-/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
-                  </div>
-                  <a href="https://drive.google.com/file/d/1NXOvVptQfiScXsr57btkA8S5FNqDQgO-/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Media Pembelajaran Siklus 3 →</a>
-                </div>
-
-                {/* Embed Dokumentasi Video Siklus 3 */}
-                <div className="flex flex-col gap-4">
-                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-100 dark:bg-slate-800">
-                    <iframe src="https://www.youtube.com/embed/YxzmKY4VigU" title="Dokumentasi Praktik Mengajar Siklus 3" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="absolute top-0 left-0 w-full h-full border-0"></iframe>
-                  </div>
-                  <a href="https://youtube.com/watch?v=YxzmKY4VigU" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Dokumentasi Praktik Siklus 3 →</a>
-                </div>
-              </div>
+        {/* --- BLOK SIKLUS 3 --- */}
+        <div className="bg-white dark:bg-[#1a1a1a] rounded-[3rem] p-10 md:p-16 shadow-[0_10px_40px_rgb(0,0,0,0.04)] border border-slate-100 dark:border-slate-800 mb-8">
+            <h3 className="text-2xl font-bold text-[#1A1A1A] dark:text-white mb-8">Siklus 3</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+                <iframe src="https://drive.google.com/viewerng/viewer?url=https://drive.google.com/file/d/1L8WSGfJtvLRq71xNY1GZIiavOon4ajTw/view?usp=sharing&embedded=true" className="w-full aspect-video border rounded-2xl"></iframe>
+                <iframe src="https://drive.google.com/viewerng/viewer?url=https://drive.google.com/file/d/1NXOvVptQfiScXsr57btkA8S5FNqDQgO-/view?usp=sharing&embedded=true" className="w-full aspect-video border rounded-2xl"></iframe>
+                <iframe src="https://www.youtube.com/embed/YxzmKY4VigU" className="w-full aspect-video border rounded-2xl" allowFullScreen></iframe>
             </div>
-            {/* AKHIR BAGIAN EMBED */}
-            
-            <div className="mb-12">
-              <h4 className="font-extrabold text-[#1A1A1A] dark:text-white mb-4 text-xl">Konteks & Teori Pedagogi</h4>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-justify text-lg">
-                Produk dan artifak pembelajaran ini disusun dengan mengadopsi model <strong>Project Based Learning (PjBL)</strong>. Pendekatan ini dianalisis melalui kajian teori pada mata kuliah integrasi <strong>Pemahaman Peserta Didik dan Pembelajarannya</strong> serta <strong>Prinsip Pengajaran dan Asesmen</strong>. PjBL dipilih karena sangat relevan dengan upaya peningkatan literasi digital dan keterampilan <em>problem-solving</em> peserta didik melalui proyek berbasis teknologi nyata.
-              </p>
-            </div>
+        </div>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-[#fafafa] dark:bg-slate-800/50 p-8 rounded-3xl border border-slate-100 dark:border-slate-700">
+        {/* Teks Analisis */}
+        <div className="bg-white dark:bg-[#1a1a1a] rounded-[3rem] p-10 md:p-16 shadow-[0_10px_40px_rgb(0,0,0,0.04)] border border-slate-100 dark:border-slate-800">
+            <h4 className="font-extrabold text-[#1A1A1A] dark:text-white mb-4 text-xl">Konteks & Teori Pedagogi</h4>
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-justify text-lg">
+                Produk dan artifak pembelajaran ini disusun dengan mengadopsi berbagai model pedagogik yang disesuaikan dengan karakteristik materi. Pada Siklus 1, saya menggunakan pendekatan <strong>Problem Based Learning (PBL)</strong> untuk mengolah data Excel. Pada Siklus 2, saya mengintegrasikan <strong>Game-Based Learning</strong> melalui Cerdas Cermat C++ untuk meningkatkan antusiasme. Sedangkan pada Siklus 3, perpaduan <strong>Project Based Learning (PjBL)</strong> dan <strong>Inquiry</strong> diterapkan untuk merancang visualisasi algoritma. Pendekatan ini relevan dengan upaya peningkatan <em>Computational Thinking</em> peserta didik.
+            </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-12 mt-8">
+            <div className="bg-[#fafafa] dark:bg-slate-800/50 p-8 rounded-3xl border border-slate-100 dark:border-slate-700">
                 <h4 className="font-bold text-[#1A1A1A] dark:text-white mb-4 text-lg flex items-center gap-3">
                   <div className="w-3 h-3 rounded-full bg-[#8234E6]"></div>
                   Faktor Keberhasilan
                 </h4>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
-                  Keberhasilan penerapan produk ini didukung oleh kesiapan guru untuk terus belajar yang berjalan beriringan dengan fasilitas fisik seperti proyektor yang memadai. Selain itu, infrastruktur teknologi seperti kapasitas server dan jaringan internet yang stabil di sekolah juga menjadi faktor pendukung utama dalam pembelajaran Informatika.
+                  Keberhasilan penerapan produk didukung oleh pemanfaatan Laboratorium Komputer yang memadai. Penggunaan media interaktif seperti <em>Wheel of Names</em> untuk pengacakan kelompok, analogi materi yang dekat dengan keseharian siswa (seperti instruksi memasak mie), serta penerapan sistem <em>reward</em> terbukti sangat efektif memacu partisipasi aktif dan memicu kompetisi yang sehat di dalam kelas.
                 </p>
-              </div>
-              <div className="bg-[#fafafa] dark:bg-slate-800/50 p-8 rounded-3xl border border-slate-100 dark:border-slate-700">
+            </div>
+            <div className="bg-[#fafafa] dark:bg-slate-800/50 p-8 rounded-3xl border border-slate-100 dark:border-slate-700">
                 <h4 className="font-bold text-[#1A1A1A] dark:text-white mb-4 text-lg flex items-center gap-3">
                   <div className="w-3 h-3 rounded-full bg-[#E1FA43]"></div>
                   Kendala Selama Proses
                 </h4>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
-                  Kendala utama yang terjadi selama penyusunan produk berkaitan dengan kompleksitas mengintegrasikan asesmen autentik yang tepat untuk mengukur kompetensi teknis dan <em>soft skills</em> siswa secara bersamaan, serta penyesuaian alokasi waktu.
+                  Kendala utama bersifat teknis dan manajerial. Secara teknis, siswa sering mengalami <em>syntax error</em> (seperti membedakan titik koma pada Excel dan aturan <em>case-sensitive</em> pada C++), serta koneksi web yang lambat saat memuat <em>draw.io</em>. Secara manajerial, tingginya antusiasme kelas saat cerdas cermat memicu suasana gaduh yang berdampak pada manajemen waktu (*overrun*).
                 </p>
-              </div>
             </div>
+        </div>
 
-            <div className="bg-[#fafafa] dark:bg-slate-800/50 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 mb-12">
-              <h4 className="font-bold text-[#1A1A1A] dark:text-white mb-4 text-lg flex items-center gap-3">
+        <div className="bg-[#fafafa] dark:bg-slate-800/50 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 mb-12">
+            <h4 className="font-bold text-[#1A1A1A] dark:text-white mb-4 text-lg flex items-center gap-3">
                 <div className="w-3 h-3 rounded-full bg-orange-500"></div>
                 Perubahan untuk Situasi Berbeda
-              </h4>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
-                Untuk situasi kelas yang mungkin memiliki literasi teknologi lebih rendah atau fasilitas terbatas, perubahan difokuskan pada penyederhanaan sintaks PjBL. Alternatifnya adalah dengan pendekatan kelompok tutor sebaya dan menggunakan media pembelajaran <em>unplugged</em> (tanpa komputer) untuk konsep-konsep dasar komputasional *thinking*.
-              </p>
-            </div>
-
-            {/* Penilaian GP dan DPL */}
-            <h3 className="text-2xl font-bold text-[#1A1A1A] dark:text-white mb-6 pt-12 border-t border-slate-100 dark:border-slate-800">Penilaian Guru Pamong & DPL (L7 & L8)</h3>
-            <p className="text-slate-600 dark:text-slate-300 mb-10 text-lg">
-              Rekapitulasi penilaian rancangan pembelajaran dan praktik mengajar selama 3 siklus.
+            </h4>
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
+                Untuk menghadapi kendala tersebut, perubahan difokuskan pada mitigasi. Secara teknis, saya menyusun LKPD yang memuat <em>cheat-sheet</em> sintaks dasar dan menyiapkan perangkat lunak <em>offline</em> sebagai cadangan jaringan. Secara pedagogis, saya menerapkan rotasi peran wajib dalam kerja kelompok agar partisipasi merata, serta beralih ke studi kasus yang lebih berorientasi pada <em>Higher Order Thinking Skills</em> (HOTS).
             </p>
+        </div>
 
-            {/* Siklus 1 Penilaian */}
-            <div className="bg-[#fafafa] dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl mb-8">
-              <h4 className="font-black text-xl text-[#1A1A1A] dark:text-white mb-4">Siklus 1</h4>
-              <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
-                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Perlu penyesuaian pada alokasi waktu PjBL agar lebih realistis.</p>
-                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Penguasaan kelas sudah baik, namun perlu lebih interaktif saat membimbing kelompok.</p>
-              </div>
-              <div className="grid md:grid-cols-2 gap-8">
+        {/* Penilaian GP dan DPL */}
+        <h3 className="text-2xl font-bold text-[#1A1A1A] dark:text-white mb-6 pt-12 border-t border-slate-100 dark:border-slate-800">Penilaian Guru Pamong & DPL (L7 & L8)</h3>
+        <p className="text-slate-600 dark:text-slate-300 mb-10 text-lg">
+            Rekapitulasi penilaian rancangan pembelajaran dan praktik mengajar selama 3 siklus.
+        </p>
+
+        {/* Siklus 1 Penilaian */}
+        <div className="bg-[#fafafa] dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl mb-8">
+            <h4 className="font-black text-xl text-[#1A1A1A] dark:text-white mb-4">Siklus 1</h4>
+            <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
+                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Pendekatan studi kasus sangat relevan, namun LKPD perlu dilengkapi dengan panduan penulisan sintaks tertulis untuk meminimalisir kendala error fungsi IF.</p>
+                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Penguasaan kelas dasar sudah baik, namun Guru Pamong menekankan perlunya peningkatan kesabaran dan manajemen *crowd control* saat banyak siswa bertanya secara bersamaan.</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8">
                 <div className="flex flex-col gap-4">
                   <div className="flex justify-between items-center">
-                    <span className="font-bold text-[#1A1A1A] dark:text-white">A. Penilaian Penyusunan Perangkat</span>
+                    <span className="font-bold text-[#1A1A1A] dark:text-white">A. Penilaian Penyusunan Perangkat Pembelajaran</span>
                     <span className="bg-[#8EF1F5] text-[#1A1A1A] font-bold px-3 py-1 rounded-full text-xs">Nilai: 100</span>
                   </div>
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
@@ -220,20 +154,20 @@ const Uts = () => {
                   </div>
                   <a href="https://drive.google.com/file/d/1cvkx1nM0n181liqTIygllalywPGk3q1Y/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-white dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Lampiran B Siklus 1 →</a>
                 </div>
-              </div>
             </div>
+        </div>
 
-            {/* Siklus 2 Penilaian */}
-            <div className="bg-[#fafafa] dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl mb-8">
-              <h4 className="font-black text-xl text-[#1A1A1A] dark:text-white mb-4">Siklus 2</h4>
-              <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
-                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Sintaks PjBL sudah tergambar dengan sangat jelas pada modul ajar.</p>
-                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Bimbingan teknis ke siswa lebih terarah, penggunaan media sangat memfasilitasi pemahaman.</p>
-              </div>
-              <div className="grid md:grid-cols-2 gap-8">
+        {/* Siklus 2 Penilaian */}
+        <div className="bg-[#fafafa] dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl mb-8">
+            <h4 className="font-black text-xl text-[#1A1A1A] dark:text-white mb-4">Siklus 2</h4>
+            <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
+                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Inovasi *Game-Based Learning* (Cerdas Cermat C++) sangat diapresiasi, namun aturan permainan perlu didesain agar memaksa pemerataan partisipasi.</p>
+                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Suasana kelas sangat hidup dan kompetitif. Kendali waktu (*time-keeping*) perlu diperketat agar tidak terjadi *overrun* saat sesi diskusi.</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8">
                 <div className="flex flex-col gap-4">
                   <div className="flex justify-between items-center">
-                    <span className="font-bold text-[#1A1A1A] dark:text-white">A. Penilaian Penyusunan Perangkat</span>
+                    <span className="font-bold text-[#1A1A1A] dark:text-white">A. Penilaian Penyusunan Perangkat Pembelajaran</span>
                     <span className="bg-[#8EF1F5] text-[#1A1A1A] font-bold px-3 py-1 rounded-full text-xs">Nilai: 100</span>
                   </div>
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
@@ -251,20 +185,20 @@ const Uts = () => {
                   </div>
                   <a href="https://drive.google.com/file/d/1cvkx1nM0n181liqTIygllalywPGk3q1Y/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-white dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Lampiran B Siklus 2 →</a>
                 </div>
-              </div>
             </div>
+        </div>
 
-            {/* Siklus 3 Penilaian */}
-            <div className="bg-[#fafafa] dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl mb-12">
-              <h4 className="font-black text-xl text-[#1A1A1A] dark:text-white mb-4">Siklus 3</h4>
-              <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
-                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Asesmen formatif terintegrasi dengan sangat baik dan komprehensif.</p>
-                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Manajemen kelas sangat efektif, siswa mampu menghasilkan produk digital sesuai target.</p>
-              </div>
-              <div className="grid md:grid-cols-2 gap-8">
+        {/* Siklus 3 Penilaian */}
+        <div className="bg-[#fafafa] dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl mb-12">
+            <h4 className="font-black text-xl text-[#1A1A1A] dark:text-white mb-4">Siklus 3</h4>
+            <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
+                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Pemberian kebebasan studi kasus pemancing sangat baik untuk menumbuhkan kreativitas penalaran abstraksi siswa.</p>
+                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Manajemen kelas sudah stabil dan pemberian *reward* sangat memotivasi. Namun, pengecekan detail hasil karya siswa di monitor perlu ditingkatkan.</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8">
                 <div className="flex flex-col gap-4">
                   <div className="flex justify-between items-center">
-                    <span className="font-bold text-[#1A1A1A] dark:text-white">A. Penilaian Penyusunan Perangkat</span>
+                    <span className="font-bold text-[#1A1A1A] dark:text-white">A. Penilaian Penyusunan Perangkat Pembelajaran</span>
                     <span className="bg-[#8EF1F5] text-[#1A1A1A] font-bold px-3 py-1 rounded-full text-xs">Nilai: 100</span>
                   </div>
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
@@ -282,9 +216,7 @@ const Uts = () => {
                   </div>
                   <a href="https://drive.google.com/file/d/1cvkx1nM0n181liqTIygllalywPGk3q1Y/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-white dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Lampiran B Siklus 3 →</a>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
       </section>
 

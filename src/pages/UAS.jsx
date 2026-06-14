@@ -20,7 +20,7 @@ const Uas = () => {
                 Pembelajaran yang Diperoleh
               </h3>
               <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-justify text-lg pl-11">
-                Selama tahapan PPL Terbimbing dari awal hingga akhir, saya belajar bahwa menjadi guru profesional bukan sekadar mentransfer pengetahuan, melainkan menjadi fasilitator yang mengorkestrasi pengalaman belajar. Saya memahami pentingnya pemetaan karakteristik peserta didik secara komprehensif sebelum merancang modul ajar. Lebih lanjut, saya menyadari bahwa implementasi teknologi dalam kelas harus diiringi dengan pendekatan pedagogik yang matang agar tidak hanya menjadi "hiasan digital", tetapi benar-benar meningkatkan kompetensi *Computational Thinking* siswa.
+                Selama tahapan PPL Terbimbing dari awal hingga akhir, saya belajar bahwa menjadi fasilitator berarti mampu menyederhanakan konsep abstrak (seperti algoritma dan pemrograman C++) menjadi hal yang dekat dengan realitas siswa. Saya memahami bahwa memadukan pendekatan Problem Based Learning (PBL) dan Game-Based Learning secara signifikan mampu mendongkrak antusiasme kelas, asalkan diimbangi dengan manajemen kelas yang kuat.
               </p>
             </div>
 
@@ -30,8 +30,8 @@ const Uas = () => {
                 Pengalaman Menantang & Solusinya
               </h3>
               <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-justify text-lg pl-11">
-                Pengalaman paling menantang adalah mengelola diferensiasi pemahaman dasar siswa terhadap literasi komputer. Di satu sisi, ada siswa yang sudah mahir *coding* dasar, sementara di sisi lain ada yang masih kesulitan dengan operasi dasar sistem. <br/><br/>
-                <strong>Solusinya:</strong> Saya menerapkan strategi *peer-tutoring* (tutor sebaya) dalam model *Project Based Learning*. Siswa yang lebih mahir didorong untuk menjadi ketua kelompok yang membimbing anggota lainnya. Selain itu, saya menyusun Lembar Kerja Peserta Didik (LKPD) yang memiliki panduan langkah-demi-langkah (scaffolding) yang jelas untuk membantu siswa yang tertinggal.
+                Pengalaman paling menantang adalah menangani kendala teknis dan dinamika kelas secara bersamaan. Di satu sisi, banyak siswa terjebak pada *syntax error* (seperti koma/titik koma di Excel dan *case-sensitive* di C++), serta kendala jaringan saat mengakses aplikasi *draw.io*. Di sisi lain, antusiasme tinggi saat cerdas cermat memicu suasana gaduh dan dominasi siswa tertentu. <br/><br/>
+                <strong>Solusinya:</strong> Saya mulai menyusun panduan sintaks tertulis, menerapkan aturan rotasi peran dalam kelompok, serta menyiapkan opsi aplikasi *offline* sebagai cadangan saat koneksi jaringan melambat.
               </p>
             </div>
 
@@ -45,9 +45,9 @@ const Uas = () => {
                   Berdasarkan diskusi refleksi akhir dengan Guru Pamong dan Dosen Pembimbing Lapangan, beberapa saran konstruktif yang saya terima untuk persiapan PPL Mandiri adalah:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-slate-600 dark:text-slate-300 leading-relaxed">
-                  <li><strong>Manajemen Waktu:</strong> Perlu lebih disiplin dalam mengelola durasi pendahuluan, inti, dan penutup agar refleksi siswa di akhir sesi tidak terburu-buru.</li>
-                  <li><strong>Variasi Asesmen Formatif:</strong> Mengurangi porsi tes tertulis dan memperbanyak observasi langsung saat siswa melakukan praktik, serta menggunakan instrumen *rubrik analitik* yang lebih spesifik.</li>
-                  <li><strong>Penguatan Konsep:</strong> Memastikan penyampaian konsep *Computational Thinking* lebih aplikatif dan mudah dihubungkan dengan permasalahan sehari-hari siswa.</li>
+                  <li><strong>Manajemen Kelas:</strong> Peningkatan kesabaran dan *crowd control* saat kelas riuh akibat kompetisi.</li>
+                  <li><strong>Pemerataan Partisipasi:</strong> Merancang strategi agar siswa yang lambat tidak hanya mengandalkan temannya yang sudah mahir.</li>
+                  <li><strong>Ketelitian Evaluasi:</strong> Perlunya pengecekan detail dengan proaktif memeriksa layar monitor siswa yang diam untuk mencegah kesalahan fundamental.</li>
                 </ul>
               </div>
             </div>
@@ -60,9 +60,9 @@ const Uas = () => {
               </div>
               <h3 className="text-xl font-bold mb-6 text-[#1A1A1A] dark:text-white">Kekuatan Diri</h3>
               <ul className="list-disc list-inside space-y-3 text-slate-600 dark:text-slate-300 leading-relaxed">
-                <li>Penguasaan yang baik dalam merancang media berbasis teknologi.</li>
-                <li>Mampu mengadopsi model pembelajaran Project Based Learning (PjBL) secara relevan.</li>
-                <li>Mudah beradaptasi dengan sistem digital sekolah (LMS).</li>
+                <li>Kemampuan memvisualisasikan konsep awal dengan apersepsi yang kontekstual.</li>
+                <li>Kreativitas memanfaatkan media interaktif (seperti *Wheel of Names* dan *draw.io*).</li>
+                <li>Keterbukaan dan adaptasi yang cepat terhadap kritik maupun masukan.</li>
               </ul>
             </div>
 
@@ -72,8 +72,8 @@ const Uas = () => {
               </div>
               <h3 className="text-xl font-bold mb-6 text-[#1A1A1A] dark:text-white">Area Pengembangan</h3>
               <ul className="list-disc list-inside space-y-3 text-slate-600 dark:text-slate-300 leading-relaxed">
-                <li>Manajemen alokasi waktu ketika siswa mengalami kendala teknis saat mengerjakan proyek.</li>
-                <li>Asesmen formatif terkadang belum mencakup evaluasi proses kognitif secara menyeluruh.</li>
+                <li>Pengendalian kelas (*crowd control*) dan manajemen waktu agar tidak kelebihan durasi (*overrun*).</li>
+                <li>Pendalaman strategi diferensiasi instruksional bagi siswa yang tertinggal.</li>
               </ul>
             </div>
           </div>
@@ -82,7 +82,7 @@ const Uas = () => {
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
             <h3 className="text-2xl font-bold mb-6 relative z-10">Rencana Tindak Lanjut</h3>
             <p className="text-purple-100 text-lg leading-relaxed text-justify relative z-10">
-              Sebagai upaya pengembangan diri, saya akan menyusun Rencana Pelaksanaan Pembelajaran (RPP) yang lebih rinci dengan mempersiapkan Rencana B (Plan B) untuk memitigasi jika terjadi kendala teknis jaringan atau perangkat di kelas. Selain itu, saya berencana untuk mendalami instrumen evaluasi formatif berbasis game atau kuiz interaktif yang dapat mengukur pemahaman siswa di tengah berjalannya proyek (PjBL) tanpa mengurangi alokasi waktu yang signifikan.
+              Sebagai upaya pengembangan diri, saya akan menyusun Rencana Pelaksanaan Pembelajaran (RPP) dengan pendekatan Project-Based Learning yang mengarah pada Higher Order Thinking Skills (HOTS). Saya akan merancang proyek nyata harian, seperti pembuatan sistem catatan keuangan atau pemecahan masalah logika komputer, untuk mengalihkan fokus dari kompetisi kecepatan menjadi kedalaman pemecahan masalah (problem solving).
             </p>
           </div>
         </div>
