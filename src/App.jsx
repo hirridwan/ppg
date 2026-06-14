@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
-import Uts from './pages/Uts';
-import Uas from './pages/Uas';
+import Uts from './pages/UTS';
+import Uas from './pages/UAS';
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
