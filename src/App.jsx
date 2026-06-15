@@ -19,6 +19,9 @@ const App = () => {
   useEffect(() => {
     document.title = "E-Portfolio | Ridwan Maulana, S.Kom.";
     
+    // BAGIAN YANG DIUBAH: Memaksa browser merender halaman dalam skala 67%
+    document.body.style.zoom = "67%";
+    
     let metaDescription = document.querySelector('meta[name="description"]');
     if (!metaDescription) {
       metaDescription = document.createElement('meta');
