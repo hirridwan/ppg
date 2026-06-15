@@ -19,8 +19,20 @@ const App = () => {
   useEffect(() => {
     document.title = "E-Portfolio | Ridwan Maulana, S.Kom.";
     
-    // BAGIAN YANG DIUBAH: Memaksa browser merender halaman dalam skala 67%
-    document.body.style.zoom = "67%";
+    // BAGIAN YANG DIUBAH: Mengatur zoom 67% HANYA untuk desktop
+    const applyResponsiveZoom = () => {
+      if (window.innerWidth >= 1024) {
+        document.body.style.zoom = "67%";
+      } else {
+        document.body.style.zoom = "100%"; // Kembali normal untuk HP/Tablet
+      }
+    };
+    
+    // Jalankan saat pertama dimuat
+    applyResponsiveZoom();
+    
+    // Pantau jika layar di-resize
+    window.addEventListener('resize', applyResponsiveZoom);
     
     let metaDescription = document.querySelector('meta[name="description"]');
     if (!metaDescription) {
@@ -49,6 +61,9 @@ const App = () => {
     });
 
     document.documentElement.style.scrollBehavior = "smooth";
+
+    // Bersihkan event listener
+    return () => window.removeEventListener('resize', applyResponsiveZoom);
   }, []);
 
   const navItems = [
