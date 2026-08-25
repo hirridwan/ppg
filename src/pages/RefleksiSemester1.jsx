@@ -15,7 +15,7 @@ const RefleksiSemester1 = () => {
       bagianArtefak: "Bagian analisis sosiokultural daerah yang saya kaitkan langsung dengan perancangan strategi pendekatan emosional di dalam kelas."
     },
     {
-      nama: "Peserta Didik dan Pemahamannya",
+      nama: "Pemahaman Tentang Peserta Didik dan Pembelajarannya",
       kaitan: "Mata kuliah ini memberikan landasan teori mengapa saya harus bersikap inklusif dan adil. Memahami profil perkembangan kognitif dan sosio-emosional peserta didik membantu saya merancang pembelajaran yang tidak membeda-bedakan latar belakang mereka.",
       tantangan: "Menghadapi kenyataan bahwa gap atau kesenjangan literasi digital di dalam satu kelas sangat lebar. Ada siswa yang sudah mahir *coding* dasar, namun ada pula yang masih kesulitan memahami logika penalaran komputasional.",
       konsep: "Konsep Teaching at the Right Level (TaRL) dan Zone of Proximal Development (ZPD) dari Vygotsky, yang menekankan pentingnya pemberian *scaffolding* (bantuan bertahap).",
@@ -55,7 +55,7 @@ const RefleksiSemester1 = () => {
       bagianArtefak: "Catatan dialog reflektif dengan siswa yang awalnya enggan mencoba *coding* hingga akhirnya berani bereksplorasi tanpa takut salah."
     },
     {
-      nama: "P. Berdiferensiasi (Elektif)",
+      nama: "Pembelajaran Berdiferensiasi",
       kaitan: "Sangat sejalan dengan visi saya untuk menjadi guru yang terus berinovasi menciptakan pembelajaran yang berpusat pada peserta didik, memastikan anak dengan gaya belajar berbeda tetap mencapai potensi maksimalnya.",
       tantangan: "Manajemen waktu dan sumber daya dalam menyiapkan materi dengan berbagai format (teks, visual, interaktif) untuk satu topik Informatika yang sama dalam satu pertemuan.",
       konsep: "Diferensiasi Konten (materi dasar vs pengayaan), Diferensiasi Proses (bimbingan intensif vs mandiri), dan Diferensiasi Produk (pilihan format pengumpulan tugas akhir).",

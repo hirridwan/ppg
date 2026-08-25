@@ -15,7 +15,7 @@ const RefleksiSemester2 = () => {
       bagianArtefak: "Bagian pendahuluan RPP yang memuat aktivitas pengenalan emosi (roda emosi) sebelum siswa mulai menyalakan komputer."
     },
     {
-      nama: "Pemb. Mendalam & Asesmen Lanjut",
+      nama: "Pembelajaran Mendalam & Asesmen Lanjut",
       kaitan: "Melanjutkan prinsip keadilan dan objektivitas saya, mata kuliah ini memperdalam cara saya memotret kemampuan siswa secara utuh. Saya belajar bahwa pemahaman mendalam dalam Informatika bukan sekadar bisa mengetik kode, tapi mengerti *mengapa* kode itu bekerja.",
       tantangan: "Merancang instrumen penilaian autentik yang mampu mengakomodasi berbagai gaya belajar dan tingkat kesiapan siswa yang berbeda-beda (*gap* literasi digital), tanpa menurunkan standar *Higher Order Thinking Skills* (HOTS).",
       konsep: "Asesmen Autentik, *Backward Design* tingkat lanjut, dan perumusan *Essential Questions* yang memantik rasa ingin tahu dibandingkan sekadar hafalan.",
