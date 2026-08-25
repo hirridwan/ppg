@@ -5,7 +5,7 @@ const RefleksiSemester1 = () => {
 
   const mataKuliah = [
     {
-      nama: "Filosofi Pendidikan Indonesia",
+      nama: "Filosofi Pendidikan dan Pendidikan Nilai",
       kaitan: "Filosofi Ki Hajar Dewantara tentang 'menuntun' sangat sejalan dengan prinsip saya sebagai fasilitator yang mengedepankan pendekatan santai namun terarah. Saya menyadari bahwa pendidikan harus mempertimbangkan kodrat alam dan zaman, yang mengingatkan saya pada nilai-nilai ketekunan dari daerah asal saya yang dapat diintegrasikan dalam membangun karakter siswa di era digital.",
       tantangan: "Tantangan utamanya adalah mengubah paradigma dari pembelajaran yang berpusat pada guru (teacher-centered) menjadi benar-benar berpusat pada siswa, terutama dalam menjaga kestabilan emosi dan kesabaran saat kelas menjadi sangat riuh karena antusiasme berlebih.",
       konsep: "Konsep utama yang saya pelajari adalah 'Pendidikan yang Memerdekakan' dan pentingnya mengintegrasikan konteks sosio-kultural ke dalam proses pembelajaran agar materi terasa lebih dekat dengan keseharian siswa.",
