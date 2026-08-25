@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
-import Uts from './pages/UTS';
-import Uas from './pages/UAS';
+import Uts from './pages/UTS'; // PPL Semester 1 UTS
+import Uas from './pages/UAS'; // PPL Semester 1 UAS
+import UtsSem2 from './pages/UtsSem2'; // PPL Semester 2 UTS
+import UasSem2 from './pages/UasSem2'; // PPL Semester 2 UAS
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -19,19 +21,15 @@ const App = () => {
   useEffect(() => {
     document.title = "E-Portfolio | Ridwan Maulana, S.Kom.";
     
-    // BAGIAN YANG DIUBAH: Mengatur zoom 67% HANYA untuk desktop
     const applyResponsiveZoom = () => {
       if (window.innerWidth >= 1024) {
         document.body.style.zoom = "67%";
       } else {
-        document.body.style.zoom = "100%"; // Kembali normal untuk HP/Tablet
+        document.body.style.zoom = "100%"; 
       }
     };
     
-    // Jalankan saat pertama dimuat
     applyResponsiveZoom();
-    
-    // Pantau jika layar di-resize
     window.addEventListener('resize', applyResponsiveZoom);
     
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -62,14 +60,34 @@ const App = () => {
 
     document.documentElement.style.scrollBehavior = "smooth";
 
-    // Bersihkan event listener
     return () => window.removeEventListener('resize', applyResponsiveZoom);
   }, []);
 
   const navItems = [
     { path: '/', label: 'Home' },
-    { path: '/uts', label: 'UTS' },
-    { path: '/uas', label: 'UAS' },
+    {
+      label: 'PPL Semester 1',
+      dropdown: [
+        { path: '/ppl-semester-1/uts', label: 'UTS' },
+        { path: '/ppl-semester-1/uas', label: 'UAS' },
+      ]
+    },
+    {
+      label: 'PPL Semester 2',
+      dropdown: [
+        { path: '/ppl-semester-2/uts', label: 'UTS' },
+        { path: '/ppl-semester-2/uas', label: 'UAS' },
+      ]
+    },
+    {
+      label: 'Seminar',
+      dropdown: [
+        { path: '/seminar/refleksi', label: 'LK 1 (Refleksi)' },
+        { path: '/seminar/refleksi-semester-1', label: 'LK 2 (Refleksi Semester 1)' },
+        { path: '/seminar/refleksi-semester-2', label: 'LK 2 (Refleksi Semester 2)' },
+        { path: '/seminar/refleksi-ppg', label: 'LK (Refleksi PPG)' },
+      ]
+    },
   ];
 
   return (
@@ -86,17 +104,41 @@ const App = () => {
           
           <nav className="flex flex-wrap justify-center space-x-2 md:space-x-8">
             {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`px-3 py-2 text-sm font-bold transition-all rounded-full ${
-                  location.pathname === item.path
-                    ? 'text-[#1A1A1A] dark:text-white bg-slate-100 dark:bg-slate-800'
-                    : 'text-slate-500 hover:text-[#1A1A1A] dark:hover:text-white'
-                }`}
-              >
-                {item.label}
-              </Link>
+              item.dropdown ? (
+                <div key={item.label} className="relative group">
+                  <button className="px-3 py-2 text-sm font-bold transition-all rounded-full text-slate-500 hover:text-[#1A1A1A] dark:hover:text-white flex items-center gap-1">
+                    {item.label}
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                  </button>
+                  <div className="absolute left-0 mt-2 w-56 bg-white dark:bg-[#1a1a1a] border border-slate-100 dark:border-slate-800 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all flex flex-col py-2 z-50">
+                    {item.dropdown.map(dropItem => (
+                      <Link
+                        key={dropItem.path}
+                        to={dropItem.path}
+                        className={`px-4 py-2 text-sm font-bold transition-all ${
+                          location.pathname === dropItem.path
+                            ? 'text-[#1A1A1A] dark:text-white bg-slate-50 dark:bg-slate-800/50'
+                            : 'text-slate-500 hover:text-[#1A1A1A] dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/50'
+                        }`}
+                      >
+                        {dropItem.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`px-3 py-2 text-sm font-bold transition-all rounded-full ${
+                    location.pathname === item.path
+                      ? 'text-[#1A1A1A] dark:text-white bg-slate-100 dark:bg-slate-800'
+                      : 'text-slate-500 hover:text-[#1A1A1A] dark:hover:text-white'
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              )
             ))}
           </nav>
 
@@ -115,8 +157,20 @@ const App = () => {
       <div className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/uts" element={<Uts />} />
-          <Route path="/uas" element={<Uas />} />
+          
+          {/* Rute PPL Semester 1 (Konten lama tidak diubah) */}
+          <Route path="/ppl-semester-1/uts" element={<Uts />} />
+          <Route path="/ppl-semester-1/uas" element={<Uas />} />
+          
+          {/* Rute PPL Semester 2 (Diambil dari pemecahan konten) */}
+          <Route path="/ppl-semester-2/uts" element={<UtsSem2 />} />
+          <Route path="/ppl-semester-2/uas" element={<UasSem2 />} />
+          
+          {/* Rute Seminar (Placeholder sementara) */}
+          <Route path="/seminar/refleksi" element={<div className="pt-32 text-center text-2xl font-bold">Halaman LK 1 (Refleksi)</div>} />
+          <Route path="/seminar/refleksi-semester-1" element={<div className="pt-32 text-center text-2xl font-bold">Halaman LK 2 (Refleksi Semester 1)</div>} />
+          <Route path="/seminar/refleksi-semester-2" element={<div className="pt-32 text-center text-2xl font-bold">Halaman LK 2 (Refleksi Semester 2)</div>} />
+          <Route path="/seminar/refleksi-ppg" element={<div className="pt-32 text-center text-2xl font-bold">Halaman LK (Refleksi PPG)</div>} />
         </Routes>
       </div>
 
