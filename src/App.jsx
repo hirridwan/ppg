@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
-import Uts from './pages/UTS'; // PPL Semester 1 UTS
-import Uas from './pages/UAS'; // PPL Semester 1 UAS
-import UtsSem2 from './pages/UtsSem2'; // PPL Semester 2 UTS
-import UasSem2 from './pages/UasSem2'; // PPL Semester 2 UAS
+import Uts from './pages/UTS'; 
+import Uas from './pages/UAS'; 
+import UtsSem2 from './pages/UtsSem2'; 
+import UasSem2 from './pages/UasSem2'; 
 import RefleksiLK1 from './pages/RefleksiLK1';
 import RefleksiSemester1 from './pages/RefleksiSemester1';
 import RefleksiSemester2 from './pages/RefleksiSemester2';
@@ -12,6 +12,8 @@ import RefleksiPPG from './pages/RefleksiPPG';
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State untuk Hamburger Menu
+  const [activeMobileDropdown, setActiveMobileDropdown] = useState(null); // State untuk klik dropdown di HP
   const location = useLocation();
 
   useEffect(() => {
@@ -21,6 +23,12 @@ const App = () => {
       document.documentElement.classList.remove('dark');
     }
   }, [isDarkMode]);
+
+  useEffect(() => {
+    // Tutup menu mobile setiap kali pindah halaman
+    setIsMobileMenuOpen(false);
+    setActiveMobileDropdown(null);
+  }, [location.pathname]);
 
   useEffect(() => {
     document.title = "E-Portfolio | Ridwan Maulana, S.Kom.";
@@ -86,31 +94,67 @@ const App = () => {
     {
       label: 'Seminar',
       dropdown: [
-        { path: '/seminar/refleksi', label: 'LK 1 (Refleksi Diri)' },
+        { path: '/seminar/refleksi', label: 'LK 1 (Refleksi)' },
         { path: '/seminar/refleksi-semester-1', label: 'LK 2 (Refleksi Semester 1)' },
         { path: '/seminar/refleksi-semester-2', label: 'LK 2 (Refleksi Semester 2)' },
-        { path: '/seminar/refleksi-ppg', label: 'LK 3 (Refleksi PPG)' },
+        { path: '/seminar/refleksi-ppg', label: 'LK (Refleksi PPG)' },
       ]
     },
   ];
+
+  const toggleMobileDropdown = (label) => {
+    if (activeMobileDropdown === label) {
+      setActiveMobileDropdown(null);
+    } else {
+      setActiveMobileDropdown(label);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-[#fafafa] dark:bg-[#111111] font-sans text-slate-900 dark:text-slate-100 overflow-x-hidden transition-colors duration-300 flex flex-col">
       
       {/* HEADER */}
       <header className="fixed top-0 left-0 w-full z-50 bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-md shadow-sm border-b border-slate-100 dark:border-slate-800">
-        <div className="max-w-[1400px] mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="max-w-[1400px] mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <h1 className="text-xl md:text-2xl font-black tracking-tighter text-[#1A1A1A] dark:text-white">
               Ridwan Maulana.
             </h1>
           </div>
           
-          <nav className="flex flex-wrap justify-center space-x-2 md:space-x-8">
+          {/* Tombol Hamburger untuk HP */}
+          <div className="flex md:hidden items-center gap-4">
+            <button
+              onClick={() => setIsDarkMode(!isDarkMode)}
+              className="p-2 rounded-full text-slate-500 hover:text-[#1A1A1A] dark:hover:text-white"
+              aria-label="Toggle Dark Mode"
+            >
+              {isDarkMode ? (
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+              ) : (
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+              )}
+            </button>
+            <button 
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="text-[#1A1A1A] dark:text-white p-2"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {isMobileMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
+
+          {/* Navigasi Desktop */}
+          <nav className="hidden md:flex flex-wrap justify-center space-x-8 items-center">
             {navItems.map((item) => (
               item.dropdown ? (
                 <div key={item.label} className="relative group">
-                  <button className="px-3 py-2 text-sm font-bold transition-all rounded-full text-slate-500 hover:text-[#1A1A1A] dark:hover:text-white flex items-center gap-1">
+                  <button className="py-2 text-sm font-bold transition-all text-slate-500 hover:text-[#1A1A1A] dark:hover:text-white flex items-center gap-1">
                     {item.label}
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                   </button>
@@ -134,9 +178,9 @@ const App = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`px-3 py-2 text-sm font-bold transition-all rounded-full ${
+                  className={`py-2 text-sm font-bold transition-all ${
                     location.pathname === item.path
-                      ? 'text-[#1A1A1A] dark:text-white bg-slate-100 dark:bg-slate-800'
+                      ? 'text-[#1A1A1A] dark:text-white'
                       : 'text-slate-500 hover:text-[#1A1A1A] dark:hover:text-white'
                   }`}
                 >
@@ -144,9 +188,6 @@ const App = () => {
                 </Link>
               )
             ))}
-          </nav>
-
-          <div className="flex">
             <button
               onClick={() => setIsDarkMode(!isDarkMode)}
               className="border-2 border-[#1A1A1A] dark:border-white px-6 py-2 rounded-full text-sm font-bold hover:bg-[#1A1A1A] hover:text-white dark:hover:bg-white dark:hover:text-[#1A1A1A] transition-all flex items-center gap-2"
@@ -154,23 +195,66 @@ const App = () => {
             >
               {isDarkMode ? "Light Mode" : "Dark Mode"}
             </button>
-          </div>
+          </nav>
         </div>
+
+        {/* Menu Mobile (Tampil jika tombol Hamburger diklik) */}
+        {isMobileMenuOpen && (
+          <nav className="md:hidden border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-[#1a1a1a] px-6 py-4 flex flex-col space-y-4 max-h-[80vh] overflow-y-auto">
+            {navItems.map((item) => (
+              item.dropdown ? (
+                <div key={item.label} className="flex flex-col">
+                  <button 
+                    onClick={() => toggleMobileDropdown(item.label)}
+                    className="flex justify-between items-center py-2 text-left font-bold text-slate-800 dark:text-slate-200"
+                  >
+                    {item.label}
+                    <svg className={`w-4 h-4 transition-transform ${activeMobileDropdown === item.label ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                  </button>
+                  
+                  {activeMobileDropdown === item.label && (
+                    <div className="flex flex-col pl-4 mt-2 space-y-3 border-l-2 border-slate-100 dark:border-slate-800">
+                      {item.dropdown.map(dropItem => (
+                        <Link
+                          key={dropItem.path}
+                          to={dropItem.path}
+                          className={`text-sm font-bold ${
+                            location.pathname === dropItem.path
+                              ? 'text-[#8234E6] dark:text-[#E1FA43]'
+                              : 'text-slate-500'
+                          }`}
+                        >
+                          {dropItem.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`py-2 font-bold ${
+                    location.pathname === item.path
+                      ? 'text-[#8234E6] dark:text-[#E1FA43]'
+                      : 'text-slate-800 dark:text-slate-200'
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              )
+            ))}
+          </nav>
+        )}
       </header>
 
-      <div className="flex-grow">
+      <div className="flex-grow pt-16 md:pt-0">
         <Routes>
           <Route path="/" element={<Home />} />
-          
-          {/* Rute PPL Semester 1 (Konten lama tidak diubah) */}
           <Route path="/ppl-semester-1/uts" element={<Uts />} />
           <Route path="/ppl-semester-1/uas" element={<Uas />} />
-          
-          {/* Rute PPL Semester 2 (Diambil dari pemecahan konten) */}
           <Route path="/ppl-semester-2/uts" element={<UtsSem2 />} />
           <Route path="/ppl-semester-2/uas" element={<UasSem2 />} />
-          
-          {/* Rute Seminar (Placeholder sementara) */}
           <Route path="/seminar/refleksi" element={<RefleksiLK1 />} />
           <Route path="/seminar/refleksi-semester-1" element={<RefleksiSemester1 />} />
           <Route path="/seminar/refleksi-semester-2" element={<RefleksiSemester2 />} />

@@ -38,7 +38,7 @@ const Home = () => {
               src="https://i.imgur.com/oYLaroL.jpeg" 
               alt="Ridwan Maulana" 
               loading="lazy"
-              className="w-full max-w-[450px] aspect-square object-cover object-top rounded-[3rem] shadow-[20px_20px_60px_rgba(0,0,0,0.3)] border-4 border-white/20 transform lg:rotate-3 hover:rotate-0 transition-transform duration-500"
+              className="w-full max-w-[450px] object-contain rounded-[3rem] shadow-[20px_20px_60px_rgba(0,0,0,0.3)] border-4 border-white/20 transform lg:rotate-3 hover:rotate-0 transition-transform duration-500"
             />
           </div>
         </div>
