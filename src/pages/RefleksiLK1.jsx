@@ -6,7 +6,7 @@ const RefleksiLK1 = () => {
       {/* HEADER */}
       <section className="text-center">
         <h2 className="text-4xl md:text-5xl font-black text-[#1A1A1A] dark:text-white mb-4 tracking-tight">Seminar PPG: LK 1</h2>
-        <p className="text-lg text-slate-600 dark:text-slate-300">Tahap 1.2. Hasil Identifikasi Diri[cite: 8]</p>
+        <p className="text-lg text-slate-600 dark:text-slate-300">Hasil Identifikasi Diri</p>
       </section>
 
       {/* HASIL IDENTIFIKASI DIRI */}
