@@ -25,7 +25,7 @@ const RefleksiSemester2 = () => {
       bagianArtefak: "Indikator penilaian pada rubrik yang memberi porsi nilai tinggi pada kemampuan *debugging* dan kolaborasi tim."
     },
     {
-      nama: "PPL Mandiri",
+      nama: "Praktik Pengalaman Lapangan (PPL) Mandiri",
       kaitan: "PPL Mandiri adalah ujian sesungguhnya dari visi saya sebagai fasilitator. Tanpa intervensi langsung dari Guru Pamong, saya harus membuktikan kemampuan mengelola kelas, menjaga wibawa lewat kedisiplinan, dan mengeksekusi *Project Based Learning* secara utuh.",
       tantangan: "Menjaga ritme dan *crowd control* secara mandiri. Tantangan terbesar adalah ketika terjadi kendala teknis massal (jaringan *down* saat mengakses *draw.io*) dan saya harus segera beralih ke *Plan B* tanpa terlihat panik.",
       konsep: "Pengambilan keputusan pedagogis secara *real-time*, kemandirian profesional, dan siklus utuh PTK (Penelitian Tindakan Kelas).",
