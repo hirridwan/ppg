@@ -45,7 +45,7 @@ const RefleksiSemester2 = () => {
       bagianArtefak: "Bagian refleksi individu dalam laporan akhir yang menceritakan dinamika resolusi konflik di internal kelompok."
     },
     {
-      nama: "Pengembangan Prof. & Berkelanjutan",
+      nama: "Pengembangan Profesionalitas Guru & Wawasan Berkelanjutan",
       kaitan: "Sangat relevan dengan komitmen saya untuk menjadi *lifelong learner*. Informatika berkembang sangat cepat; jika saya berhenti belajar, saya akan gagal menjembatani kesenjangan digital siswa di masa depan.",
       tantangan: "Membagi waktu antara tugas administratif, persiapan mengajar, dan upaya sadar untuk terus melakukan *up-skilling* teknologi terbaru secara konsisten.",
       konsep: "*Continuous Professional Development* (CPD), pembentukan Komunitas Praktisi, dan wawasan pendidikan berkelanjutan menuju *Society 5.0*.",
