@@ -169,9 +169,9 @@ const App = () => {
           
           {/* Rute Seminar (Placeholder sementara) */}
           <Route path="/seminar/refleksi" element={<RefleksiLK1 />} />
-          <Route path="/seminar/refleksi-semester-1" element={<RefleksiSemester1 />} />
-          <Route path="/seminar/refleksi-semester-2" element={<RefleksiSemester2 />} />
-          <Route path="/seminar/refleksi-ppg" element={<RefleksiPPG />} />
+          <Route path="/seminar/refleksi-semester-1" element={<div className="pt-32 text-center text-2xl font-bold">Halaman LK 2 (Refleksi Semester 1)</div>} />
+          <Route path="/seminar/refleksi-semester-2" element={<div className="pt-32 text-center text-2xl font-bold">Halaman LK 2 (Refleksi Semester 2)</div>} />
+          <Route path="/seminar/refleksi-ppg" element={<div className="pt-32 text-center text-2xl font-bold">Halaman LK (Refleksi PPG)</div>} />
         </Routes>
       </div>
 
