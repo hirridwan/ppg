@@ -6,7 +6,7 @@ const RefleksiPPG = () => {
       {/* HEADER */}
       <section className="text-center">
         <h2 className="text-4xl md:text-5xl font-black text-[#1A1A1A] dark:text-white mb-4 tracking-tight">Seminar PPG: LK 3</h2>
-        <p className="text-lg text-slate-600 dark:text-slate-300">Refleksi Pengalaman Belajar Selama Mengikuti Program PPG[cite: 10]</p>
+        <p className="text-lg text-slate-600 dark:text-slate-300">Refleksi Pengalaman Belajar Selama Mengikuti Program PPG</p>
       </section>
 
       {/* REFLEKSI PENGALAMAN BELAJAR */}
@@ -19,7 +19,7 @@ const RefleksiPPG = () => {
             <div>
               <h3 className="text-2xl font-bold mb-6 text-[#1A1A1A] dark:text-white flex items-start gap-4">
                 <span className="w-10 h-10 rounded-xl bg-[#8EF1F5] flex items-center justify-center text-[#1A1A1A] text-lg font-black flex-shrink-0 mt-1">1</span>
-                <span>Setelah mengikuti rangkaian refleksi pengalaman belajar, menurut anda, bagaimana seharusnya pendidikan di Indonesia?[cite: 10]</span>
+                <span>Setelah mengikuti rangkaian refleksi pengalaman belajar, menurut anda, bagaimana seharusnya pendidikan di Indonesia?</span>
               </h3>
               <div className="bg-[#fafafa] dark:bg-slate-800/50 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 ml-0 md:ml-14">
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-justify text-lg">
@@ -32,7 +32,7 @@ const RefleksiPPG = () => {
             <div>
               <h3 className="text-2xl font-bold mb-6 text-[#1A1A1A] dark:text-white flex items-start gap-4">
                 <span className="w-10 h-10 rounded-xl bg-[#E1FA43] flex items-center justify-center text-[#1A1A1A] text-lg font-black flex-shrink-0 mt-1">2</span>
-                <span>Apa saja yang dapat anda lakukan untuk menjadi guru profesional?[cite: 10]</span>
+                <span>Apa saja yang dapat anda lakukan untuk menjadi guru profesional?</span>
               </h3>
               <div className="bg-[#fafafa] dark:bg-slate-800/50 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 ml-0 md:ml-14">
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-justify text-lg mb-4">
@@ -60,7 +60,7 @@ const RefleksiPPG = () => {
           <div className="relative z-10">
             <h3 className="text-2xl font-bold mb-8 text-white flex items-start gap-4">
                 <span className="w-10 h-10 rounded-xl bg-orange-400 flex items-center justify-center text-white text-lg font-black flex-shrink-0 mt-1">3</span>
-                <span>Apa saja tiga hal penting yang akan anda lakukan ketika memulai karir sebagai guru?[cite: 10]</span>
+                <span>Apa saja tiga hal penting yang akan anda lakukan ketika memulai karir sebagai guru?</span>
             </h3>
 
             <div className="grid gap-6 ml-0 md:ml-14">
@@ -92,7 +92,7 @@ const RefleksiPPG = () => {
                     <div>
                         <h4 className="font-bold text-xl mb-3 text-pink-300">Mengembangkan Media Pembelajaran Interaktif & Kontekstual</h4>
                         <p className="text-purple-50 leading-relaxed text-justify text-lg">
-                            Melanjutkan praktik baik selama PPL, saya akan terus mengeksplorasi metode <em>Game-Based Learning</em> dan <em>Project Based Learning</em>. Saya akan merancang proyek nyata yang dekat dengan kehidupan siswa—misalnya terkait sistem administrasi digital untuk UMKM—guna mengasah <em>Computational Thinking</em> mereka secara menyenangkan dan bermakna.
+                            Melanjutkan praktik baik selama PPL, saya akan terus mengeksplorasi metode <em>Game-Based Learning</em> dan <em>Project Based Learning</em>. Saya akan merancang proyek nyata yang dekat dengan kehidupan siswa misalnya terkait sistem administrasi digital untuk UMKM guna mengasah <em>Computational Thinking</em> mereka secara menyenangkan dan bermakna.
                         </p>
                     </div>
                 </div>
