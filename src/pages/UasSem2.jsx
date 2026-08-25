@@ -45,7 +45,7 @@ const UasSem2 = () => {
             </div>
 
             {/* SIKLUS 3 */}
-            <div className="mb-12">
+            <div className="mb-10">
               <h4 className="font-extrabold text-[#1A1A1A] dark:text-white mb-4 text-xl">Siklus 3</h4>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="flex flex-col gap-4">
@@ -71,29 +71,29 @@ const UasSem2 = () => {
               </div>
             </div>
 
-            {/* SIKLUS 4 (Placeholder) */}
+            {/* SIKLUS 4 (Di-copy dari Siklus 3 sesuai permintaan) */}
             <div className="mb-12">
               <h4 className="font-extrabold text-[#1A1A1A] dark:text-white mb-4 text-xl">Siklus 4</h4>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="flex flex-col gap-4">
-                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900 flex items-center justify-center text-slate-400">
-                    <span>Modul Ajar 4</span>
+                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
+                    <iframe src="https://drive.google.com/file/d/1L8WSGfJtvLRq71xNY1GZIiavOon4ajTw/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
                   </div>
-                  <a href="#" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Modul Ajar Siklus 4 →</a>
+                  <a href="https://drive.google.com/file/d/1L8WSGfJtvLRq71xNY1GZIiavOon4ajTw/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Modul Ajar Siklus 4 →</a>
                 </div>
                 
                 <div className="flex flex-col gap-4">
-                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900 flex items-center justify-center text-slate-400">
-                    <span>Media 4</span>
+                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
+                    <iframe src="https://drive.google.com/file/d/1NXOvVptQfiScXsr57btkA8S5FNqDQgO-/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
                   </div>
-                  <a href="#" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Media Pembelajaran Siklus 4 →</a>
+                  <a href="https://drive.google.com/file/d/1NXOvVptQfiScXsr57btkA8S5FNqDQgO-/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Media Pembelajaran Siklus 4 →</a>
                 </div>
 
                 <div className="flex flex-col gap-4">
-                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400">
-                    <span>Video 4</span>
+                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-100 dark:bg-slate-800">
+                    <iframe src="https://www.youtube.com/embed/YxzmKY4VigU" title="Dokumentasi Praktik Mengajar Siklus 4" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="absolute top-0 left-0 w-full h-full border-0"></iframe>
                   </div>
-                  <a href="#" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Dokumentasi Praktik Siklus 4 →</a>
+                  <a href="https://youtube.com/watch?v=YxzmKY4VigU" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Dokumentasi Praktik Siklus 4 →</a>
                 </div>
               </div>
             </div>
@@ -133,7 +133,7 @@ const UasSem2 = () => {
             </div>
 
             {/* Siklus 3 Penilaian */}
-            <div className="bg-[#fafafa] dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl mb-12">
+            <div className="bg-[#fafafa] dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl mb-8">
               <h4 className="font-black text-xl text-[#1A1A1A] dark:text-white mb-4">Siklus 3</h4>
               <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
                 <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Pemberian kebebasan studi kasus pemancing sangat baik untuk menumbuhkan kreativitas penalaran abstraksi siswa.</p>
@@ -162,11 +162,36 @@ const UasSem2 = () => {
                 </div>
               </div>
             </div>
-            
-            {/* Siklus 4 Penilaian (Placeholder) */}
+
+            {/* Siklus 4 Penilaian (Di-copy dari Siklus 3 sesuai permintaan) */}
             <div className="bg-[#fafafa] dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl mb-12">
               <h4 className="font-black text-xl text-[#1A1A1A] dark:text-white mb-4">Siklus 4</h4>
-              <p className="text-slate-500 mb-4">Konten penilaian Siklus 4 dapat diisi di sini...</p>
+              <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
+                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Pemberian kebebasan studi kasus pemancing sangat baik untuk menumbuhkan kreativitas penalaran abstraksi siswa.</p>
+                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Manajemen kelas sudah stabil dan pemberian *reward* sangat memotivasi. Namun, pengecekan detail hasil karya siswa di monitor perlu ditingkatkan.</p>
+              </div>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="flex flex-col gap-4">
+                  <div className="flex justify-between items-center">
+                    <span className="font-bold text-[#1A1A1A] dark:text-white">A. Penilaian Penyusunan Perangkat</span>
+                    <span className="bg-[#8EF1F5] text-[#1A1A1A] font-bold px-3 py-1 rounded-full text-xs">Nilai: 100</span>
+                  </div>
+                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
+                    <iframe src="https://drive.google.com/file/d/1eSMsLTKI0L01-NMTH5d8KMztZkDMGxjy/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
+                  </div>
+                  <a href="https://drive.google.com/file/d/1eSMsLTKI0L01-NMTH5d8KMztZkDMGxjy/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-white dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Lampiran A Siklus 4 →</a>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <div className="flex justify-between items-center">
+                    <span className="font-bold text-[#1A1A1A] dark:text-white">B. Penilaian Pelaksanaan Pembelajaran</span>
+                    <span className="bg-[#8EF1F5] text-[#1A1A1A] font-bold px-3 py-1 rounded-full text-xs">Nilai: 82</span>
+                  </div>
+                  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
+                    <iframe src="https://drive.google.com/file/d/1cvkx1nM0n181liqTIygllalywPGk3q1Y/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
+                  </div>
+                  <a href="https://drive.google.com/file/d/1cvkx1nM0n181liqTIygllalywPGk3q1Y/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-white dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Lampiran B Siklus 4 →</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
