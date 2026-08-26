@@ -97,7 +97,7 @@ const App = () => {
         { path: '/seminar/refleksi', label: 'LK 1 (Refleksi)' },
         { path: '/seminar/refleksi-semester-1', label: 'LK 2 (Refleksi Semester 1)' },
         { path: '/seminar/refleksi-semester-2', label: 'LK 2 (Refleksi Semester 2)' },
-        { path: '/seminar/refleksi-ppg', label: 'LK (Refleksi PPG)' },
+        { path: '/seminar/refleksi-ppg', label: 'LK 3 (Refleksi PPG)' },
       ]
     },
   ];
