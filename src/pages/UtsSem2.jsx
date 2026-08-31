@@ -24,9 +24,9 @@ const UtsSem2 = () => {
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
-                    <iframe src="https://drive.google.com/file/d/1g3N40YKkq-AO_8jHITyRPGcI3HcZVjKG/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1e7z-B3H02DuXDNmrdK7aV817pSq2W_Hj/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
                   </div>
-                  <a href="https://drive.google.com/file/d/1g3N40YKkq-AO_8jHITyRPGcI3HcZVjKG/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Modul Ajar Siklus 1 →</a>
+                  <a href="https://drive.google.com/file/d/1e7z-B3H02DuXDNmrdK7aV817pSq2W_Hj/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Modul Ajar Siklus 1 →</a>
                 </div>
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
