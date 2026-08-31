@@ -36,13 +36,12 @@ const UtsSem2 = () => {
                 </div>
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-100 dark:bg-slate-800">
-                    <iframe src="https://www.youtube.com/embed/lX9cO0kNx4I" title="Dokumentasi Praktik Mengajar Siklus 1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="absolute top-0 left-0 w-full h-full border-0"></iframe>
+                    <iframe src="https://www.youtube.com/embed/u7rDt8bTU8Y" title="Dokumentasi Praktik Mengajar Siklus 1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="absolute top-0 left-0 w-full h-full border-0"></iframe>
                   </div>
-                  <a href="https://youtube.com/watch?v=lX9cO0kNx4I" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Dokumentasi Praktik Siklus 1 →</a>
+                  <a href="https://youtube.com/watch?v=u7rDt8bTU8Y" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Dokumentasi Praktik Siklus 1 →</a>
                 </div>
               </div>
             </div>
-            
             {/* Penilaian GP dan DPL */}
             <h3 className="text-2xl font-bold text-[#1A1A1A] dark:text-white mb-6 pt-12 border-t border-slate-100 dark:border-slate-800">Penilaian Guru Pamong & DPL (L7 & L8)</h3>
             <p className="text-slate-600 dark:text-slate-300 mb-10 text-lg">
@@ -60,7 +59,7 @@ const UtsSem2 = () => {
                 <div className="flex flex-col gap-4">
                   <div className="flex justify-between items-center">
                     <span className="font-bold text-[#1A1A1A] dark:text-white">A. Penilaian Penyusunan Perangkat</span>
-                    <span className="bg-[#8EF1F5] text-[#1A1A1A] font-bold px-3 py-1 rounded-full text-xs">Nilai: 100</span>
+                    <span className="bg-[#8EF1F5] text-[#1A1A1A] font-bold px-3 py-1 rounded-full text-xs">Nilai: 94,74</span>
                   </div>
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
                     <iframe src="https://drive.google.com/file/d/1eSMsLTKI0L01-NMTH5d8KMztZkDMGxjy/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
@@ -70,7 +69,7 @@ const UtsSem2 = () => {
                 <div className="flex flex-col gap-4">
                   <div className="flex justify-between items-center">
                     <span className="font-bold text-[#1A1A1A] dark:text-white">B. Penilaian Pelaksanaan Pembelajaran</span>
-                    <span className="bg-[#8EF1F5] text-[#1A1A1A] font-bold px-3 py-1 rounded-full text-xs">Nilai: 82</span>
+                    <span className="bg-[#8EF1F5] text-[#1A1A1A] font-bold px-3 py-1 rounded-full text-xs">Nilai: 82,14</span>
                   </div>
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
                     <iframe src="https://drive.google.com/file/d/1cvkx1nM0n181liqTIygllalywPGk3q1Y/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
