@@ -53,8 +53,8 @@ const UtsSem2 = () => {
             <div className="bg-[#fafafa] dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl mb-8">
               <h4 className="font-black text-xl text-[#1A1A1A] dark:text-white mb-4">Siklus 1</h4>
               <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
-                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Pendekatan studi kasus sangat relevan, namun LKPD perlu dilengkapi dengan panduan penulisan sintaks tertulis untuk meminimalisir kendala error fungsi IF.</p>
-                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Penguasaan kelas dasar sudah baik, namun Guru Pamong menekankan perlunya peningkatan kesabaran dan manajemen *crowd control* saat banyak siswa bertanya secara bersamaan.</p>
+                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Penggunaan media sangat efektif dalam meningkatkan partisipasi siswa. Terdapat kombinasi yang berhasil antara gawai pribadi siswa untuk keperluan evaluasi instan (pre-test dan post-test) dengan media fisik berupa LKPD yang dirancang menyerupai arena permainan. Kartu kasus dan misi berpoin (XP) di dalam LKPD menjadi katalis utama yang menuntut semua anggota kelompok untuk berpartisipasi aktif menjalankan perannya masing-masing demi memenangkan tantangan.</p>
+                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Praktik pembelajaran mandiri sudah berjalan dengan cukup baik. Namun, terdapat catatan penting terkait ritme mengajar. Guru Pamong memberikan masukan agar penyampaian instruksi dan materi tidak dilakukan secara terburu-buru. Pembelajaran sebaiknya dibawakan dengan lebih santai dan tidak terlalu berorientasi pada target mengejar ketuntasan materi, sehingga peserta didik dapat lebih leluasa dan nyaman dalam mencerna konsep yang sedang dipelajari.</p>
               </div>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="flex flex-col gap-4">
