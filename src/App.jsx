@@ -12,8 +12,8 @@ import RefleksiPPG from './pages/RefleksiPPG';
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [activeMobileDropdown, setActiveMobileDropdown] = useState(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State untuk Hamburger Menu
+  const [activeMobileDropdown, setActiveMobileDropdown] = useState(null); // State untuk klik dropdown di HP
   const location = useLocation();
 
   useEffect(() => {
@@ -25,6 +25,7 @@ const App = () => {
   }, [isDarkMode]);
 
   useEffect(() => {
+    // Tutup menu mobile setiap kali pindah halaman
     setIsMobileMenuOpen(false);
     setActiveMobileDropdown(null);
   }, [location.pathname]);
@@ -110,13 +111,13 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-[#001b3d] font-sans text-[#333333] dark:text-white overflow-x-hidden transition-colors duration-300 flex flex-col" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+    <div className="min-h-screen bg-[#fafafa] dark:bg-[#111111] font-sans text-slate-900 dark:text-slate-100 overflow-x-hidden transition-colors duration-300 flex flex-col">
       
-      {/* HEADER - Solid Blue Design */}
-      <header className="fixed top-0 left-0 w-full z-50 bg-[#0052b4] shadow-lg">
-        <div className="max-w-[1400px] mx-auto px-6 py-5 flex justify-between items-center">
+      {/* HEADER */}
+      <header className="fixed top-0 left-0 w-full z-50 bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-md shadow-sm border-b border-slate-100 dark:border-slate-800">
+        <div className="max-w-[1400px] mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <h1 className="text-2xl md:text-3xl font-black tracking-tighter text-white">
+            <h1 className="text-xl md:text-2xl font-black tracking-tighter text-[#1A1A1A] dark:text-white">
               Ridwan Maulana.
             </h1>
           </div>
@@ -125,24 +126,24 @@ const App = () => {
           <div className="flex md:hidden items-center gap-4">
             <button
               onClick={() => setIsDarkMode(!isDarkMode)}
-              className="p-2 rounded-full text-white/80 hover:text-white"
+              className="p-2 rounded-full text-slate-500 hover:text-[#1A1A1A] dark:hover:text-white"
               aria-label="Toggle Dark Mode"
             >
               {isDarkMode ? (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
               ) : (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
               )}
             </button>
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-white p-2"
+              className="text-[#1A1A1A] dark:text-white p-2"
             >
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {isMobileMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M6 18L18 6M6 6l12 12" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                 ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M4 6h16M4 12h16M4 18h16" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                 )}
               </svg>
             </button>
@@ -153,19 +154,19 @@ const App = () => {
             {navItems.map((item) => (
               item.dropdown ? (
                 <div key={item.label} className="relative group">
-                  <button className="py-2 text-[0.9rem] font-bold transition-all text-white/80 hover:text-white flex items-center gap-1 uppercase tracking-wide">
+                  <button className="py-2 text-sm font-bold transition-all text-slate-500 hover:text-[#1A1A1A] dark:hover:text-white flex items-center gap-1">
                     {item.label}
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                   </button>
-                  <div className="absolute left-0 mt-4 w-60 bg-white dark:bg-[#002855] border-t-4 border-[#0052b4] rounded-b-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all flex flex-col py-3 z-50">
+                  <div className="absolute left-0 mt-2 w-56 bg-white dark:bg-[#1a1a1a] border border-slate-100 dark:border-slate-800 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all flex flex-col py-2 z-50">
                     {item.dropdown.map(dropItem => (
                       <Link
                         key={dropItem.path}
                         to={dropItem.path}
-                        className={`px-6 py-3 text-[0.9rem] font-bold transition-all ${
+                        className={`px-4 py-2 text-sm font-bold transition-all ${
                           location.pathname === dropItem.path
-                            ? 'text-[#0052b4] dark:text-[#e6f0fa] bg-[#e6f0fa] dark:bg-[#003b7a]'
-                            : 'text-[#333333] dark:text-white hover:text-[#0052b4] hover:bg-[#e6f0fa] dark:hover:bg-[#003b7a]'
+                            ? 'text-[#1A1A1A] dark:text-white bg-slate-50 dark:bg-slate-800/50'
+                            : 'text-slate-500 hover:text-[#1A1A1A] dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/50'
                         }`}
                       >
                         {dropItem.label}
@@ -177,10 +178,10 @@ const App = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`py-2 text-[0.9rem] font-bold transition-all uppercase tracking-wide ${
+                  className={`py-2 text-sm font-bold transition-all ${
                     location.pathname === item.path
-                      ? 'text-white border-b-2 border-white'
-                      : 'text-white/80 hover:text-white'
+                      ? 'text-[#1A1A1A] dark:text-white'
+                      : 'text-slate-500 hover:text-[#1A1A1A] dark:hover:text-white'
                   }`}
                 >
                   {item.label}
@@ -189,7 +190,7 @@ const App = () => {
             ))}
             <button
               onClick={() => setIsDarkMode(!isDarkMode)}
-              className="bg-white text-[#0052b4] px-6 py-2.5 rounded-full text-[0.9rem] font-black hover:bg-[#e6f0fa] transition-all flex items-center gap-2 shadow-md uppercase tracking-wide"
+              className="border-2 border-[#1A1A1A] dark:border-white px-6 py-2 rounded-full text-sm font-bold hover:bg-[#1A1A1A] hover:text-white dark:hover:bg-white dark:hover:text-[#1A1A1A] transition-all flex items-center gap-2"
               aria-label="Toggle Dark Mode"
             >
               {isDarkMode ? "Light Mode" : "Dark Mode"}
@@ -197,30 +198,30 @@ const App = () => {
           </nav>
         </div>
 
-        {/* Menu Mobile */}
+        {/* Menu Mobile (Tampil jika tombol Hamburger diklik) */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden bg-[#004291] px-6 py-6 flex flex-col space-y-4 max-h-[80vh] overflow-y-auto">
+          <nav className="md:hidden border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-[#1a1a1a] px-6 py-4 flex flex-col space-y-4 max-h-[80vh] overflow-y-auto">
             {navItems.map((item) => (
               item.dropdown ? (
                 <div key={item.label} className="flex flex-col">
                   <button 
                     onClick={() => toggleMobileDropdown(item.label)}
-                    className="flex justify-between items-center py-3 text-left font-bold text-white text-lg"
+                    className="flex justify-between items-center py-2 text-left font-bold text-slate-800 dark:text-slate-200"
                   >
                     {item.label}
-                    <svg className={`w-5 h-5 transition-transform ${activeMobileDropdown === item.label ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    <svg className={`w-4 h-4 transition-transform ${activeMobileDropdown === item.label ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                   </button>
                   
                   {activeMobileDropdown === item.label && (
-                    <div className="flex flex-col pl-4 mt-2 space-y-2 border-l-2 border-white/20">
+                    <div className="flex flex-col pl-4 mt-2 space-y-3 border-l-2 border-slate-100 dark:border-slate-800">
                       {item.dropdown.map(dropItem => (
                         <Link
                           key={dropItem.path}
                           to={dropItem.path}
-                          className={`text-[0.95rem] font-bold py-2 ${
+                          className={`text-sm font-bold ${
                             location.pathname === dropItem.path
-                              ? 'text-[#e6f0fa]'
-                              : 'text-white/70'
+                              ? 'text-[#8234E6] dark:text-[#E1FA43]'
+                              : 'text-slate-500'
                           }`}
                         >
                           {dropItem.label}
@@ -233,10 +234,10 @@ const App = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`py-3 font-bold text-lg ${
+                  className={`py-2 font-bold ${
                     location.pathname === item.path
-                      ? 'text-white border-l-4 border-white pl-3 -ml-4'
-                      : 'text-white/80'
+                      ? 'text-[#8234E6] dark:text-[#E1FA43]'
+                      : 'text-slate-800 dark:text-slate-200'
                   }`}
                 >
                   {item.label}
@@ -247,7 +248,7 @@ const App = () => {
         )}
       </header>
 
-      <div className="flex-grow pt-24 md:pt-28">
+      <div className="flex-grow pt-16 md:pt-0">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/ppl-semester-1/uts" element={<Uts />} />
@@ -261,28 +262,27 @@ const App = () => {
         </Routes>
       </div>
 
-      {/* FOOTER - Interior Design Ref Style */}
-      <footer className="bg-[#0052b4] text-white py-16 md:py-20 mt-20 rounded-t-[40px] md:rounded-t-[60px] mx-4 md:mx-8 mb-4 md:mb-8">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-10">
-          <div className="text-center md:text-left relative">
-            <div className="text-white/20 text-5xl font-black tracking-widest absolute -top-8 left-0 hidden md:block">:: ::</div>
-            <h3 className="text-3xl font-black tracking-tighter relative z-10">Ridwan Maulana, S.Kom.</h3>
-            <p className="text-[#e6f0fa] font-semibold mt-2 text-lg">Mahasiswa PPG Prajabatan Informatika - Universitas Pendidikan Indonesia</p>
+      {/* FOOTER */}
+      <footer className="bg-white dark:bg-[#1a1a1a] border-t border-slate-100 dark:border-slate-800 py-12 md:py-16 mt-auto">
+        <div className="max-w-[1400px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="text-center md:text-left">
+            <h3 className="text-xl font-black tracking-tight text-[#1A1A1A] dark:text-white">Ridwan Maulana, S.Kom.</h3>
+            <p className="text-slate-500 dark:text-slate-400 font-medium mt-1">Mahasiswa PPG Prajabatan Informatika - Universitas Pendidikan Indonesia</p>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="mailto:ridwanguru@student.upi.edu" className="flex items-center gap-3 px-8 py-4 rounded-full bg-white text-[#0052b4] font-bold text-sm hover:bg-[#e6f0fa] transition-colors shadow-lg">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            <a href="mailto:ridwanguru@student.upi.edu" className="flex items-center gap-2 px-6 py-3 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold text-sm hover:bg-[#E1FA43] hover:text-[#1A1A1A] transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
               ridwanguru@student.upi.edu
             </a>
-            <a href="tel:085860565852" className="flex items-center gap-3 px-8 py-4 rounded-full bg-[#003b7a] text-white font-bold text-sm hover:bg-[#002855] transition-colors shadow-lg">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            <a href="tel:085860565852" className="flex items-center gap-2 px-6 py-3 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold text-sm hover:bg-[#E1FA43] hover:text-[#1A1A1A] transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
               085860565852
             </a>
           </div>
         </div>
-        <div className="max-w-[1400px] mx-auto px-6 mt-16 pt-8 border-t-2 border-white/20 text-center">
-            <p className="text-[#e6f0fa] font-bold text-[0.9rem] uppercase tracking-widest">© 2026. All rights reserved.</p>
+        <div className="max-w-[1400px] mx-auto px-6 mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 text-center">
+            <p className="text-slate-400 font-bold text-sm">© 2026. All rights reserved.</p>
         </div>
       </footer>
     </div>
