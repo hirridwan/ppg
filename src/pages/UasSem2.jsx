@@ -105,8 +105,8 @@ const UasSem2 = () => {
             <div className="bg-[#fafafa] dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl mb-8">
               <h4 className="font-black text-xl text-[#1A1A1A] dark:text-white mb-4">Siklus 2</h4>
               <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
-                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Inovasi *Game-Based Learning* (Cerdas Cermat C++) sangat diapresiasi, namun aturan permainan perlu didesain agar memaksa pemerataan partisipasi.</p>
-                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Suasana kelas sangat hidup dan kompetitif. Kendali waktu (*time-keeping*) perlu diperketat agar tidak terjadi *overrun* saat sesi diskusi.</p>
+                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Inovasi Game-Based Learning (Cerdas Cermat C++) sangat diapresiasi, namun aturan permainan perlu didesain agar memaksa pemerataan partisipasi.</p>
+                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Suasana kelas sangat hidup dan kompetitif. Kendali waktu (time-keeping) perlu diperketat agar tidak terjadi overrun saat sesi diskusi.</p>
               </div>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="flex flex-col gap-4">
@@ -137,7 +137,7 @@ const UasSem2 = () => {
               <h4 className="font-black text-xl text-[#1A1A1A] dark:text-white mb-4">Siklus 3</h4>
               <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
                 <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Pemberian kebebasan studi kasus pemancing sangat baik untuk menumbuhkan kreativitas penalaran abstraksi siswa.</p>
-                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Manajemen kelas sudah stabil dan pemberian *reward* sangat memotivasi. Namun, pengecekan detail hasil karya siswa di monitor perlu ditingkatkan.</p>
+                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Manajemen kelas sudah stabil dan pemberian reward sangat memotivasi. Namun, pengecekan detail hasil karya siswa di monitor perlu ditingkatkan.</p>
               </div>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="flex flex-col gap-4">
@@ -168,7 +168,7 @@ const UasSem2 = () => {
               <h4 className="font-black text-xl text-[#1A1A1A] dark:text-white mb-4">Siklus 4</h4>
               <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
                 <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Pemberian kebebasan studi kasus pemancing sangat baik untuk menumbuhkan kreativitas penalaran abstraksi siswa.</p>
-                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Manajemen kelas sudah stabil dan pemberian *reward* sangat memotivasi. Namun, pengecekan detail hasil karya siswa di monitor perlu ditingkatkan.</p>
+                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Manajemen kelas sudah stabil dan pemberian reward sangat memotivasi. Namun, pengecekan detail hasil karya siswa di monitor perlu ditingkatkan.</p>
               </div>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="flex flex-col gap-4">
