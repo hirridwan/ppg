@@ -6,9 +6,9 @@ const RefleksiSemester2 = () => {
   const mataKuliah = [
     {
       nama: "Pembelajaran Sosial Emosional",
-      kaitan: "Mata kuliah ini sangat resonan dengan kepribadian saya yang selalu berusaha menjaga kestabilan emosi dan tidak menggunakan kata-kata kasar. PSE memberikan landasan teoritis mengapa menjadi pendengar yang saksama dan empatik itu esensial untuk menciptakan ruang aman bagi siswa yang frustrasi menghadapi *error* pada kode mereka.",
-      tantangan: "Tantangan utamanya adalah mempraktikkan kesadaran penuh (*mindfulness*) secara konsisten saat situasi kelas sedang sangat *chaos*, terutama ketika antusiasme siswa meledak-ledak saat sesi *Game-Based Learning*.",
-      konsep: "Kerangka CASEL (*Collaborative for Academic, Social, and Emotional Learning*), khususnya kompetensi manajemen diri (*self-management*) dan kesadaran sosial (*social awareness*).",
+      kaitan: "Mata kuliah ini sangat resonan dengan kepribadian saya yang selalu berusaha menjaga kestabilan emosi dan tidak menggunakan kata-kata kasar. PSE memberikan landasan teoritis mengapa menjadi pendengar yang saksama dan empatik itu esensial untuk menciptakan ruang aman bagi siswa yang frustrasi menghadapi error pada kode mereka.",
+      tantangan: "Tantangan utamanya adalah mempraktikkan kesadaran penuh (mindfulness) secara konsisten saat situasi kelas sedang sangat chaos, terutama ketika antusiasme siswa meledak-ledak saat sesi Game-Based Learning.",
+      konsep: "Kerangka CASEL (Collaborative for Academic, Social, and Emotional Learning), khususnya kompetensi manajemen diri (self-management) dan kesadaran sosial (social awareness).",
       perubahan: "Saya mulai rutin menerapkan teknik STOP (berhenti sejenak dan ambil napas) di awal pelajaran atau saat transisi kegiatan, guna membantu siswa (dan saya sendiri) memfokuskan kembali pikiran sebelum memecahkan logika algoritma yang rumit.",
       artefak: "Jurnal Refleksi & RPP Terintegrasi PSE.",
       alasanArtefak: "RPP ini menunjukkan aplikasi langsung bagaimana kompetensi sosial emosional disisipkan secara mulus ke dalam sintaks pembelajaran Informatika.",
@@ -16,20 +16,20 @@ const RefleksiSemester2 = () => {
     },
     {
       nama: "Pembelajaran Mendalam & Asesmen Lanjut",
-      kaitan: "Melanjutkan prinsip keadilan dan objektivitas saya, mata kuliah ini memperdalam cara saya memotret kemampuan siswa secara utuh. Saya belajar bahwa pemahaman mendalam dalam Informatika bukan sekadar bisa mengetik kode, tapi mengerti *mengapa* kode itu bekerja.",
-      tantangan: "Merancang instrumen penilaian autentik yang mampu mengakomodasi berbagai gaya belajar dan tingkat kesiapan siswa yang berbeda-beda (*gap* literasi digital), tanpa menurunkan standar *Higher Order Thinking Skills* (HOTS).",
-      konsep: "Asesmen Autentik, *Backward Design* tingkat lanjut, dan perumusan *Essential Questions* yang memantik rasa ingin tahu dibandingkan sekadar hafalan.",
-      perubahan: "Saya beralih dari ujian tulis pilihan ganda menjadi penilaian berbasis portofolio dan proyek mini. Saya menilai alur berpikir logis (*pseudocode*) siswa, bukan hanya hasil akhir program yang terbebas dari *syntax error*.",
+      kaitan: "Melanjutkan prinsip keadilan dan objektivitas saya, mata kuliah ini memperdalam cara saya memotret kemampuan siswa secara utuh. Saya belajar bahwa pemahaman mendalam dalam Informatika bukan sekadar bisa mengetik kode, tapi mengerti mengapa kode itu bekerja.",
+      tantangan: "Merancang instrumen penilaian autentik yang mampu mengakomodasi berbagai gaya belajar dan tingkat kesiapan siswa yang berbeda-beda (gap literasi digital), tanpa menurunkan standar Higher Order Thinking Skills (HOTS).",
+      konsep: "Asesmen Autentik, Backward Design tingkat lanjut, dan perumusan Essential Questions yang memantik rasa ingin tahu dibandingkan sekadar hafalan.",
+      perubahan: "Saya beralih dari ujian tulis pilihan ganda menjadi penilaian berbasis portofolio dan proyek mini. Saya menilai alur berpikir logis (pseudocode) siswa, bukan hanya hasil akhir program yang terbebas dari syntax error.",
       artefak: "Rubrik Penilaian Proyek & Kisi-kisi Asesmen HOTS.",
-      alasanArtefak: "Bukti nyata dari pergeseran paradigma evaluasi saya dari berorientasi pada hasil (*product-oriented*) menjadi berorientasi pada proses penalaran (*process-oriented*).",
-      bagianArtefak: "Indikator penilaian pada rubrik yang memberi porsi nilai tinggi pada kemampuan *debugging* dan kolaborasi tim."
+      alasanArtefak: "Bukti nyata dari pergeseran paradigma evaluasi saya dari berorientasi pada hasil (product-oriented) menjadi berorientasi pada proses penalaran (process-oriented).",
+      bagianArtefak: "Indikator penilaian pada rubrik yang memberi porsi nilai tinggi pada kemampuan debugging dan kolaborasi tim."
     },
     {
       nama: "Praktik Pengalaman Lapangan (PPL) Mandiri",
-      kaitan: "PPL Mandiri adalah ujian sesungguhnya dari visi saya sebagai fasilitator. Tanpa intervensi langsung dari Guru Pamong, saya harus membuktikan kemampuan mengelola kelas, menjaga wibawa lewat kedisiplinan, dan mengeksekusi *Project Based Learning* secara utuh.",
-      tantangan: "Menjaga ritme dan *crowd control* secara mandiri. Tantangan terbesar adalah ketika terjadi kendala teknis massal (jaringan *down* saat mengakses *draw.io*) dan saya harus segera beralih ke *Plan B* tanpa terlihat panik.",
-      konsep: "Pengambilan keputusan pedagogis secara *real-time*, kemandirian profesional, dan siklus utuh PTK (Penelitian Tindakan Kelas).",
-      perubahan: "Saya menjadi jauh lebih proaktif dalam manajemen risiko. Saya selalu menyiapkan materi cadangan *offline* dan LKPD cetak berisi panduan sintaks, sehingga pembelajaran tidak pernah terhenti oleh masalah teknis.",
+      kaitan: "PPL Mandiri adalah ujian sesungguhnya dari visi saya sebagai fasilitator. Tanpa intervensi langsung dari Guru Pamong, saya harus membuktikan kemampuan mengelola kelas, menjaga wibawa lewat kedisiplinan, dan mengeksekusi Project Based Learning secara utuh.",
+      tantangan: "Menjaga ritme dan crowd control secara mandiri. Tantangan terbesar adalah ketika terjadi kendala teknis massal (jaringan down saat mengakses draw.io) dan saya harus segera beralih ke Plan B tanpa terlihat panik.",
+      konsep: "Pengambilan keputusan pedagogis secara real-time, kemandirian profesional, dan siklus utuh PTK (Penelitian Tindakan Kelas).",
+      perubahan: "Saya menjadi jauh lebih proaktif dalam manajemen risiko. Saya selalu menyiapkan materi cadangan offline dan LKPD cetak berisi panduan sintaks, sehingga pembelajaran tidak pernah terhenti oleh masalah teknis.",
       artefak: "Laporan Pelaksanaan PPL Mandiri & PTK.",
       alasanArtefak: "Laporan ini mendokumentasikan secara komprehensif seluruh siklus perbaikan berkelanjutan yang saya lakukan saat mengelola kelas secara mandiri.",
       bagianArtefak: "Bab refleksi pada laporan PTK yang menyoroti strategi saya dalam meratakan partisipasi siswa melalui rotasi peran wajib."
@@ -38,7 +38,7 @@ const RefleksiSemester2 = () => {
       nama: "Projek Kepemimpinan",
       kaitan: "Projek ini mewadahi visi saya untuk membangun ekosistem yang melek digital. Nilai-nilai ketekunan, gotong royong, dan semangat inovasi UMKM dari daerah asal saya menjadi inspirasi utama dalam menggerakkan proyek kolaboratif yang berdampak bagi masyarakat.",
       tantangan: "Menyelaraskan visi, mengelola ego lintas divisi, dan menyatukan jadwal rekan-rekan mahasiswa yang padat untuk mengeksekusi proyek sosial tepat waktu.",
-      konsep: "*Servant Leadership* (Kepemimpinan yang Melayani), *Design Thinking* untuk pemecahan masalah sosial, dan pemetaan kekuatan (*Asset-Based Community Development*).",
+      konsep: "Servant Leadership (Kepemimpinan yang Melayani), Design Thinking untuk pemecahan masalah sosial, dan pemetaan kekuatan (Asset-Based Community Development).",
       perubahan: "Saya belajar menekan ego perfeksionis saya dan lebih banyak mendelegasikan tugas berdasarkan kekuatan masing-masing anggota tim. Saya menjadi pendengar yang lebih baik bagi rekan sejawat.",
       artefak: "Proposal dan Laporan Akhir Projek Kepemimpinan.",
       alasanArtefak: "Dokumen ini merekam jejak langkah kolaborasi tim dari fase empati hingga eksekusi proyek nyata di lapangan.",
@@ -46,11 +46,11 @@ const RefleksiSemester2 = () => {
     },
     {
       nama: "Pengembangan Profesionalitas Guru & Wawasan Berkelanjutan",
-      kaitan: "Sangat relevan dengan komitmen saya untuk menjadi *lifelong learner*. Informatika berkembang sangat cepat; jika saya berhenti belajar, saya akan gagal menjembatani kesenjangan digital siswa di masa depan.",
-      tantangan: "Membagi waktu antara tugas administratif, persiapan mengajar, dan upaya sadar untuk terus melakukan *up-skilling* teknologi terbaru secara konsisten.",
-      konsep: "*Continuous Professional Development* (CPD), pembentukan Komunitas Praktisi, dan wawasan pendidikan berkelanjutan menuju *Society 5.0*.",
+      kaitan: "Sangat relevan dengan komitmen saya untuk menjadi lifelong learner. Informatika berkembang sangat cepat; jika saya berhenti belajar, saya akan gagal menjembatani kesenjangan digital siswa di masa depan.",
+      tantangan: "Membagi waktu antara tugas administratif, persiapan mengajar, dan upaya sadar untuk terus melakukan up-skilling teknologi terbaru secara konsisten.",
+      konsep: "Continuous Professional Development (CPD), pembentukan Komunitas Praktisi, dan wawasan pendidikan berkelanjutan menuju Society 5.0.",
       perubahan: "Saya mulai membangun kebiasaan membaca literatur teknologi terbaru setiap minggu dan aktif berdiskusi dalam forum Musyawarah Guru Mata Pelajaran (MGMP) untuk merancang inovasi media ajar bersama.",
-      artefak: "Peta Jalan (*Roadmap*) Pengembangan Diri.",
+      artefak: "Peta Jalan (Roadmap) Pengembangan Diri.",
       alasanArtefak: "Merupakan cetak biru (blueprint) komitmen jangka panjang saya untuk terus berinovasi dan tidak cepat berpuas diri.",
       bagianArtefak: "Fase target 1-3 tahun ke depan yang memuat rencana saya untuk menguasai integrasi AI dalam media pembelajaran interaktif."
     }
