@@ -26,7 +26,7 @@ const RefleksiLK1 = () => {
                   <div className="w-3 h-3 rounded-full bg-blue-500"></div> Pedagogik
                 </h4>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
-                  Secara pedagogik, saya adalah guru yang mengedepankan pendekatan santai namun terarah—tahu kapan waktunya serius dan kapan harus bercanda agar siswa merasa senang belajar. Saya selalu memotivasi siswa agar tidak takut mencoba, karena bagi saya, salah saat mencoba jauh lebih baik daripada tidak mencoba sama sekali. Saya rutin memberikan umpan balik positif untuk mengapresiasi keberanian mereka, aktif memanfaatkan media pembelajaran yang relevan, serta rajin melakukan refleksi berkala dengan meminta masukan dari siswa mengenai cara mengajar saya.
+                  Secara pedagogik, saya adalah guru yang mengedepankan pendekatan santai namun terarahtahu kapan waktunya serius dan kapan harus bercanda agar siswa merasa senang belajar. Saya selalu memotivasi siswa agar tidak takut mencoba, karena bagi saya, salah saat mencoba jauh lebih baik daripada tidak mencoba sama sekali. Saya rutin memberikan umpan balik positif untuk mengapresiasi keberanian mereka, aktif memanfaatkan media pembelajaran yang relevan, serta rajin melakukan refleksi berkala dengan meminta masukan dari siswa mengenai cara mengajar saya.
                 </p>
               </div>
               <div className="bg-[#fafafa] dark:bg-slate-800/50 p-8 rounded-3xl border border-slate-100 dark:border-slate-700">
