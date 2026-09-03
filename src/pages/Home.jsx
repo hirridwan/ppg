@@ -21,7 +21,7 @@ const Home = () => {
             </h2>
             
             <p className="text-lg md:text-xl text-purple-100/90 leading-relaxed mb-10 max-w-xl font-medium">
-              E-Portfolio ini disusun sebagai bentuk refleksi akhir PPL Terbimbing di SMA Negeri 1 Bandung, 
+              E-Portfolio ini disusun sebagai bentuk refleksi akhir PPL Terbimbing di SMA Negeri 1 Bandung dan Seminar PPG, 
               menggambarkan fondasi karakter, analisis produk pembelajaran, dan komitmen profesional 
               menjadi pendidik Informatika.
             </p>
