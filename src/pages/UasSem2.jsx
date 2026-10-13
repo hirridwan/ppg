@@ -52,15 +52,15 @@ const UasSem2 = () => {
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
-                    <iframe src="https://drive.google.com/file/d/1L8WSGfJtvLRq71xNY1GZIiavOon4ajTw/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1n5FpQv4WH4OmTL3wsKjBZ3krvVYqseu9/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
                   </div>
-                  <a href="https://drive.google.com/file/d/1L8WSGfJtvLRq71xNY1GZIiavOon4ajTw/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Modul Ajar Siklus 3 →</a>
+                  <a href="https://drive.google.com/file/d/1n5FpQv4WH4OmTL3wsKjBZ3krvVYqseu9/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Modul Ajar Siklus 3 →</a>
                 </div>
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
-                    <iframe src="https://drive.google.com/file/d/1NXOvVptQfiScXsr57btkA8S5FNqDQgO-/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1ghUIBgjhI_knhAZuAJJjF5U9Va2GFIXF/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
                   </div>
-                  <a href="https://drive.google.com/file/d/1NXOvVptQfiScXsr57btkA8S5FNqDQgO-/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Presentasi Pembelajaran Siklus 3 →</a>
+                  <a href="https://drive.google.com/file/d/1ghUIBgjhI_knhAZuAJJjF5U9Va2GFIXF/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Presentasi Pembelajaran Siklus 3 →</a>
                 </div>
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-100 dark:bg-slate-800">
@@ -80,15 +80,15 @@ const UasSem2 = () => {
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
-                    <iframe src="https://drive.google.com/file/d/1L8WSGfJtvLRq71xNY1GZIiavOon4ajTw/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1i7KG3X_cGhHyuGq7u4PmG4Yg90ZRb6wW/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
                   </div>
-                  <a href="https://drive.google.com/file/d/1L8WSGfJtvLRq71xNY1GZIiavOon4ajTw/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Modul Ajar Siklus 4 →</a>
+                  <a href="https://drive.google.com/file/d/1i7KG3X_cGhHyuGq7u4PmG4Yg90ZRb6wW/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Modul Ajar Siklus 4 →</a>
                 </div>
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
-                    <iframe src="https://drive.google.com/file/d/1NXOvVptQfiScXsr57btkA8S5FNqDQgO-/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1HAoVr5BzRVMiOZDQBfA7Yn1gsEYdXWjQ/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
                   </div>
-                  <a href="https://drive.google.com/file/d/1NXOvVptQfiScXsr57btkA8S5FNqDQgO-/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Presentasi Pembelajaran Siklus 4 →</a>
+                  <a href="https://drive.google.com/file/d/1HAoVr5BzRVMiOZDQBfA7Yn1gsEYdXWjQ/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Presentasi Pembelajaran Siklus 4 →</a>
                 </div>
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-100 dark:bg-slate-800">
