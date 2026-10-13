@@ -30,9 +30,9 @@ const UasSem2 = () => {
                 </div>
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
-                    <iframe src="https://docs.google.com/presentation/d/1-HmGuRwTcmtlHzzsvjkJQ_kj-slGxt8e/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
+                    <iframe src="https://drive.google.com/file/d/10SkN4EZsobrLXR3DDP0dyU4u8fTuaNlw/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
                   </div>
-                  <a href="https://docs.google.com/presentation/d/1-HmGuRwTcmtlHzzsvjkJQ_kj-slGxt8e/edit?usp=sharing&ouid=109472731533837518407&rtpof=true&sd=true" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Presentasi Pembelajaran Siklus 2 →</a>
+                  <a href="https://drive.google.com/file/d/10SkN4EZsobrLXR3DDP0dyU4u8fTuaNlw/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Presentasi Pembelajaran Siklus 2 →</a>
                 </div>
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-100 dark:bg-slate-800">
