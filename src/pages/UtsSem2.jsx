@@ -21,6 +21,9 @@ const UtsSem2 = () => {
             {/* SIKLUS 1 */}
             <div className="mb-10">
               <h4 className="font-extrabold text-[#1A1A1A] dark:text-white mb-4 text-xl">Siklus 1</h4>
+              <p className="text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
+                Pembelajaran Sistem Komputer berfokus pada model Input–Process–Output (IPO) dalam arsitektur Von Neumann. Murid belajar melalui gamifikasi berbasis misi menggunakan kartu cetak dan LKPD kertas, bekerja dalam kelompok dengan pembagian peran, serta mengerjakan pretest dan posttest secara individu.
+              </p>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
@@ -32,7 +35,7 @@ const UtsSem2 = () => {
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
                     <iframe src="https://drive.google.com/file/d/1v2BTvHlrMh3KUpysUVP_Nhajm1bQ6SCl/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
                   </div>
-                  <a href="https://drive.google.com/file/d/1v2BTvHlrMh3KUpysUVP_Nhajm1bQ6SCl/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Media Pembelajaran Siklus 1 →</a>
+                  <a href="https://drive.google.com/file/d/1v2BTvHlrMh3KUpysUVP_Nhajm1bQ6SCl/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Presentasi/Media Pembelajaran Siklus 1 →</a>
                 </div>
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-100 dark:bg-slate-800">
@@ -52,8 +55,8 @@ const UtsSem2 = () => {
             <div className="bg-[#fafafa] dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl mb-8">
               <h4 className="font-black text-xl text-[#1A1A1A] dark:text-white mb-4">Siklus 1</h4>
               <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
-                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Penggunaan media sangat efektif dalam meningkatkan partisipasi siswa. Terdapat kombinasi yang berhasil antara gawai pribadi siswa untuk keperluan evaluasi instan (pre-test dan post-test) dengan media fisik berupa LKPD yang dirancang menyerupai arena permainan. Kartu kasus dan misi berpoin (XP) di dalam LKPD menjadi katalis utama yang menuntut semua anggota kelompok untuk berpartisipasi aktif menjalankan perannya masing-masing demi memenangkan tantangan.</p>
-                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Praktik pembelajaran mandiri sudah berjalan dengan cukup baik. Namun, terdapat catatan penting terkait ritme mengajar. Guru Pamong memberikan masukan agar penyampaian instruksi dan materi tidak dilakukan secara terburu-buru. Pembelajaran sebaiknya dibawakan dengan lebih santai dan tidak terlalu berorientasi pada target mengejar ketuntasan materi, sehingga peserta didik dapat lebih leluasa dan nyaman dalam mencerna konsep yang sedang dipelajari.</p>
+                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Gamifikasi berbasis misi menggunakan kartu cetak dan LKPD kertas membuat kegiatan belajar lebih terstruktur. Murid mengerjakan pretest dan posttest secara individu, sedangkan misi dan LKPD diselesaikan secara berkelompok dengan peran yang jelas. Kartu kasus dan poin pengalaman (XP) membantu menjaga keterlibatan tim selama mempelajari model IPO dan arsitektur Von Neumann.</p>
+                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Praktik pembelajaran berjalan cukup baik dan murid terlihat antusias mengikuti misi. Guru Pamong memberi masukan agar penyampaian materi dan instruksi tidak terlalu terburu-buru mengejar ketuntasan. Saya perlu memberi waktu yang cukup kepada murid untuk memahami konsep, berdiskusi, dan menyelesaikan tantangan dengan baik.</p>
               </div>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="flex flex-col gap-4">

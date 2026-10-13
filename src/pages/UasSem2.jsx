@@ -18,6 +18,9 @@ const UasSem2 = () => {
             {/* SIKLUS 2 */}
             <div className="mb-10">
               <h4 className="font-extrabold text-[#1A1A1A] dark:text-white mb-4 text-xl">Siklus 2</h4>
+              <p className="text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
+                Pembelajaran Sistem Komputer melanjutkan materi model Input–Process–Output (IPO) pada arsitektur Von Neumann. Dibandingkan Siklus 1, gamifikasi beralih dari kartu dan LKPD kertas ke misi digital menggunakan Quizizz. Murid mengerjakan pretest dan posttest secara individu, menyelesaikan misi secara berkelompok, dan menghadapi soal dengan tuntutan kognitif C4–C6 (menganalisis, mengevaluasi, dan mencipta).
+              </p>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
@@ -29,7 +32,7 @@ const UasSem2 = () => {
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
                     <iframe src="https://drive.google.com/file/d/1zAHtx0wbDqshY_8OBLlKIjaCWMI-Nq13/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
                   </div>
-                  <a href="https://drive.google.com/file/d/1zAHtx0wbDqshY_8OBLlKIjaCWMI-Nq13/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Media Pembelajaran Siklus 2 →</a>
+                  <a href="https://drive.google.com/file/d/1zAHtx0wbDqshY_8OBLlKIjaCWMI-Nq13/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Presentasi Pembelajaran Siklus 2 →</a>
                 </div>
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-100 dark:bg-slate-800">
@@ -43,6 +46,9 @@ const UasSem2 = () => {
             {/* SIKLUS 3 */}
             <div className="mb-10">
               <h4 className="font-extrabold text-[#1A1A1A] dark:text-white mb-4 text-xl">Siklus 3</h4>
+              <p className="text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
+                Pembelajaran beralih ke materi Internet of Things (IoT). Setelah mengenal konsep dasar dan contoh penerapannya, murid membuat proyek LED sederhana melalui Cirkit Designer dan melanjutkannya dengan perangkat Arduino Uno fisik. Proses praktik ditekankan melalui empat tahap: wiring (pengkabelan), coding (pengkodean), debugging (menemukan dan memperbaiki kesalahan), serta uploading (mengunggah kode ke board mikrokontroler).
+              </p>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
@@ -54,7 +60,7 @@ const UasSem2 = () => {
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
                     <iframe src="https://drive.google.com/file/d/1NXOvVptQfiScXsr57btkA8S5FNqDQgO-/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
                   </div>
-                  <a href="https://drive.google.com/file/d/1NXOvVptQfiScXsr57btkA8S5FNqDQgO-/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Media Pembelajaran Siklus 3 →</a>
+                  <a href="https://drive.google.com/file/d/1NXOvVptQfiScXsr57btkA8S5FNqDQgO-/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Presentasi Pembelajaran Siklus 3 →</a>
                 </div>
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-100 dark:bg-slate-800">
@@ -68,6 +74,9 @@ const UasSem2 = () => {
             {/* SIKLUS 4 */}
             <div className="mb-12">
               <h4 className="font-extrabold text-[#1A1A1A] dark:text-white mb-4 text-xl">Siklus 4</h4>
+              <p className="text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
+                Pembelajaran IoT dilanjutkan melalui proyek simulasi lampu lalu lintas menggunakan Arduino Uno virtual di Cirkit Designer. Murid menyusun rangkaian tiga LED (merah, kuning, dan hijau), menulis kode untuk mengatur urutan lampu, lalu melakukan debugging dan menguji perilaku simulasi. Siklus ini menggunakan simulator saja, tanpa merakit atau mengunggah kode ke perangkat fisik; konsep uploading tetap dibahas sebagai tahap saat program diterapkan pada board nyata.
+              </p>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
@@ -79,7 +88,7 @@ const UasSem2 = () => {
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
                     <iframe src="https://drive.google.com/file/d/1NXOvVptQfiScXsr57btkA8S5FNqDQgO-/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
                   </div>
-                  <a href="https://drive.google.com/file/d/1NXOvVptQfiScXsr57btkA8S5FNqDQgO-/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Media Pembelajaran Siklus 4 →</a>
+                  <a href="https://drive.google.com/file/d/1NXOvVptQfiScXsr57btkA8S5FNqDQgO-/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Presentasi Pembelajaran Siklus 4 →</a>
                 </div>
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-100 dark:bg-slate-800">
@@ -97,8 +106,8 @@ const UasSem2 = () => {
             <div className="bg-[#fafafa] dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl mb-8">
               <h4 className="font-black text-xl text-[#1A1A1A] dark:text-white mb-4">Siklus 2</h4>
               <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
-                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Inovasi Game-Based Learning (Cerdas Cermat C++) sangat diapresiasi, namun aturan permainan perlu didesain agar memaksa pemerataan partisipasi.</p>
-                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Suasana kelas sangat hidup dan kompetitif. Kendali waktu (time-keeping) perlu diperketat agar tidak terjadi overrun saat sesi diskusi.</p>
+                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Materi Sistem Komputer tetap menggunakan model IPO dan arsitektur Von Neumann, tetapi misi gamifikasi dialihkan ke Quizizz. Tingkat kognitif soal dikembangkan dari C1–C3 pada Siklus 1 menjadi C4–C6 agar murid lebih banyak menganalisis, mengevaluasi, dan menyusun solusi.</p>
+                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Murid terlihat antusias dengan tantangan digital dan leaderboard. Masukan Guru Pamong yang tetap perlu diperhatikan adalah pengelolaan ritme pembelajaran: materi dan instruksi sebaiknya tidak disampaikan terlalu terburu-buru, sehingga murid mempunyai waktu yang cukup untuk memahami alasan di balik jawabannya.</p>
               </div>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="flex flex-col gap-4">
@@ -128,8 +137,8 @@ const UasSem2 = () => {
             <div className="bg-[#fafafa] dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl mb-8">
               <h4 className="font-black text-xl text-[#1A1A1A] dark:text-white mb-4">Siklus 3</h4>
               <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
-                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Pemberian kebebasan studi kasus pemancing sangat baik untuk menumbuhkan kreativitas penalaran abstraksi siswa.</p>
-                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Manajemen kelas sudah stabil dan pemberian reward sangat memotivasi. Namun, pengecekan detail hasil karya siswa di monitor perlu ditingkatkan.</p>
+                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Pembelajaran IoT dimulai dengan pengenalan konsep dan contoh penerapannya, kemudian dilanjutkan dengan proyek LED sederhana. Penggunaan Cirkit Designer membantu murid memahami hubungan antara rangkaian dan program sebelum mencoba proyek menggunakan Arduino Uno fisik.</p>
+                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Proyek membuat konsep IoT lebih konkret dan mendorong rasa ingin tahu murid. Sebagian murid masih mengalami kesulitan saat coding, sehingga perlu pendampingan bertahap dan pengaturan waktu yang memberi ruang untuk mencoba serta memperbaiki kesalahan.</p>
               </div>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="flex flex-col gap-4">
@@ -159,8 +168,8 @@ const UasSem2 = () => {
             <div className="bg-[#fafafa] dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl mb-12">
               <h4 className="font-black text-xl text-[#1A1A1A] dark:text-white mb-4">Siklus 4</h4>
               <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
-                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Pemberian kebebasan studi kasus pemancing sangat baik untuk menumbuhkan kreativitas penalaran abstraksi siswa.</p>
-                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Manajemen kelas sudah stabil dan pemberian reward sangat memotivasi. Namun, pengecekan detail hasil karya siswa di monitor perlu ditingkatkan.</p>
+                <p><strong className="text-slate-900 dark:text-white">Rancangan Pembelajaran:</strong> Pembelajaran IoT dilanjutkan melalui proyek simulasi lampu lalu lintas di Cirkit Designer. Murid merancang wiring tiga LED, menulis kode, melakukan debugging, dan menguji urutan lampu pada Arduino virtual. Kegiatan ini berfokus pada simulasi, tanpa praktik uploading ke board fisik pada siklus tersebut.</p>
+                <p className="mt-2"><strong className="text-slate-900 dark:text-white">Praktik Mengajar:</strong> Proyek yang dekat dengan kehidupan sehari-hari membantu murid memahami penerapan logika program pada sistem lampu lalu lintas. Beberapa kelompok masih mengalami kesulitan saat debugging, sehingga dukungan guru dan waktu untuk menelusuri error perlu diberikan tanpa terburu-buru mengejar ketuntasan materi.</p>
               </div>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="flex flex-col gap-4">
