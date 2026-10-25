@@ -142,6 +142,49 @@ export default function RefleksiLK4() {
       </section>
 
       <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-[#1a1a1a] md:p-9">
+        <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-[#8234E6] dark:text-[#BCA0FF]">Landasan pengembangan</p>
+        <h2 className="mt-2 text-2xl font-black md:text-3xl">Prinsip Karya Inovasi Pendidikan</h2>
+        <p className="mt-4 max-w-4xl leading-7 text-slate-700 dark:text-slate-300">Pengembangan Computer Mission mempertimbangkan lima prinsip berikut. Uraiannya dikaitkan dengan rancangan dan pelaksanaan pembelajaran di kelas X-8, sehingga kebaruan dan manfaatnya dijelaskan sesuai konteks, sedangkan hasil evaluasi dibaca dengan memperhatikan keterbatasan data.</p>
+        <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {[
+            {
+              number: '01',
+              title: 'Kebaruan (Novelty)',
+              text: 'Kebaruan karya ini terletak pada adaptasi dan pengembangan gamifikasi berbasis misi untuk materi Sistem Komputer di kelas X-8. Siklus 1 memanfaatkan kartu perangkat, kartu kasus, LKPD cetak, pembagian peran, skor, dan kartu bantuan; pada Siklus 2, rancangan dikembangkan dengan Quizizz di laboratorium komputer. Kebaruan yang dimaksud bersifat kontekstual, bukan klaim bahwa setiap unsurnya belum pernah digunakan di tempat lain.',
+            },
+            {
+              number: '02',
+              title: 'Kreativitas',
+              text: 'Desain menggabungkan misi bertahap, kasus kontekstual, kerja kelompok, pembagian peran, skor, dan bantuan belajar. Pengembangan misi dari Sort the Data dan Trace the Data menuju RAM or Storage serta ALU or CU memberi kesempatan murid mengidentifikasi komponen sekaligus menjelaskan alasan dan alur data.',
+            },
+            {
+              number: '03',
+              title: 'Kebermanfaatan (Usefulness)',
+              text: 'Karya ini dirancang agar konsep IPO dan komponen Sistem Komputer lebih mudah dipelajari melalui aktivitas yang terstruktur dan kolaboratif. Asesmen individual tetap digunakan bersama hasil kerja kelompok, sehingga guru memperoleh dua jenis informasi: pemahaman masing-masing murid dan proses penyelesaian misi oleh kelompok.',
+            },
+            {
+              number: '04',
+              title: 'Relevansi dan Kontekstualitas',
+              text: 'Rancangan didasarkan pada kebutuhan belajar yang teridentifikasi di kelas X-8 serta kondisi nyata sekolah: laboratorium komputer hanya satu, jadwal dapat berbenturan, penggunaan HP memerlukan izin, dan dinamika kelas membutuhkan instruksi serta pembagian peran yang jelas. Oleh karena itu, Siklus 1 menggunakan kartu misi dan LKPD cetak, sedangkan Siklus 2 memanfaatkan komputer laboratorium dan Quizizz.',
+            },
+            {
+              number: '05',
+              title: 'Efektivitas Berbasis Bukti (Evidence-Based)',
+              text: 'Karya dicoba dalam dua siklus dan dievaluasi melalui pretest–posttest individual serta hasil misi kelompok. Pada Siklus 1, rata-rata 34 murid yang memiliki data berpasangan berubah dari 76,18 menjadi 95,59. Pada Siklus 2, ringkasan Class Accuracy Quizizz menunjukkan 76% pada pretest dan 96% pada posttest. Angka ini merupakan indikasi awal yang perlu dibaca secara hati-hati, bukan bukti tunggal bahwa inovasi menjadi penyebab peningkatan; ringkasan Siklus 2 memiliki keterbatasan konsistensi data dan metrik kedua siklus tidak sepenuhnya sama.',
+            },
+          ].map((principle) => (
+            <article key={principle.number} className="rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-slate-800 dark:bg-slate-900">
+              <div className="flex items-start gap-3">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-violet-100 text-sm font-black text-violet-900 dark:bg-violet-900/50 dark:text-violet-100">{principle.number}</span>
+                <h3 className="pt-1 font-black leading-6">{principle.title}</h3>
+              </div>
+              <p className="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">{principle.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-[#1a1a1a] md:p-9">
         <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-[#8234E6] dark:text-[#BCA0FF]">Kajian sederhana</p>
         <h2 className="mt-2 text-2xl font-black md:text-3xl">Dasar pengembangan inovasi</h2>
         <p className="mt-4 leading-7 text-slate-700 dark:text-slate-300">Kajian yang dirujuk dalam LK4 mengindikasikan bahwa gamifikasi dapat mendukung pengalaman belajar, tetapi pengaruhnya dapat berbeda menurut konteks dan unsur permainan. Karena itu, desain ini menempatkan tujuan pembelajaran, kualitas alasan, umpan balik, kerja kelompok, dan asesmen individual sebagai bagian yang saling terkait.</p>
