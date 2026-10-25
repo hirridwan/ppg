@@ -52,7 +52,6 @@ export default function RefleksiLK4() {
           <span className="rounded-full bg-white/15 px-4 py-2 text-sm font-bold">6 kelompok</span>
           <span className="rounded-full bg-[#E1FA43] px-4 py-2 text-sm font-bold text-[#1A1A1A]">2 siklus · 90 menit/sesi</span>
         </div>
-        <div className="relative z-10 mt-6"><ArtifactCTA artifactKey="lk4-dokumen" label="Buka dokumen LK 4" /></div>
       </section>
 
       <section className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
@@ -84,7 +83,6 @@ export default function RefleksiLK4() {
           <h3 className="font-black text-[#5B21B6] dark:text-violet-200">Implikasi terhadap desain inovasi</h3>
           <p className="mt-2 leading-7 text-slate-700 dark:text-slate-300">Siklus 1 menggunakan kartu misi dan LKPD cetak di ruang kelas. Pada Siklus 2, pembelajaran dikembangkan dengan komputer laboratorium dan Quizizz. Misi Quizizz/LKPD tetap dikerjakan secara berkelompok dengan meneruskan pembagian peran dari Siklus 1, sedangkan pretest dan posttest dikerjakan secara individual.</p>
         </div>
-        <div className="mt-5"><ArtifactCTA artifactKey="lk4-asesmen-awal-x8" label="Akses bukti asesmen awal" /></div>
       </section>
 
       <section className="grid gap-6 lg:grid-cols-2">
@@ -95,7 +93,6 @@ export default function RefleksiLK4() {
           <div className="mt-5 space-y-3">
             {cycleOneMissions.map((mission, i) => <div key={mission.title} className="rounded-2xl bg-slate-50 p-4 dark:bg-slate-900"><h3 className="font-black">{i + 1}. {mission.title}</h3><p className="mt-1 text-sm leading-6 text-slate-700 dark:text-slate-300">{mission.text}</p></div>)}
           </div>
-          <div className="mt-5 flex flex-wrap gap-2"><ArtifactCTA artifactKey="lk4-modul-siklus-1" label="Modul Ajar" compact /><ArtifactCTA artifactKey="lk4-presentasi-siklus-1" label="Presentasi" compact /><ArtifactCTA artifactKey="lk4-lkpd-siklus-1" label="LKPD & kartu misi" compact /></div>
         </article>
         <article className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-[#1a1a1a] md:p-8">
           <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-[#8234E6] dark:text-[#BCA0FF]">Siklus 2</p>
@@ -104,7 +101,6 @@ export default function RefleksiLK4() {
           <div className="mt-5 space-y-3">
             {cycleTwoMissions.map((mission, i) => <div key={mission.title} className="rounded-2xl bg-slate-50 p-4 dark:bg-slate-900"><h3 className="font-black">{i + 1}. {mission.title}</h3><p className="mt-1 text-sm leading-6 text-slate-700 dark:text-slate-300">{mission.text}</p></div>)}
           </div>
-          <div className="mt-5 flex flex-wrap gap-2"><ArtifactCTA artifactKey="lk4-modul-siklus-2" label="Modul Ajar" compact /><ArtifactCTA artifactKey="lk4-presentasi-siklus-2" label="Presentasi" compact /><ArtifactCTA artifactKey="lk4-lkpd-siklus-2" label="LKPD & misi" compact /></div>
         </article>
       </section>
 
@@ -120,7 +116,6 @@ export default function RefleksiLK4() {
               <Stat value="+19,41" label="Selisih rata-rata" note="Perbandingan rata-rata berpasangan, bukan peningkatan setiap murid." />
               <Stat value="84,17" label="Rata-rata LKPD kelompok" note="Enam skor kelompok: 81, 88, 82, 87, 78, dan 89." />
             </div>
-            <div className="mt-4 flex flex-wrap gap-2"><ArtifactCTA artifactKey="lk4-pretest-posttest-siklus-1" label="Pretest–posttest" compact /><ArtifactCTA artifactKey="lk4-rekap-siklus-1" label="Rekap Siklus 1" compact /></div>
           </div>
           <div className="rounded-2xl bg-slate-50 p-5 dark:bg-slate-900">
             <h3 className="text-lg font-black">Siklus 2 · Quizizz dan asesmen individual</h3>
@@ -130,7 +125,6 @@ export default function RefleksiLK4() {
               <Stat value="96,1%" label="Akurasi per butir posttest" note="Rata-rata akurasi per butir dari 10 soal pilihan ganda." />
               <Stat value="86,33%" label="Rata-rata misi kelompok" note="Enam kelompok: 94%, 88%, 88%, 88%, 83%, dan 77%." />
             </div>
-            <div className="mt-4 flex flex-wrap gap-2"><ArtifactCTA artifactKey="lk4-pretest-posttest-siklus-2" label="Pretest–posttest" compact /><ArtifactCTA artifactKey="lk4-ekspor-quizizz-siklus-2" label="Ekspor Quizizz" compact /><ArtifactCTA artifactKey="lk4-rekap-siklus-2" label="Rekap Siklus 2" compact /></div>
           </div>
         </div>
         <div className="mt-6 rounded-2xl border border-violet-200 bg-violet-50/70 p-5 dark:border-violet-900 dark:bg-violet-950/20">
@@ -158,21 +152,20 @@ export default function RefleksiLK4() {
             ['Putri, Lutfiana, & Purwasih (2026)','Studi Quizizz pada konteks dan materi yang berbeda; digunakan sebagai pembanding desain, bukan bukti langsung efektivitas di X-8.'],
           ].map(([title, text]) => <div key={title} className="rounded-2xl bg-slate-50 p-5 dark:bg-slate-900"><h3 className="font-black">{title}</h3><p className="mt-2 text-sm leading-6 text-slate-700 dark:text-slate-300">{text}</p></div>)}
         </div>
-        <div className="mt-5"><ArtifactCTA artifactKey="lk4-dokumen" label="Lihat daftar rujukan di LK 4" /></div>
       </section>
 
       <section className="rounded-3xl border border-amber-200 bg-amber-50 p-6 dark:border-amber-900 dark:bg-amber-950/25 md:p-8">
         <h2 className="text-xl font-black text-amber-950 dark:text-amber-100">Catatan refleksi dan tindak lanjut</h2>
         <p className="mt-3 leading-7 text-amber-950 dark:text-amber-100">Refleksi 3-2-1 tercantum pada sebagian rancangan bahan ajar, tetapi tidak terlaksana saat pembelajaran. Pada LKPD Siklus 1 terdapat empat pertanyaan “Refleksi Tim”, yang berbeda dari format 3-2-1. Karena itu, refleksi 3-2-1 tidak diperlakukan sebagai bukti pelaksanaan. Perbaikan berikutnya adalah menyelaraskan rancangan dengan praktik, memperjelas alokasi waktu, memeriksa konsistensi data asesmen, memperkuat kasus analitis, serta menyiapkan alternatif media ketika akses digital terbatas.</p>
-        <div className="mt-4"><ArtifactCTA artifactKey="lk4-umpan-balik-guru-pamong" label="Buka catatan umpan balik guru pamong" /></div>
       </section>
 
       <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-[#1a1a1a] md:p-9">
         <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-[#8234E6] dark:text-[#BCA0FF]">Artefak pendukung</p>
         <h2 className="mt-2 text-2xl font-black md:text-3xl">Dokumen yang mendukung karya inovasi</h2>
-        <p className="mt-3 max-w-3xl leading-7 text-slate-600 dark:text-slate-400">Semua tombol artefak di website membuka satu folder induk Google Drive yang sama. Agar mudah ditemukan, susun isi folder berdasarkan dokumen utama, artefak Semester 1, artefak Semester 2, dan Karya Inovasi Siklus 1–2. Cukup masukkan satu URL folder induk pada konfigurasi website.</p>
+        <p className="mt-3 max-w-3xl leading-7 text-slate-600 dark:text-slate-400">Dokumen pendukung karya inovasi meliputi asesmen awal, modul ajar, presentasi, LKPD dan kartu misi, hasil pretest–posttest, rekap hasil setiap siklus, serta umpan balik guru pamong. Dokumen tersebut tersedia di folder LK 4 dalam Google Drive Seminar PPG.</p>
+        <div className="mt-5"><ArtifactCTA label="Buka folder SEMINAR PPG" /></div>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-          {supportingArtifacts.map(([key,title,description]) => <article key={key} className="flex flex-col rounded-2xl border border-slate-200 p-5 dark:border-slate-800"><h3 className="font-black leading-6">{title}</h3><p className="mt-2 flex-1 text-sm leading-6 text-slate-600 dark:text-slate-400">{description}</p><div className="mt-4"><ArtifactCTA artifactKey={key} /></div></article>)}
+          {supportingArtifacts.map(([key,title,description]) => <article key={key} className="flex flex-col rounded-2xl border border-slate-200 p-5 dark:border-slate-800"><h3 className="font-black leading-6">{title}</h3><p className="mt-2 flex-1 text-sm leading-6 text-slate-600 dark:text-slate-400">{description}</p></article>)}
         </div>
       </section>
     </main>

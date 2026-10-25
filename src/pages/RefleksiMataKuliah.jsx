@@ -44,9 +44,6 @@ export default function RefleksiMataKuliah({ semester, courses }) {
               </button>
             ))}
           </div>
-          <div className="mt-4 border-t border-slate-100 pt-4 dark:border-slate-800">
-            <ArtifactCTA artifactKey="lk2-dokumen" label="Buka dokumen LK 2" compact />
-          </div>
         </aside>
 
         <div className="min-w-0 space-y-6">
@@ -80,15 +77,15 @@ export default function RefleksiMataKuliah({ semester, courses }) {
             <div className="mt-6 grid gap-4">
               {activeCourse.artifacts.map((artifact, index) => (
                 <article key={artifact.key} className="rounded-2xl border border-slate-200 p-5 dark:border-slate-800">
-                  <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                    <div className="min-w-0">
-                      <p className="text-xs font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400">Artefak {index + 1}</p>
-                      <h3 className="mt-1 font-bold leading-relaxed">{artifact.title}</h3>
-                    </div>
-                    <div className="shrink-0"><ArtifactCTA artifactKey={artifact.key} /></div>
-                  </div>
+                  <p className="text-xs font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400">Artefak {index + 1}</p>
+                  <h3 className="mt-1 font-bold leading-relaxed">{artifact.title}</h3>
                 </article>
               ))}
+            </div>
+            <div className="mt-6 rounded-2xl bg-slate-50 p-5 dark:bg-slate-900">
+              <h3 className="font-black">Akses artefak mata kuliah</h3>
+              <p className="mt-2 text-sm leading-7 text-slate-700 dark:text-slate-300">Daftar di atas menunjukkan artefak yang menjadi bukti refleksi untuk mata kuliah ini. Dokumen pendukung Semester 1 dan Semester 2 disimpan dalam folder LK 2 di Google Drive Seminar PPG.</p>
+              <div className="mt-4"><ArtifactCTA label="Buka folder SEMINAR PPG" compact /></div>
             </div>
             <div className="mt-5 grid gap-4 md:grid-cols-2">
               <div className="rounded-2xl bg-slate-50 p-5 dark:bg-slate-900">
