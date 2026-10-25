@@ -72,9 +72,9 @@ const Uts = () => {
                 {/* Embed Media Pembelajaran Siklus 1 */}
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
-                    <iframe src="https://drive.google.com/file/d/1YRlbovcLweLwn2rr_cSrAVqIUMPb_0IV/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1WWsNGQ6nBCHcppa5z_GLs1WDMqobE40j/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
                   </div>
-                  <a href="https://drive.google.com/file/d/1YRlbovcLweLwn2rr_cSrAVqIUMPb_0IV/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Media Pembelajaran Siklus 1 →</a>
+                  <a href="https://drive.google.com/file/d/1WWsNGQ6nBCHcppa5z_GLs1WDMqobE40j/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Media Pembelajaran Siklus 1 →</a>
                 </div>
 
                 {/* Embed Dokumentasi Video Siklus 1 */}
@@ -94,17 +94,17 @@ const Uts = () => {
                 {/* Embed Modul Ajar Siklus 2 */}
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
-                    <iframe src="https://drive.google.com/file/d/1bgofRcDUSDTrY2kAvIStMUKRopv_Zyvr/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1UyN9R12qDw-6kQtfwVlE8o5k3V4kRmO-/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
                   </div>
-                  <a href="https://drive.google.com/file/d/1bgofRcDUSDTrY2kAvIStMUKRopv_Zyvr/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Modul Ajar Siklus 2 →</a>
+                  <a href="https://drive.google.com/file/d/1UyN9R12qDw-6kQtfwVlE8o5k3V4kRmO-/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Modul Ajar Siklus 2 →</a>
                 </div>
                 
                 {/* Embed Media Pembelajaran Siklus 2 */}
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
-                    <iframe src="https://drive.google.com/file/d/1zAHtx0wbDqshY_8OBLlKIjaCWMI-Nq13/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1fiQ7R203rEnLaSpkx86AsSNA4CbLTAB3/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
                   </div>
-                  <a href="https://drive.google.com/file/d/1zAHtx0wbDqshY_8OBLlKIjaCWMI-Nq13/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Media Pembelajaran Siklus 2 →</a>
+                  <a href="https://drive.google.com/file/d/1fiQ7R203rEnLaSpkx86AsSNA4CbLTAB3/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Media Pembelajaran Siklus 2 →</a>
                 </div>
 
                 {/* Embed Dokumentasi Video Siklus 2 */}
@@ -132,9 +132,9 @@ const Uts = () => {
                 {/* Embed Media Pembelajaran Siklus 3 */}
                 <div className="flex flex-col gap-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-900">
-                    <iframe src="https://drive.google.com/file/d/1NXOvVptQfiScXsr57btkA8S5FNqDQgO-/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1vn0Tfz7YBwrZfQ7u2ugzk2gfaC0ItQhj/preview" width="100%" height="100%" className="absolute top-0 left-0 w-full h-full border-0"></iframe>
                   </div>
-                  <a href="https://drive.google.com/file/d/1NXOvVptQfiScXsr57btkA8S5FNqDQgO-/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Media Pembelajaran Siklus 3 →</a>
+                  <a href="https://drive.google.com/file/d/1vn0Tfz7YBwrZfQ7u2ugzk2gfaC0ItQhj/view?usp=sharing" target="_blank" rel="noreferrer" className="text-center px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-[#E1FA43] hover:text-[#1A1A1A] text-slate-800 dark:text-slate-200 rounded-full font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">Media Pembelajaran Siklus 3 →</a>
                 </div>
 
                 {/* Embed Dokumentasi Video Siklus 3 */}
