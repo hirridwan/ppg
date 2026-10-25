@@ -48,6 +48,34 @@ export default function RefleksiPPG() {
           ))}
         </div>
       </section>
+
+      <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-[#1a1a1a] md:p-9">
+        <div className="flex items-center gap-3">
+          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-violet-100 font-black text-violet-900 dark:bg-violet-900/40 dark:text-violet-100">04</span>
+          <div>
+            <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-[#8234E6] dark:text-[#BCA0FF]">Refleksi perjalanan</p>
+            <h2 className="text-xl font-black md:text-2xl">Refleksi PPG: sebelum, selama, dan setelah mengikuti PPG</h2>
+          </div>
+        </div>
+        <p className="mt-4 max-w-4xl leading-7 text-slate-600 dark:text-slate-400">Perjalanan PPG membantu saya meninjau kembali visi sebagai calon guru, menguji pemahaman melalui pengalaman belajar dan praktik, serta merumuskan komitmen pengembangan diri ke depan.</p>
+        <div className="mt-6 grid gap-4 lg:grid-cols-3">
+          <article className="rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-slate-800 dark:bg-slate-900">
+            <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-cyan-800 dark:text-cyan-300">Tahap 1</p>
+            <h3 className="mt-2 text-lg font-black">Sebelum mengikuti PPG</h3>
+            <p className="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">Pada tahap awal, saya membawa visi bahwa pendidikan perlu memberi kesempatan belajar yang bermutu dan adil. Sebagai calon guru Informatika, saya ingin membantu murid memahami konsep melalui contoh yang dekat dengan kehidupan mereka, memberi ruang untuk praktik, dan membangun kelas yang aktif tetapi tetap terarah. Visi tersebut menjadi arah yang perlu saya perdalam melalui pengetahuan pedagogik, pengalaman, dan umpan balik.</p>
+          </article>
+          <article className="rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-slate-800 dark:bg-slate-900">
+            <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-amber-800 dark:text-amber-300">Tahap 2</p>
+            <h3 className="mt-2 text-lg font-black">Selama mengikuti PPG</h3>
+            <p className="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">Mata kuliah PPG dan pengalaman PPL memperkuat pemahaman saya bahwa pembelajaran perlu dirancang berdasarkan kebutuhan murid, dengan tujuan, aktivitas, dan asesmen yang selaras. Praktik mengajar juga mengingatkan saya pentingnya instruksi yang jelas, pengelolaan waktu dan kelas, pembagian peran, serta penggunaan hasil asesmen dan umpan balik untuk menentukan perbaikan. Saat mengembangkan Computer Mission, saya menyesuaikan media dengan kondisi kelas dan fasilitas yang tersedia.</p>
+          </article>
+          <article className="rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-slate-800 dark:bg-slate-900">
+            <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-emerald-800 dark:text-emerald-300">Tahap 3</p>
+            <h3 className="mt-2 text-lg font-black">Setelah mengikuti PPG</h3>
+            <p className="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">Setelah menyelesaikan PPG, saya ingin menerapkan pembelajaran yang berpihak pada kebutuhan murid, menyiapkan perencanaan dan alternatif media secara lebih matang, serta membiasakan refleksi setelah mengajar. Saya akan menelaah hasil asesmen dan keterlibatan murid, menerima masukan dari guru pamong atau rekan sejawat, dan terus mengembangkan kompetensi pedagogik, kepribadian, sosial, serta profesional melalui komunitas belajar, pelatihan, dan kajian mandiri.</p>
+          </article>
+        </div>
+      </section>
     </main>
   );
 }
