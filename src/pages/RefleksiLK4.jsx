@@ -20,14 +20,14 @@ const supportingArtifacts = [
 // Isi previewUrl dengan tautan Google Drive berbentuk https://drive.google.com/file/d/FILE_ID/preview.
 // Delapan kartu sengaja disiapkan; bagian lain dari halaman LK4 tetap dipertahankan.
 const documentationImages = [
-  { title: 'Dokumentasi 1', previewUrl: '' },
-  { title: 'Dokumentasi 2', previewUrl: '' },
-  { title: 'Dokumentasi 3', previewUrl: '' },
-  { title: 'Dokumentasi 4', previewUrl: '' },
-  { title: 'Dokumentasi 5', previewUrl: '' },
-  { title: 'Dokumentasi 6', previewUrl: '' },
-  { title: 'Dokumentasi 7', previewUrl: '' },
-  { title: 'Dokumentasi 8', previewUrl: '' },
+  { title: 'Dokumentasi 1', previewUrl: 'https://drive.google.com/file/d/1uhI-y-0-fTkIXeoVadgnBko1b5l_TXEj/preview' },
+  { title: 'Dokumentasi 2', previewUrl: 'https://drive.google.com/file/d/1V1o_SAlfIm6PWq8eQUNtPO_nRXWGk6_H/preview' },
+  { title: 'Dokumentasi 3', previewUrl: 'https://drive.google.com/file/d/1_xDhtNnqHr8026Yoj7T8kEw-IZrppq_c/preview' },
+  { title: 'Dokumentasi 4', previewUrl: 'https://drive.google.com/file/d/1jGdFCF0B6XWEYEQX6KH1MhIzwwr4oMRr/preview' },
+  { title: 'Dokumentasi 5', previewUrl: 'https://drive.google.com/file/d/1ND7kgJwpjESyMq9zH52W1qeOVUqYrjck/preview' },
+  { title: 'Dokumentasi 6', previewUrl: 'https://drive.google.com/file/d/1m5LbgKEdySZNk9hj0cE7QO0BNeTvWEXd/preview' },
+  { title: 'Dokumentasi 7', previewUrl: 'https://drive.google.com/file/d/14AH_FdI1-8kpJxnck9OXco-CTf4gslpL/preview' },
+  { title: 'Dokumentasi 8', previewUrl: 'https://drive.google.com/file/d/1NyD7n5LThOPwLqSNCLDMG0VwG1XuXhA5/preview' },
 ];
 
 const cycleOneMissions = [
