@@ -63,13 +63,28 @@ export default function RefleksiLK4() {
       </section>
 
       <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-[#1a1a1a] md:p-9">
-        <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-[#8234E6] dark:text-[#BCA0FF]">Identifikasi kebutuhan</p>
-        <h2 className="mt-2 text-2xl font-black md:text-3xl">Mengapa inovasi ini dikembangkan?</h2>
-        <div className="mt-5 grid gap-5 md:grid-cols-2">
-          <p className="leading-8 text-slate-700 dark:text-slate-300">Konsep Sistem Komputer, model Input–Process–Output (IPO), dan Arsitektur Von Neumann perlu dipelajari melalui pengalaman yang aktif dan kontekstual. Asesmen awal menggambarkan kebutuhan belajar umum kelas X-8; data tersebut bukan pengukuran langsung penguasaan materi IPO.</p>
-          <p className="leading-8 text-slate-700 dark:text-slate-300">Ketersediaan laboratorium yang hanya satu ruang dan jadwal yang kerap berbenturan membuat pembelajaran kadang berlangsung di kelas. Penggunaan HP perlu izin dan pengambilannya dapat mengurangi waktu belajar. Kelas juga aktif dan terkadang ramai. Karena itu, alur, instruksi, pembagian peran, pengaturan waktu, dan alternatif media menjadi bagian penting dari desain.</p>
+        <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-[#8234E6] dark:text-[#BCA0FF]">Latar belakang masalah</p>
+        <h2 className="mt-2 text-2xl font-black md:text-3xl">Tantangan nyata di kelas X-8</h2>
+        <p className="mt-4 max-w-4xl leading-8 text-slate-700 dark:text-slate-300">Konsep Sistem Komputer, model Input–Process–Output (IPO), dan Arsitektur Von Neumann perlu dipelajari melalui pengalaman yang aktif dan kontekstual. Asesmen awal terhadap 44 murid memberi gambaran umum tentang kebutuhan belajar, tetapi bukan pengukuran langsung penguasaan materi IPO.</p>
+        <div className="mt-6 grid gap-4 md:grid-cols-3">
+          <article className="rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-slate-800 dark:bg-slate-900">
+            <div className="flex items-center gap-3"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-violet-100 text-lg dark:bg-violet-900/40">01</span><h3 className="font-black">Laboratorium terbatas</h3></div>
+            <p className="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">Sekolah hanya memiliki satu laboratorium komputer. Jadwalnya terkadang berbenturan dengan kelas lain, sehingga pembelajaran tidak selalu bisa berlangsung di laboratorium dan kadang harus dilakukan di ruang kelas.</p>
+          </article>
+          <article className="rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-slate-800 dark:bg-slate-900">
+            <div className="flex items-center gap-3"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-100 text-lg dark:bg-amber-900/40">02</span><h3 className="font-black">Akses HP perlu izin</h3></div>
+            <p className="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">Penggunaan HP perlu memperoleh izin. Proses murid mengambil perangkat dapat mengurangi waktu belajar, sehingga media dan alur kegiatan perlu disesuaikan dengan fasilitas yang tersedia.</p>
+          </article>
+          <article className="rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-slate-800 dark:bg-slate-900">
+            <div className="flex items-center gap-3"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-100 text-lg dark:bg-cyan-900/40">03</span><h3 className="font-black">Dinamika kelas</h3></div>
+            <p className="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">Murid X-8 aktif dan terkadang ramai. Instruksi, pembagian peran, aturan permainan, dan pengelolaan waktu perlu dibuat jelas agar keaktifan tetap mendukung tujuan belajar.</p>
+          </article>
         </div>
-        <div className="mt-5"><ArtifactCTA artifactKey="lk4-asesmen-awal-x8" label="Buka asesmen awal" /></div>
+        <div className="mt-6 rounded-2xl border border-[#8234E6]/20 bg-violet-50 p-5 dark:bg-violet-950/25">
+          <h3 className="font-black text-[#5B21B6] dark:text-violet-200">Implikasi terhadap desain inovasi</h3>
+          <p className="mt-2 leading-7 text-slate-700 dark:text-slate-300">Siklus 1 menggunakan kartu misi dan LKPD cetak di ruang kelas. Pada Siklus 2, pembelajaran dikembangkan dengan komputer laboratorium dan Quizizz. Misi Quizizz/LKPD tetap dikerjakan secara berkelompok dengan meneruskan pembagian peran dari Siklus 1, sedangkan pretest dan posttest dikerjakan secara individual.</p>
+        </div>
+        <div className="mt-5"><ArtifactCTA artifactKey="lk4-asesmen-awal-x8" label="Akses bukti asesmen awal" /></div>
       </section>
 
       <section className="grid gap-6 lg:grid-cols-2">
@@ -144,7 +159,7 @@ export default function RefleksiLK4() {
       <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-[#1a1a1a] md:p-9">
         <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-[#8234E6] dark:text-[#BCA0FF]">Artefak pendukung</p>
         <h2 className="mt-2 text-2xl font-black md:text-3xl">Dokumen yang mendukung karya inovasi</h2>
-        <p className="mt-3 max-w-3xl leading-7 text-slate-600 dark:text-slate-400">Tombol di bawah disiapkan untuk mengakses dokumen pendukung melalui Google Drive. Tautan akan aktif setelah URL berbagi dimasukkan pada satu file konfigurasi.</p>
+        <p className="mt-3 max-w-3xl leading-7 text-slate-600 dark:text-slate-400">Semua tombol artefak di website membuka satu folder induk Google Drive yang sama. Agar mudah ditemukan, susun isi folder berdasarkan dokumen utama, artefak Semester 1, artefak Semester 2, dan Karya Inovasi Siklus 1–2. Cukup masukkan satu URL folder induk pada konfigurasi website.</p>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
           {supportingArtifacts.map(([key,title,description]) => <article key={key} className="flex flex-col rounded-2xl border border-slate-200 p-5 dark:border-slate-800"><h3 className="font-black leading-6">{title}</h3><p className="mt-2 flex-1 text-sm leading-6 text-slate-600 dark:text-slate-400">{description}</p><div className="mt-4"><ArtifactCTA artifactKey={key} /></div></article>)}
         </div>
