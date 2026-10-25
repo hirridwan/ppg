@@ -10,6 +10,7 @@ import RefleksiSemester1 from './pages/RefleksiSemester1';
 import RefleksiSemester2 from './pages/RefleksiSemester2';
 import RefleksiPPG from './pages/RefleksiPPG';
 import RefleksiLK4 from './pages/RefleksiLK4';
+import ComputerMission from './pages/ComputerMission';
 
 const navItems = [
   { path: '/', label: 'Beranda' },
@@ -28,6 +29,7 @@ const navItems = [
     { path: '/seminar/refleksi-ppg', label: 'LK 3 · Refleksi PPG' },
     { path: '/seminar/karya-inovasi', label: 'LK 4 · Karya Inovasi' },
   ]},
+  { path: '/computer-mission', label: 'Computer Mission' },
 ];
 
 function Chevron({ open = false }) {
@@ -117,6 +119,7 @@ export default function App() {
           <Route path="/seminar/refleksi-semester-2" element={<RefleksiSemester2 />} />
           <Route path="/seminar/refleksi-ppg" element={<RefleksiPPG />} />
           <Route path="/seminar/karya-inovasi" element={<RefleksiLK4 />} />
+          <Route path="/computer-mission" element={<ComputerMission />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </div>

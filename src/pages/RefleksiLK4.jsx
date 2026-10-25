@@ -17,6 +17,19 @@ const supportingArtifacts = [
   ['lk4-umpan-balik-guru-pamong','Umpan balik guru pamong','Catatan untuk pengembangan pengelolaan waktu dan kesempatan memahami konsep.'],
 ];
 
+// Isi previewUrl dengan tautan Google Drive berbentuk https://drive.google.com/file/d/FILE_ID/preview.
+// Delapan kartu sengaja disiapkan; bagian lain dari halaman LK4 tetap dipertahankan.
+const documentationImages = [
+  { title: 'Dokumentasi 1', previewUrl: '' },
+  { title: 'Dokumentasi 2', previewUrl: '' },
+  { title: 'Dokumentasi 3', previewUrl: '' },
+  { title: 'Dokumentasi 4', previewUrl: '' },
+  { title: 'Dokumentasi 5', previewUrl: '' },
+  { title: 'Dokumentasi 6', previewUrl: '' },
+  { title: 'Dokumentasi 7', previewUrl: '' },
+  { title: 'Dokumentasi 8', previewUrl: '' },
+];
+
 const cycleOneMissions = [
   { title: 'Mission 1 — Sort the Data', text: 'Murid mengelompokkan kartu perangkat komputer ke kategori input, process, output, storage, atau software dan mencatat alasan pada LKPD.' },
   { title: 'Mission 2 — Trace the Data', text: 'Kelompok menelusuri alur data pada kartu kasus dan mengidentifikasi perangkat atau komponen yang terlibat.' },
@@ -203,12 +216,46 @@ export default function RefleksiLK4() {
       </section>
 
       <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-[#1a1a1a] md:p-9">
+        <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-[#8234E6] dark:text-[#BCA0FF]">Arah pengembangan</p>
+        <h2 className="mt-2 text-2xl font-black md:text-3xl">Rencana Pengembangan Lanjutan</h2>
+        <p className="mt-4 max-w-4xl leading-7 text-slate-700 dark:text-slate-300">Berdasarkan refleksi Siklus 1 dan Siklus 2, pengembangan berikutnya diarahkan pada prototipe game edukasi digital 2D <em>Computer Mission: Where Does My Data Go?</em>. Game ini meneruskan gagasan gamifikasi berbasis misi dengan eksplorasi dunia digital, pengumpulan objek, tantangan interaktif, dan lima misi tentang perangkat komputer, alur data, RAM dan storage, fungsi ALU dan Control Unit, serta kasus Sistem Komputer.</p>
+        <p className="mt-3 max-w-4xl leading-7 text-slate-700 dark:text-slate-300">Prototipe ini merupakan pengembangan lanjutan dari pembelajaran yang telah diterapkan, bukan bagian dari implementasi pada dua siklus sebelumnya. Game belum diuji kepada peserta didik. Tahap berikutnya direncanakan mencakup uji coba terbatas, pengumpulan umpan balik, pemeriksaan kesesuaian tantangan dengan tujuan pembelajaran, dan evaluasi hasil belajar sebelum efektivitasnya disimpulkan.</p>
+        <div className="mt-5 flex flex-wrap items-center gap-3">
+          <span className="rounded-full bg-amber-100 px-3 py-1.5 text-xs font-bold text-amber-900 dark:bg-amber-900/40 dark:text-amber-100">Prototipe · belum diuji di kelas</span>
+          <a href="/computer_mission_adventure.html" target="_blank" rel="noreferrer" className="inline-flex items-center rounded-full bg-[#8234E6] px-4 py-2.5 text-sm font-bold text-white transition hover:bg-[#6D28D9]">Lihat prototipe game <span className="ml-2" aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-[#1a1a1a] md:p-9">
         <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-[#8234E6] dark:text-[#BCA0FF]">Artefak pendukung</p>
         <h2 className="mt-2 text-2xl font-black md:text-3xl">Dokumen yang mendukung karya inovasi</h2>
         <p className="mt-3 max-w-3xl leading-7 text-slate-600 dark:text-slate-400">Dokumen pendukung karya inovasi meliputi asesmen awal, modul ajar, presentasi, LKPD dan kartu misi, hasil pretest–posttest, rekap hasil setiap siklus, serta umpan balik guru pamong. Dokumen tersebut tersedia di folder LK 4 dalam Google Drive Seminar PPG.</p>
         <div className="mt-5"><ArtifactCTA label="Buka folder SEMINAR PPG" /></div>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
           {supportingArtifacts.map(([key,title,description]) => <article key={key} className="flex flex-col rounded-2xl border border-slate-200 p-5 dark:border-slate-800"><h3 className="font-black leading-6">{title}</h3><p className="mt-2 flex-1 text-sm leading-6 text-slate-600 dark:text-slate-400">{description}</p></article>)}
+        </div>
+      </section>
+
+      <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-[#1a1a1a] md:p-9">
+        <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-[#8234E6] dark:text-[#BCA0FF]">Dokumentasi</p>
+        <h2 className="mt-2 text-2xl font-black md:text-3xl">Dokumentasi Karya Inovasi</h2>
+        <p className="mt-3 max-w-3xl leading-7 text-slate-600 dark:text-slate-400">Bagian ini disiapkan untuk delapan foto dokumentasi. Setelah foto diunggah ke Google Drive, masukkan tautan pratinjau masing-masing pada daftar <code>documentationImages</code> di bagian awal file ini.</p>
+        <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
+          {documentationImages.map((item, index) => (
+            <article key={item.title} className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-900">
+              <div className="aspect-[4/3] w-full overflow-hidden bg-slate-100 dark:bg-slate-800">
+                {item.previewUrl ? (
+                  <iframe src={item.previewUrl} title={item.title} loading="lazy" className="h-full w-full border-0" allow="autoplay" />
+                ) : (
+                  <div className="flex h-full flex-col items-center justify-center gap-2 p-3 text-center text-slate-400">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white text-[#8234E6] shadow-sm dark:bg-slate-700 dark:text-violet-200"><svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9" r="1.5"/><path d="m21 15-5-5L5 20"/></svg></span>
+                    <span className="text-xs font-semibold">Tambahkan tautan foto</span>
+                  </div>
+                )}
+              </div>
+              <div className="px-3 py-2.5"><h3 className="text-sm font-black">{String(index + 1).padStart(2, '0')} · {item.title}</h3></div>
+            </article>
+          ))}
         </div>
       </section>
     </main>
