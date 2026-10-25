@@ -133,6 +133,17 @@ export default function RefleksiLK4() {
             <div className="mt-4 flex flex-wrap gap-2"><ArtifactCTA artifactKey="lk4-pretest-posttest-siklus-2" label="Pretest–posttest" compact /><ArtifactCTA artifactKey="lk4-ekspor-quizizz-siklus-2" label="Ekspor Quizizz" compact /><ArtifactCTA artifactKey="lk4-rekap-siklus-2" label="Rekap Siklus 2" compact /></div>
           </div>
         </div>
+        <div className="mt-6 rounded-2xl border border-violet-200 bg-violet-50/70 p-5 dark:border-violet-900 dark:bg-violet-950/20">
+          <h3 className="text-lg font-black">Rata-rata gabungan Siklus 1 dan Siklus 2</h3>
+          <p className="mt-1 text-sm leading-6 text-slate-700 dark:text-slate-300">Ringkasan rata-rata antarsiklus untuk melihat gambaran hasil pembelajaran secara keseluruhan.</p>
+          <div className="mt-4 grid grid-cols-2 gap-3 lg:grid-cols-4">
+            <Stat value="76,09" label="Rata-rata pretest" note="Rata-rata 76,18 pada Siklus 1 dan 76% Class Accuracy pada Siklus 2." />
+            <Stat value="95,80" label="Rata-rata posttest" note="Rata-rata 95,59 pada Siklus 1 dan 96% Class Accuracy pada Siklus 2." />
+            <Stat value="+19,71" label="Selisih rata-rata" note="Selisih antara rata-rata pretest dan posttest gabungan, dalam poin." />
+            <Stat value="85,25" label="Rata-rata aktivitas kelompok" note="Rata-rata nilai LKPD Siklus 1 (84,17) dan misi kelompok Siklus 2 (86,33)." />
+          </div>
+          <p className="mt-4 text-xs leading-5 text-slate-600 dark:text-slate-400">Catatan: angka gabungan dihitung dengan merata-ratakan ringkasan masing-masing siklus, bukan menggabungkan seluruh skor individu. Data Siklus 1 menggunakan rata-rata 34 murid dengan data pretest–posttest berpasangan, sedangkan data asesmen Siklus 2 menggunakan ringkasan Class Accuracy Quizizz. Rata-rata aktivitas kelompok juga bersifat indikatif karena tugas pada kedua siklus tidak sepenuhnya sama.</p>
+        </div>
         <p className="mt-5 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-950 dark:border-amber-900 dark:bg-amber-950/30 dark:text-amber-100">Batasan data: ekspor pretest Siklus 2 tidak konsisten antara ringkasan Class Accuracy dan rata-rata pada Participant Data. Karena itu, 76% ditampilkan sebagai angka ringkasan sistem. Skor misi kelompok merupakan data proses, bukan pengganti asesmen individual.</p>
       </section>
 
