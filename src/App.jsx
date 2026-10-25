@@ -1,254 +1,111 @@
 import React, { useEffect, useState } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
-import Uts from './pages/UTS'; 
-import Uas from './pages/UAS'; 
-import UtsSem2 from './pages/UtsSem2'; 
-import UasSem2 from './pages/UasSem2'; 
+import Uts from './pages/UTS';
+import Uas from './pages/UAS';
+import UtsSem2 from './pages/UtsSem2';
+import UasSem2 from './pages/UasSem2';
 import RefleksiLK1 from './pages/RefleksiLK1';
 import RefleksiSemester1 from './pages/RefleksiSemester1';
 import RefleksiSemester2 from './pages/RefleksiSemester2';
 import RefleksiPPG from './pages/RefleksiPPG';
+import RefleksiLK4 from './pages/RefleksiLK4';
 
-const App = () => {
+const navItems = [
+  { path: '/', label: 'Beranda' },
+  { label: 'PPL Semester 1', dropdown: [
+    { path: '/ppl-semester-1/uts', label: 'UTS' },
+    { path: '/ppl-semester-1/uas', label: 'UAS' },
+  ]},
+  { label: 'PPL Semester 2', dropdown: [
+    { path: '/ppl-semester-2/uts', label: 'UTS' },
+    { path: '/ppl-semester-2/uas', label: 'UAS' },
+  ]},
+  { label: 'Seminar PPG', dropdown: [
+    { path: '/seminar/refleksi', label: 'LK 1 · Identifikasi Diri' },
+    { path: '/seminar/refleksi-semester-1', label: 'LK 2 · Semester 1' },
+    { path: '/seminar/refleksi-semester-2', label: 'LK 2 · Semester 2' },
+    { path: '/seminar/refleksi-ppg', label: 'LK 3 · Refleksi PPG' },
+    { path: '/seminar/karya-inovasi', label: 'LK 4 · Karya Inovasi' },
+  ]},
+];
+
+function Chevron({ open = false }) {
+  return <svg className={`h-4 w-4 transition-transform ${open ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>;
+}
+
+export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State untuk Hamburger Menu
-  const [activeMobileDropdown, setActiveMobileDropdown] = useState(null); // State untuk klik dropdown di HP
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeMobileDropdown, setActiveMobileDropdown] = useState(null);
   const location = useLocation();
 
   useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
+    document.documentElement.classList.toggle('dark', isDarkMode);
   }, [isDarkMode]);
 
   useEffect(() => {
-    // Tutup menu mobile setiap kali pindah halaman
     setIsMobileMenuOpen(false);
     setActiveMobileDropdown(null);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [location.pathname]);
 
   useEffect(() => {
-    document.title = "E-Portfolio | Ridwan Maulana, S.Kom.";
-    
-    const applyResponsiveZoom = () => {
-      if (window.innerWidth >= 1024) {
-        document.body.style.zoom = "67%";
-      } else {
-        document.body.style.zoom = "100%"; 
-      }
-    };
-    
-    applyResponsiveZoom();
-    window.addEventListener('resize', applyResponsiveZoom);
-    
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (!metaDescription) {
-      metaDescription = document.createElement('meta');
-      metaDescription.name = "description";
-      document.head.appendChild(metaDescription);
+    document.title = 'E-Portfolio PPG | Ridwan Maulana';
+    document.documentElement.style.scrollBehavior = 'smooth';
+    let description = document.querySelector('meta[name="description"]');
+    if (!description) {
+      description = document.createElement('meta');
+      description.name = 'description';
+      document.head.appendChild(description);
     }
-    metaDescription.content = "E-Portfolio PPG Prajabatan UPI - Refleksi PPL Terbimbing di SMAN 1 Bandung.";
-    
-    const ogTags = [
-      { property: 'og:title', content: 'E-Portfolio | Ridwan Maulana, S.Kom.' },
-      { property: 'og:description', content: 'E-Portfolio PPG Prajabatan UPI - Refleksi PPL Terbimbing di SMAN 1 Bandung.' },
-      { property: 'og:image', content: 'https://i.imgur.com/gK53z6G.jpeg' },
-      { property: 'og:url', content: 'https://ppg.rmfhd.my.id/' },
-      { property: 'og:type', content: 'website' }
-    ];
-
-    ogTags.forEach(tag => {
-      let element = document.querySelector(`meta[property="${tag.property}"]`);
-      if (!element) {
-        element = document.createElement('meta');
-        element.setAttribute('property', tag.property);
-        document.head.appendChild(element);
-      }
-      element.content = tag.content;
-    });
-
-    document.documentElement.style.scrollBehavior = "smooth";
-
-    return () => window.removeEventListener('resize', applyResponsiveZoom);
+    description.content = 'E-Portfolio PPG Prajabatan Pendidikan Informatika: refleksi LK1–LK3 dan Karya Inovasi Pendidikan LK4.';
   }, []);
 
-  const navItems = [
-    { path: '/', label: 'Home' },
-    {
-      label: 'PPL Semester 1',
-      dropdown: [
-        { path: '/ppl-semester-1/uts', label: 'UTS' },
-        { path: '/ppl-semester-1/uas', label: 'UAS' },
-      ]
-    },
-    {
-      label: 'PPL Semester 2',
-      dropdown: [
-        { path: '/ppl-semester-2/uts', label: 'UTS' },
-        { path: '/ppl-semester-2/uas', label: 'UAS' },
-      ]
-    },
-    {
-      label: 'Seminar',
-      dropdown: [
-        { path: '/seminar/refleksi', label: 'LK 1 (Refleksi Diri)' },
-        { path: '/seminar/refleksi-semester-1', label: 'LK 2 (Refleksi Semester 1)' },
-        { path: '/seminar/refleksi-semester-2', label: 'LK 2 (Refleksi Semester 2)' },
-        { path: '/seminar/refleksi-ppg', label: 'LK 3 (Refleksi PPG)' },
-      ]
-    },
-  ];
-
-  const toggleMobileDropdown = (label) => {
-    if (activeMobileDropdown === label) {
-      setActiveMobileDropdown(null);
-    } else {
-      setActiveMobileDropdown(label);
-    }
-  };
+  const toggleDropdown = (label) => setActiveMobileDropdown((active) => active === label ? null : label);
+  const isItemActive = (item) => item.path === location.pathname || item.dropdown?.some((child) => child.path === location.pathname);
 
   return (
-    <div className="min-h-screen bg-[#fafafa] dark:bg-[#111111] font-sans text-slate-900 dark:text-slate-100 overflow-x-hidden transition-colors duration-300 flex flex-col">
-      
-      {/* HEADER */}
-      <header className="fixed top-0 left-0 w-full z-50 bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-md shadow-sm border-b border-slate-100 dark:border-slate-800">
-        <div className="max-w-[1400px] mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <h1 className="text-xl md:text-2xl font-black tracking-tighter text-[#1A1A1A] dark:text-white">
-              Ridwan Maulana.
-            </h1>
-          </div>
-          
-          {/* Tombol Hamburger untuk HP */}
-          <div className="flex md:hidden items-center gap-4">
-            <button
-              onClick={() => setIsDarkMode(!isDarkMode)}
-              className="p-2 rounded-full text-slate-500 hover:text-[#1A1A1A] dark:hover:text-white"
-              aria-label="Toggle Dark Mode"
-            >
-              {isDarkMode ? (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-              ) : (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
-              )}
-            </button>
-            <button 
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-[#1A1A1A] dark:text-white p-2"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                {isMobileMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
+    <div className="flex min-h-screen flex-col overflow-x-hidden bg-[#fafafa] font-sans text-slate-900 transition-colors duration-300 dark:bg-[#111111] dark:text-slate-100">
+      <header className="fixed left-0 top-0 z-50 w-full border-b border-slate-100 bg-white/95 shadow-sm backdrop-blur-md dark:border-slate-800 dark:bg-[#1a1a1a]/95">
+        <div className="mx-auto flex max-w-[1500px] items-center justify-between gap-4 px-4 py-4 md:px-6">
+          <Link to="/" className="shrink-0 leading-tight" aria-label="Kembali ke beranda">
+            <span className="block text-lg font-black tracking-tight md:text-xl">Ridwan Maulana<span className="text-[#8234E6]">.</span></span>
+            <span className="mt-1 block text-[10px] font-bold uppercase tracking-[0.15em] text-slate-500 dark:text-slate-400">E-Portfolio PPG Informatika</span>
+          </Link>
+
+          <div className="flex items-center gap-2 md:hidden">
+            <button type="button" onClick={() => setIsDarkMode((value) => !value)} className="rounded-full border border-slate-200 px-3 py-2 text-xs font-bold dark:border-slate-700" aria-label="Ganti tema">{isDarkMode ? 'Terang' : 'Gelap'}</button>
+            <button type="button" onClick={() => setIsMobileMenuOpen((value) => !value)} className="rounded-xl p-2 hover:bg-slate-100 dark:hover:bg-slate-800" aria-label={isMobileMenuOpen ? 'Tutup menu' : 'Buka menu'}>
+              {isMobileMenuOpen ? <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="m6 6 12 12M18 6 6 18" /></svg> : <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 6h16M4 12h16M4 18h16" /></svg>}
             </button>
           </div>
 
-          {/* Navigasi Desktop */}
-          <nav className="hidden md:flex flex-wrap justify-center space-x-8 items-center">
-            {navItems.map((item) => (
-              item.dropdown ? (
-                <div key={item.label} className="relative group">
-                  <button className="py-2 text-sm font-bold transition-all text-slate-500 hover:text-[#1A1A1A] dark:hover:text-white flex items-center gap-1">
-                    {item.label}
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
-                  </button>
-                  <div className="absolute left-0 mt-2 w-56 bg-white dark:bg-[#1a1a1a] border border-slate-100 dark:border-slate-800 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all flex flex-col py-2 z-50">
-                    {item.dropdown.map(dropItem => (
-                      <Link
-                        key={dropItem.path}
-                        to={dropItem.path}
-                        className={`px-4 py-2 text-sm font-bold transition-all ${
-                          location.pathname === dropItem.path
-                            ? 'text-[#1A1A1A] dark:text-white bg-slate-50 dark:bg-slate-800/50'
-                            : 'text-slate-500 hover:text-[#1A1A1A] dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/50'
-                        }`}
-                      >
-                        {dropItem.label}
-                      </Link>
-                    ))}
-                  </div>
+          <nav className="hidden items-center gap-1 md:flex">
+            {navItems.map((item) => item.dropdown ? (
+              <div key={item.label} className="group relative">
+                <button type="button" className={`inline-flex items-center gap-1 rounded-full px-4 py-2 text-sm font-bold transition-colors ${isItemActive(item) ? 'bg-slate-100 text-[#8234E6] dark:bg-slate-800 dark:text-[#E1FA43]' : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800'}`}>
+                  {item.label}<Chevron />
+                </button>
+                <div className="invisible absolute right-0 top-full mt-2 w-64 translate-y-1 rounded-2xl border border-slate-100 bg-white p-2 opacity-0 shadow-xl transition-all group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 dark:border-slate-800 dark:bg-[#1a1a1a]">
+                  {item.dropdown.map((child) => <Link key={child.path} to={child.path} className={`block rounded-xl px-4 py-3 text-sm font-bold transition-colors ${location.pathname === child.path ? 'bg-[#8234E6] text-white' : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800'}`}>{child.label}</Link>)}
                 </div>
-              ) : (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className={`py-2 text-sm font-bold transition-all ${
-                    location.pathname === item.path
-                      ? 'text-[#1A1A1A] dark:text-white'
-                      : 'text-slate-500 hover:text-[#1A1A1A] dark:hover:text-white'
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              )
-            ))}
-            <button
-              onClick={() => setIsDarkMode(!isDarkMode)}
-              className="border-2 border-[#1A1A1A] dark:border-white px-6 py-2 rounded-full text-sm font-bold hover:bg-[#1A1A1A] hover:text-white dark:hover:bg-white dark:hover:text-[#1A1A1A] transition-all flex items-center gap-2"
-              aria-label="Toggle Dark Mode"
-            >
-              {isDarkMode ? "Light Mode" : "Dark Mode"}
-            </button>
+              </div>
+            ) : <Link key={item.path} to={item.path} className={`rounded-full px-4 py-2 text-sm font-bold transition-colors ${location.pathname === item.path ? 'bg-slate-100 text-[#8234E6] dark:bg-slate-800 dark:text-[#E1FA43]' : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800'}`}>{item.label}</Link>)}
+            <button type="button" onClick={() => setIsDarkMode((value) => !value)} className="ml-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-bold hover:border-[#8234E6] dark:border-slate-700" aria-label="Ganti tema">{isDarkMode ? 'Mode Terang' : 'Mode Gelap'}</button>
           </nav>
         </div>
 
-        {/* Menu Mobile (Tampil jika tombol Hamburger diklik) */}
-        {isMobileMenuOpen && (
-          <nav className="md:hidden border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-[#1a1a1a] px-6 py-4 flex flex-col space-y-4 max-h-[80vh] overflow-y-auto">
-            {navItems.map((item) => (
-              item.dropdown ? (
-                <div key={item.label} className="flex flex-col">
-                  <button 
-                    onClick={() => toggleMobileDropdown(item.label)}
-                    className="flex justify-between items-center py-2 text-left font-bold text-slate-800 dark:text-slate-200"
-                  >
-                    {item.label}
-                    <svg className={`w-4 h-4 transition-transform ${activeMobileDropdown === item.label ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
-                  </button>
-                  
-                  {activeMobileDropdown === item.label && (
-                    <div className="flex flex-col pl-4 mt-2 space-y-3 border-l-2 border-slate-100 dark:border-slate-800">
-                      {item.dropdown.map(dropItem => (
-                        <Link
-                          key={dropItem.path}
-                          to={dropItem.path}
-                          className={`text-sm font-bold ${
-                            location.pathname === dropItem.path
-                              ? 'text-[#8234E6] dark:text-[#E1FA43]'
-                              : 'text-slate-500'
-                          }`}
-                        >
-                          {dropItem.label}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className={`py-2 font-bold ${
-                    location.pathname === item.path
-                      ? 'text-[#8234E6] dark:text-[#E1FA43]'
-                      : 'text-slate-800 dark:text-slate-200'
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              )
-            ))}
-          </nav>
-        )}
+        {isMobileMenuOpen && <nav className="max-h-[80vh] overflow-y-auto border-t border-slate-100 bg-white px-4 py-4 dark:border-slate-800 dark:bg-[#1a1a1a] md:hidden">
+          {navItems.map((item) => item.dropdown ? <div key={item.label} className="border-b border-slate-100 py-1 dark:border-slate-800">
+            <button type="button" onClick={() => toggleDropdown(item.label)} className={`flex w-full items-center justify-between py-3 text-left font-bold ${isItemActive(item) ? 'text-[#8234E6] dark:text-[#E1FA43]' : ''}`}>{item.label}<Chevron open={activeMobileDropdown === item.label} /></button>
+            {activeMobileDropdown === item.label && <div className="mb-3 ml-3 border-l-2 border-slate-100 pl-3 dark:border-slate-700">{item.dropdown.map((child) => <Link key={child.path} to={child.path} className={`block rounded-lg px-3 py-3 text-sm font-semibold ${location.pathname === child.path ? 'text-[#8234E6] dark:text-[#E1FA43]' : 'text-slate-600 dark:text-slate-300'}`}>{child.label}</Link>)}</div>}
+          </div> : <Link key={item.path} to={item.path} className="block border-b border-slate-100 py-3 font-bold dark:border-slate-800">{item.label}</Link>)}
+          <p className="pt-4 text-xs leading-5 text-slate-500 dark:text-slate-400">Menu Seminar memuat halaman LK 1, LK 2 Semester 1 dan 2, LK 3, serta LK 4 Karya Inovasi.</p>
+        </nav>}
       </header>
 
-      <div className="flex-grow pt-16 md:pt-0">
+      <div className="flex-1 pt-16">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/ppl-semester-1/uts" element={<Uts />} />
@@ -259,34 +116,18 @@ const App = () => {
           <Route path="/seminar/refleksi-semester-1" element={<RefleksiSemester1 />} />
           <Route path="/seminar/refleksi-semester-2" element={<RefleksiSemester2 />} />
           <Route path="/seminar/refleksi-ppg" element={<RefleksiPPG />} />
+          <Route path="/seminar/karya-inovasi" element={<RefleksiLK4 />} />
+          <Route path="*" element={<Home />} />
         </Routes>
       </div>
 
-      {/* FOOTER */}
-      <footer className="bg-white dark:bg-[#1a1a1a] border-t border-slate-100 dark:border-slate-800 py-12 md:py-16 mt-auto">
-        <div className="max-w-[1400px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="text-center md:text-left">
-            <h3 className="text-xl font-black tracking-tight text-[#1A1A1A] dark:text-white">Ridwan Maulana, S.Kom.</h3>
-            <p className="text-slate-500 dark:text-slate-400 font-medium mt-1">Mahasiswa PPG Prajabatan Informatika - Universitas Pendidikan Indonesia</p>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a href="mailto:ridwanguru@student.upi.edu" className="flex items-center gap-2 px-6 py-3 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold text-sm hover:bg-[#E1FA43] hover:text-[#1A1A1A] transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-              ridwanguru@student.upi.edu
-            </a>
-            <a href="tel:085860565852" className="flex items-center gap-2 px-6 py-3 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold text-sm hover:bg-[#E1FA43] hover:text-[#1A1A1A] transition-colors border border-slate-200 dark:border-slate-700 hover:border-[#E1FA43]">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-              085860565852
-            </a>
-          </div>
+      <footer className="mt-auto border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-[#1a1a1a]">
+        <div className="mx-auto flex max-w-[1400px] flex-col gap-5 px-4 py-8 md:flex-row md:items-center md:justify-between md:px-6 md:py-10">
+          <div><p className="text-lg font-black">Ridwan Maulana, S.Kom.</p><p className="mt-1 text-sm text-slate-500 dark:text-slate-400">PPG Prajabatan · Pendidikan Informatika · Universitas Pendidikan Indonesia</p></div>
+          <a href="mailto:ridwanguru@student.upi.edu" className="inline-flex w-fit items-center gap-2 rounded-full border border-slate-200 px-5 py-3 text-sm font-bold hover:border-[#8234E6] hover:text-[#8234E6] dark:border-slate-700 dark:hover:text-[#E1FA43]">ridwanguru@student.upi.edu ↗</a>
         </div>
-        <div className="max-w-[1400px] mx-auto px-6 mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 text-center">
-            <p className="text-slate-400 font-bold text-sm">© 2026. All rights reserved.</p>
-        </div>
+        <div className="border-t border-slate-100 px-4 py-4 text-center text-xs font-semibold text-slate-400 dark:border-slate-800">© 2026 · E-Portfolio Seminar PPG</div>
       </footer>
     </div>
   );
-};
-
-export default App;
+}

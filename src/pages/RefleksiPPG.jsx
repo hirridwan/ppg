@@ -1,107 +1,53 @@
 import React from 'react';
+import ArtifactCTA from '../components/ArtifactCTA';
 
-const RefleksiPPG = () => {
+const followUps = [
+  {
+    title: 'Merancang pembelajaran berdasarkan kebutuhan murid',
+    text: 'Saya akan memeriksa pengetahuan awal, menetapkan tujuan dan asesmen yang selaras, memakai contoh kontekstual, serta menyesuaikan dukungan bagi murid dengan kesiapan berbeda.'
+  },
+  {
+    title: 'Menyiapkan pembelajaran dan pengelolaan kelas dengan matang',
+    text: 'Saya akan menyusun modul ajar lebih awal, meminta masukan guru pamong atau rekan sejawat, memperjelas instruksi dan pembagian peran, mengatur waktu, serta menyiapkan alternatif media cetak atau aktivitas tanpa perangkat jika laboratorium atau izin penggunaan HP tidak tersedia.'
+  },
+  {
+    title: 'Membiasakan refleksi dan pengembangan profesional',
+    text: 'Setelah mengajar, saya akan menelaah hasil asesmen, mengamati keterlibatan murid, menerima umpan balik, dan menetapkan perbaikan. Saya akan terus belajar melalui komunitas profesional, pelatihan, dan kajian mandiri agar empat kompetensi guru terus berkembang.'
+  }
+];
+
+export default function RefleksiPPG() {
   return (
-    <main className="max-w-[1400px] mx-auto px-4 md:px-6 pb-24 pt-32 flex flex-col gap-24">
-      {/* HEADER */}
-      <section className="text-center">
-        <h2 className="text-4xl md:text-5xl font-black text-[#1A1A1A] dark:text-white mb-4 tracking-tight">Seminar PPG: LK 3</h2>
-        <p className="text-lg text-slate-600 dark:text-slate-300">Refleksi Pengalaman Belajar Selama Mengikuti Program PPG</p>
+    <main className="mx-auto flex max-w-[1400px] flex-col gap-8 px-4 pb-24 pt-28 md:px-6 md:pt-32">
+      <section className="rounded-[2rem] bg-[#8234E6] p-7 text-white shadow-xl md:rounded-[2.5rem] md:p-12">
+        <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#E1FA43]">Seminar PPG · LK 3</p>
+        <h1 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">Refleksi Pengalaman Belajar Selama PPG</h1>
+        <p className="mt-4 max-w-3xl text-base leading-relaxed text-white/85 md:text-lg">Sintesis pengalaman PPL Terbimbing dan PPL Mandiri, pandangan tentang pendidikan, kompetensi guru profesional, dan rencana tindak lanjut.</p>
+        <div className="mt-6"><ArtifactCTA artifactKey="lk3-dokumen" label="Buka dokumen LK 3" /></div>
       </section>
 
-      {/* REFLEKSI PENGALAMAN BELAJAR */}
-      <section id="refleksi-ppg" className="scroll-mt-32">
-        <div className="bg-white dark:bg-[#1a1a1a] rounded-[3rem] p-10 md:p-16 shadow-[0_10px_40px_rgb(0,0,0,0.04)] border border-slate-100 dark:border-slate-800">
-          <h2 className="text-3xl md:text-4xl font-black text-[#1A1A1A] dark:text-white mb-12 tracking-tight">Refleksi Pengalaman Belajar</h2>
-          
-          <div className="grid gap-12">
-            {/* Pertanyaan 1 */}
-            <div>
-              <h3 className="text-2xl font-bold mb-6 text-[#1A1A1A] dark:text-white flex items-start gap-4">
-                <span className="w-10 h-10 rounded-xl bg-[#8EF1F5] flex items-center justify-center text-[#1A1A1A] text-lg font-black flex-shrink-0 mt-1">1</span>
-                <span>Setelah mengikuti rangkaian refleksi pengalaman belajar, menurut anda, bagaimana seharusnya pendidikan di Indonesia?</span>
-              </h3>
-              <div className="bg-[#fafafa] dark:bg-slate-800/50 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 ml-0 md:ml-14">
-                <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-justify text-lg">
-                  Pendidikan di Indonesia seharusnya inklusif, memanusiakan manusia, dan adaptif terhadap perkembangan teknologi tanpa kehilangan akar sosial budayanya. Mengingat latar belakang saya yang kental dengan nilai ketekunan, saya menyadari pendidikan harus menjadi ruang yang aman bagi siswa untuk berani mencoba, melakukan kesalahan (seperti halnya <em>syntax error</em> dalam pemrograman), dan belajar darinya tanpa merasa dihakimi. Sistem pendidikan tidak boleh sekadar mengejar ketuntasan materi secara teknis atau hasil akhir yang sempurna, melainkan harus berpusat pada proses penalaran kritis (<em>problem solving</em>), tumbuhnya <em>growth mindset</em>, dan pengembangan karakter siswa secara holistik agar bijak di era digital.
-                </p>
-              </div>
-            </div>
-
-            {/* Pertanyaan 2 */}
-            <div>
-              <h3 className="text-2xl font-bold mb-6 text-[#1A1A1A] dark:text-white flex items-start gap-4">
-                <span className="w-10 h-10 rounded-xl bg-[#E1FA43] flex items-center justify-center text-[#1A1A1A] text-lg font-black flex-shrink-0 mt-1">2</span>
-                <span>Apa saja yang dapat anda lakukan untuk menjadi guru profesional?</span>
-              </h3>
-              <div className="bg-[#fafafa] dark:bg-slate-800/50 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 ml-0 md:ml-14">
-                <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-justify text-lg mb-4">
-                  Untuk menjadi guru profesional, saya harus meneguhkan komitmen sebagai pembelajar sepanjang hayat (<em>lifelong learner</em>). Ada beberapa langkah nyata yang akan saya lakukan:
-                </p>
-                <ul className="list-disc list-inside space-y-3 text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
-                  <li>Terus memperbarui wawasan dan keahlian di bidang teknologi masa depan agar mampu menjembatani kesenjangan literasi digital peserta didik.</li>
-                  <li>Menjaga kestabilan emosi dan kesabaran (manajemen diri) untuk menghadirkan pendekatan mengajar yang santai namun tetap terarah dan berwibawa.</li>
-                  <li>Memastikan proses evaluasi dan penilaian berjalan secara transparan dan sangat objektif, sesuai dengan porsi usaha masing-masing siswa tanpa pilih kasih.</li>
-                  <li>Proaktif berkolaborasi dengan rekan sejawat, orang tua, dan komunitas praktisi untuk merancang inovasi media pembelajaran yang berpusat pada peserta didik.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+      <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-[#1a1a1a] md:p-9">
+        <div className="flex items-center gap-3"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-100 font-black text-cyan-900">01</span><h2 className="text-xl font-black md:text-2xl">Bagaimana seharusnya pendidikan di Indonesia?</h2></div>
+        <p className="mt-5 leading-8 text-slate-700 dark:text-slate-300">Menurut saya, pendidikan di Indonesia seharusnya memberi setiap murid kesempatan belajar yang bermakna, aman, inklusif, dan sesuai kebutuhannya. Pendidikan tidak hanya berorientasi pada penuntasan materi atau nilai, tetapi juga membantu murid memahami konsep, menerapkannya dalam kehidupan, membangun karakter, serta mengembangkan kemampuan berpikir kritis dan bekerja sama. Pengalaman mengajar Informatika selama PPL Terbimbing dan PPL Mandiri menyadarkan saya bahwa kesiapan dan cara belajar murid beragam. Karena itu, guru perlu menetapkan tujuan yang jelas, menggunakan konteks yang dekat dengan kehidupan murid, memanfaatkan asesmen dan umpan balik, serta menyesuaikan strategi dengan kondisi kelas tanpa mengabaikan tujuan belajar.</p>
       </section>
 
-      {/* RENCANA TINDAK LANJUT */}
-      <section id="rencana-tindak-lanjut" className="scroll-mt-32">
-        <div className="bg-gradient-to-br from-[#8234E6] to-[#6c28c4] rounded-[3rem] p-10 md:p-16 shadow-2xl relative overflow-hidden text-white">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/3 pointer-events-none"></div>
-          
-          <h2 className="text-3xl md:text-4xl font-black mb-12 tracking-tight relative z-10">Rencana Tindak Lanjut</h2>
-          
-          <div className="relative z-10">
-            <h3 className="text-2xl font-bold mb-8 text-white flex items-start gap-4">
-                <span className="w-10 h-10 rounded-xl bg-orange-400 flex items-center justify-center text-white text-lg font-black flex-shrink-0 mt-1">3</span>
-                <span>Apa saja tiga hal penting yang akan anda lakukan ketika memulai karir sebagai guru?</span>
-            </h3>
+      <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-[#1a1a1a] md:p-9">
+        <div className="flex items-center gap-3"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-100 font-black text-amber-900">02</span><h2 className="text-xl font-black md:text-2xl">Apa yang dapat saya lakukan untuk menjadi guru profesional?</h2></div>
+        <p className="mt-5 leading-8 text-slate-700 dark:text-slate-300">Untuk menjadi guru profesional, saya perlu mengembangkan empat kompetensi secara seimbang. Kompetensi pedagogik saya kembangkan dengan memahami kesiapan murid, merancang pembelajaran dan asesmen yang selaras, serta memberi tindak lanjut sesuai kebutuhan. Kompetensi kepribadian berarti menjaga integritas, disiplin, tanggung jawab, dan terbuka terhadap kritik. Kompetensi sosial saya wujudkan melalui komunikasi dan kolaborasi yang baik serta sikap menghargai perbedaan. Kompetensi profesional saya kembangkan dengan menguasai materi Informatika, mengikuti perkembangan teknologi, dan memilih media sesuai tujuan serta kondisi kelas. Pengalaman PPL juga mengingatkan saya untuk menyiapkan modul lebih awal, mengatur waktu, dan memeriksa pemahaman murid.</p>
+      </section>
 
-            <div className="grid gap-6 ml-0 md:ml-14">
-                {/* Poin 1 */}
-                <div className="bg-white/10 backdrop-blur-sm p-8 rounded-3xl border border-white/20 flex gap-6 items-start">
-                    <div className="w-12 h-12 rounded-full bg-[#E1FA43] text-[#1A1A1A] font-black text-xl flex items-center justify-center flex-shrink-0">1</div>
-                    <div>
-                        <h4 className="font-bold text-xl mb-3 text-[#E1FA43]">Menerapkan Asesmen Diagnostik & Pembelajaran Berdiferensiasi</h4>
-                        <p className="text-purple-50 leading-relaxed text-justify text-lg">
-                            Saya akan memetakan gaya belajar, minat, dan tingkat kesiapan literasi digital siswa di setiap awal semester. Data ini akan menjadi landasan mutlak bagi saya untuk merancang skenario pembelajaran yang berkeadilan, di mana anak yang sudah mahir dan yang tertinggal sama-sama mendapatkan <em>scaffolding</em> yang tepat sasaran.
-                        </p>
-                    </div>
-                </div>
-
-                {/* Poin 2 */}
-                <div className="bg-white/10 backdrop-blur-sm p-8 rounded-3xl border border-white/20 flex gap-6 items-start">
-                    <div className="w-12 h-12 rounded-full bg-[#8EF1F5] text-[#1A1A1A] font-black text-xl flex items-center justify-center flex-shrink-0">2</div>
-                    <div>
-                        <h4 className="font-bold text-xl mb-3 text-[#8EF1F5]">Membangun Budaya Kelas yang Aman dan Inklusif (<em>Growth Mindset</em>)</h4>
-                        <p className="text-purple-50 leading-relaxed text-justify text-lg">
-                            Saya akan konsisten menanamkan paradigma bahwa kegagalan teknis saat belajar adalah wajar. Saya akan membiasakan siswa untuk saling membantu melalui metode tutor sebaya (<em>peer tutoring</em>), menekan ego kompetisi buta, dan mengedepankan kolaborasi kelas yang tidak membeda-bedakan latar belakang sosial maupun kemampuan kognitif.
-                        </p>
-                    </div>
-                </div>
-
-                {/* Poin 3 */}
-                <div className="bg-white/10 backdrop-blur-sm p-8 rounded-3xl border border-white/20 flex gap-6 items-start">
-                    <div className="w-12 h-12 rounded-full bg-pink-400 text-white font-black text-xl flex items-center justify-center flex-shrink-0">3</div>
-                    <div>
-                        <h4 className="font-bold text-xl mb-3 text-pink-300">Mengembangkan Media Pembelajaran Interaktif & Kontekstual</h4>
-                        <p className="text-purple-50 leading-relaxed text-justify text-lg">
-                            Melanjutkan praktik baik selama PPL, saya akan terus mengeksplorasi metode <em>Game-Based Learning</em> dan <em>Project Based Learning</em>. Saya akan merancang proyek nyata yang dekat dengan kehidupan siswa misalnya terkait sistem administrasi digital untuk UMKM guna mengasah <em>Computational Thinking</em> mereka secara menyenangkan dan bermakna.
-                        </p>
-                    </div>
-                </div>
-            </div>
-          </div>
+      <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-[#1a1a1a] md:p-9">
+        <div className="flex items-center gap-3"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-100 font-black text-emerald-900">03</span><h2 className="text-xl font-black md:text-2xl">Rencana tindak lanjut</h2></div>
+        <p className="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-400">Tiga hal penting yang akan saya lakukan ketika memulai karier sebagai guru:</p>
+        <div className="mt-5 grid gap-4">
+          {followUps.map((item, index) => (
+            <article key={item.title} className="flex gap-4 rounded-2xl bg-slate-50 p-5 dark:bg-slate-900">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#E1FA43] font-black text-[#1A1A1A]">{index + 1}</span>
+              <div><h3 className="font-black">{item.title}</h3><p className="mt-2 text-sm leading-7 text-slate-700 dark:text-slate-300">{item.text}</p></div>
+            </article>
+          ))}
         </div>
       </section>
     </main>
   );
-};
-
-export default RefleksiPPG;
+}
