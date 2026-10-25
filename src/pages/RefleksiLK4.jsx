@@ -239,7 +239,7 @@ export default function RefleksiLK4() {
       <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-[#1a1a1a] md:p-9">
         <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-[#8234E6] dark:text-[#BCA0FF]">Dokumentasi</p>
         <h2 className="mt-2 text-2xl font-black md:text-3xl">Dokumentasi Karya Inovasi</h2>
-        <p className="mt-3 max-w-3xl leading-7 text-slate-600 dark:text-slate-400">Bagian ini disiapkan untuk delapan foto dokumentasi. Setelah foto diunggah ke Google Drive, masukkan tautan pratinjau masing-masing pada daftar <code>documentationImages</code> di bagian awal file ini.</p>
+        <p className="mt-3 max-w-3xl leading-7 text-slate-600 dark:text-slate-400">Berikut ini adalah dokumentasi pembelajaran dari karya inovasi yang telah dikembangkan.</p>
         <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
           {documentationImages.map((item, index) => (
             <article key={item.title} className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-900">
