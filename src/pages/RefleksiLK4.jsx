@@ -222,7 +222,7 @@ export default function RefleksiLK4() {
         <p className="mt-3 max-w-4xl leading-7 text-slate-700 dark:text-slate-300">Prototipe ini merupakan pengembangan lanjutan dari pembelajaran yang telah diterapkan, bukan bagian dari implementasi pada dua siklus sebelumnya. Game belum diuji kepada peserta didik. Tahap berikutnya direncanakan mencakup uji coba terbatas, pengumpulan umpan balik, pemeriksaan kesesuaian tantangan dengan tujuan pembelajaran, dan evaluasi hasil belajar sebelum efektivitasnya disimpulkan.</p>
         <div className="mt-5 flex flex-wrap items-center gap-3">
           <span className="rounded-full bg-amber-100 px-3 py-1.5 text-xs font-bold text-amber-900 dark:bg-amber-900/40 dark:text-amber-100">Prototipe · belum diuji di kelas</span>
-          <a href="/computer_mission_adventure.html" target="_blank" rel="noreferrer" className="inline-flex items-center rounded-full bg-[#8234E6] px-4 py-2.5 text-sm font-bold text-white transition hover:bg-[#6D28D9]">Lihat prototipe game <span className="ml-2" aria-hidden="true">↗</span></a>
+          <a href="/computer-mission" className="inline-flex items-center rounded-full bg-[#8234E6] px-4 py-2.5 text-sm font-bold text-white transition hover:bg-[#6D28D9]">Jelajahi halaman game <span className="ml-2" aria-hidden="true">→</span></a>
         </div>
       </section>
 

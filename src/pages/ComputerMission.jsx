@@ -1,6 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+// Vite: BASE_URL keeps the game path valid when the portfolio is hosted in a subdirectory.
+const GAME_URL = `${import.meta.env.BASE_URL}computer_mission_adventure.html`;
 
 export default function ComputerMission() {
+  const [gameFileMissing, setGameFileMissing] = useState(false);
+
+  const verifyLoadedGame = (event) => {
+    try {
+      const frameDocument = event.currentTarget.contentDocument;
+      const pageText = frameDocument?.body?.innerText || '';
+      const pageTitle = frameDocument?.title || '';
+      const looksLikePortfolioFallback = pageText.includes('Dari refleksi menuju inovasi pembelajaran.') || pageTitle.includes('E-Portfolio PPG');
+      setGameFileMissing(looksLikePortfolioFallback);
+    } catch {
+      // If the host prevents inspection, keep the game frame visible.
+      setGameFileMissing(false);
+    }
+  };
+
   return (
     <main className="mx-auto flex max-w-[1500px] flex-col gap-6 px-4 pb-16 pt-28 md:px-6 md:pt-32">
       <section className="relative overflow-hidden rounded-3xl bg-[#242B9B] p-6 text-white shadow-xl md:p-9">
@@ -14,15 +32,24 @@ export default function ComputerMission() {
       <section className="overflow-hidden rounded-3xl border border-slate-200 bg-[#0c1328] shadow-lg dark:border-slate-800">
         <div className="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 px-4 py-3 text-sm text-white md:px-6">
           <span className="font-bold">Computer Mission 2D · Mode petualangan</span>
-          <a href="/computer_mission_adventure.html" target="_blank" rel="noreferrer" className="rounded-full bg-[#FFC343] px-4 py-2 font-extrabold text-[#172554] transition hover:bg-yellow-300">Buka layar penuh ↗</a>
+          <a href={GAME_URL} target="_blank" rel="noreferrer" className="rounded-full bg-[#FFC343] px-4 py-2 font-extrabold text-[#172554] transition hover:bg-yellow-300">Buka layar penuh ↗</a>
         </div>
-        <iframe
-          src="/computer_mission_adventure.html"
-          title="Game Computer Mission 2D"
-          className="block h-[70vh] min-h-[560px] w-full border-0 md:h-[78vh]"
-          allow="fullscreen; autoplay"
-          loading="lazy"
-        />
+        {gameFileMissing ? (
+          <div className="m-5 rounded-2xl border border-amber-300 bg-amber-50 p-5 text-amber-950">
+            <h2 className="font-black">File game belum ditemukan di website</h2>
+            <p className="mt-2 text-sm leading-6">Website sedang menampilkan halaman utama sebagai pengganti file game. Pastikan <code>computer_mission_adventure.html</code> berada di folder <code>public/</code> proyek, lalu build dan deploy ulang website.</p>
+            <a href={GAME_URL} target="_blank" rel="noreferrer" className="mt-3 inline-flex rounded-full bg-amber-900 px-4 py-2 text-sm font-bold text-white">Coba buka file game ↗</a>
+          </div>
+        ) : (
+          <iframe
+            src={GAME_URL}
+            title="Game Computer Mission 2D"
+            onLoad={verifyLoadedGame}
+            className="block h-[70vh] min-h-[560px] w-full border-0 md:h-[78vh]"
+            allow="fullscreen; autoplay"
+            loading="lazy"
+          />
+        )}
       </section>
 
       <section className="grid gap-4 md:grid-cols-3">
