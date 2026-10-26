@@ -143,10 +143,11 @@ export default function RefleksiLK4() {
         <div className="mt-6 rounded-2xl border border-violet-200 bg-violet-50/70 p-5 dark:border-violet-900 dark:bg-violet-950/20">
           <h3 className="text-lg font-black">Rata-rata gabungan Siklus 1 dan Siklus 2</h3>
           <p className="mt-1 text-sm leading-6 text-slate-700 dark:text-slate-300">Ringkasan rata-rata antarsiklus untuk melihat gambaran hasil pembelajaran secara keseluruhan.</p>
-          <div className="mt-4 grid grid-cols-2 gap-3 lg:grid-cols-4">
+          <div className="mt-4 grid grid-cols-2 gap-3 lg:grid-cols-3">
             <Stat value="76,09" label="Rata-rata pretest" note="Rata-rata 76,18 pada Siklus 1 dan 76% Class Accuracy pada Siklus 2." />
             <Stat value="95,80" label="Rata-rata posttest" note="Rata-rata 95,59 pada Siklus 1 dan 96% Class Accuracy pada Siklus 2." />
             <Stat value="+19,71" label="Selisih rata-rata" note="Selisih antara rata-rata pretest dan posttest gabungan, dalam poin." />
+            <Stat value="0,82" label="N-gain gabungan (indikatif)" note="82,4%; g = (95,80 − 76,09) / (100 − 76,09). Bersifat indikatif karena metrik antarsiklus berbeda." />
             <Stat value="85,25" label="Rata-rata aktivitas kelompok" note="Rata-rata nilai LKPD Siklus 1 (84,17) dan misi kelompok Siklus 2 (86,33)." />
           </div>
           <p className="mt-4 text-xs leading-5 text-slate-600 dark:text-slate-400">Catatan: angka gabungan dihitung dengan merata-ratakan ringkasan masing-masing siklus, bukan menggabungkan seluruh skor individu. Data Siklus 1 menggunakan rata-rata 34 murid dengan data pretest–posttest berpasangan, sedangkan data asesmen Siklus 2 menggunakan ringkasan Class Accuracy Quizizz. Rata-rata aktivitas kelompok juga bersifat indikatif karena tugas pada kedua siklus tidak sepenuhnya sama.</p>
