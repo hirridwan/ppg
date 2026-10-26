@@ -118,6 +118,55 @@ export default function RefleksiLK4() {
       </section>
 
       <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-[#1a1a1a] md:p-9">
+        <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-[#8234E6] dark:text-[#BCA0FF]">Strategi kolaborasi</p>
+        <h2 className="mt-2 text-2xl font-black md:text-3xl">Pembagian Peran dalam Misi Kelompok</h2>
+        <p className="mt-4 max-w-4xl leading-7 text-slate-700 dark:text-slate-300">Untuk membantu koordinasi dan keterlibatan anggota, aktivitas misi kelompok menggunakan enam peran. Setiap peran memiliki tanggung jawab sederhana yang mendukung penyelesaian misi secara terarah.</p>
+        <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {[
+            {
+              number: '01',
+              title: 'Leader',
+              text: 'Memimpin diskusi tim.',
+            },
+            {
+              number: '02',
+              title: 'Reader',
+              text: 'Membaca instruksi misi.',
+            },
+            {
+              number: '03',
+              title: 'Recorder',
+              text: 'Menulis jawaban di LKPD.',
+            },
+            {
+              number: '04',
+              title: 'Card Manager',
+              text: 'Mengatur kartu misi.',
+            },
+            {
+              number: '05',
+              title: 'Checker',
+              text: 'Mengecek jawaban tim.',
+            },
+            {
+              number: '06',
+              title: 'Time Keeper',
+              text: 'Menjaga waktu tim.',
+            },
+          ].map((role) => (
+            <article key={role.number} className="rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-slate-800 dark:bg-slate-900">
+              <div className="flex items-start gap-3">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-violet-100 text-sm font-black text-violet-900 dark:bg-violet-900/50 dark:text-violet-100">{role.number}</span>
+                <h3 className="pt-1 font-black leading-6">{role.title}</h3>
+              </div>
+              <p className="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">{role.text}</p>
+            </article>
+          ))}
+        </div>
+        <p className="mt-5 rounded-2xl border border-violet-200 bg-violet-50 p-4 text-sm leading-6 text-slate-700 dark:border-violet-900 dark:bg-violet-950/20 dark:text-slate-300">Pembagian peran ini digunakan dalam aktivitas misi kelompok, sedangkan pretest dan posttest tetap dikerjakan secara individual.</p>
+      </section>
+
+      <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-[#1a1a1a] md:p-9">
         <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-[#8234E6] dark:text-[#BCA0FF]">Evaluasi hasil</p>
         <h2 className="mt-2 text-2xl font-black md:text-3xl">Bukti awal dari dua siklus</h2>
         <div className="mt-6 grid gap-6 lg:grid-cols-2">
